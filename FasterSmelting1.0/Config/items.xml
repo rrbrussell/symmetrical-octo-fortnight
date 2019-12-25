@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+
+	<!-- Base Scrap Resources -->
+
+	<insertAfter xpath="/items/item[@name='resourceIronFragment']/property[@name='Group']" >
+		<property name="MeltTimePerUnit" value="0.0005"/>
+	</insertAfter>
+	
+	<insertAfter xpath="/items/item[@name='resourceScrapIron']/property[@name='Group']" >
+		<property name="MeltTimePerUnit" value="0.0005"/>
+	</insertAfter>
+	<!--
+	<insertAfter xpath="/items/item[@name='resourceRockSmall']/property[@name='Group']" >
+		<property name="MeltTimePerUnit" value="0.0005"/>
+	</insertAfter>
+	-->
+	<insertAfter xpath="/items/item[@name='resourceCrushedSand']/property[@name='Group']" >
+		<property name="MeltTimePerUnit" value="0.0005"/>
+	</insertAfter>
+	
+	<insertAfter xpath="/items/item[@name='resourceScrapBrass']/property[@name='Group']" >
+		<property name="MeltTimePerUnit" value="0.0005"/>
+	</insertAfter>
+	
+	<insertAfter xpath="/items/item[@name='resourceScrapLead']/property[@name='Group']" >
+		<property name="MeltTimePerUnit" value="0.0005"/>
+	</insertAfter>
+	
+	<insertAfter xpath="/items/item[@name='resourceClayLump']/property[@name='Group']" >
+		<property name="MeltTimePerUnit" value="0.0005"/>
+	</insertAfter>
+	
+	<insertAfter xpath="/items/item[@name='resourceBrokenGlass']/property[@name='Group']" >
+		<property name="MeltTimePerUnit" value="0.0005"/>
+	</insertAfter>
+	
+	<set xpath="/items/item[@name='unit_iron']/property[@name='MeltTimePerUnit']/@value">0.0005</set>
+	<set xpath="/items/item[@name='resourceRockSmall']/property[@name='MeltTimePerUnit']/@value">0.0005</set>
+	
+	<!-- Lootable Scrap Items -->
+	
+	<insertAfter xpath="/items/item[contains (@name, 'Trophy')]/property[@name='Group']" >
+		<property name="MeltTimePerUnit" value="0.0005"/>
+	</insertAfter>
+	
+	<insertAfter xpath="/items/item[contains (@name, 'Knob')]/property[@name='Group']" >
+		<property name="MeltTimePerUnit" value="0.0005"/>
+	</insertAfter>
+	
+	<insertAfter xpath="/items/item[contains (@name, 'Radiator')]/property[@name='Group']" >
+		<property name="MeltTimePerUnit" value="0.0005"/>
+	</insertAfter>
+	
+	<insertAfter xpath="/items/item[contains (@name, 'FishingWeight')]/property[@name='Group']" >
+		<property name="MeltTimePerUnit" value="0.0005"/>
+	</insertAfter>
+	
+	<insertAfter xpath="/items/item[contains (@name, 'CandleStick')]/property[@name='Group']" >
+		<property name="MeltTimePerUnit" value="0.0005"/>
+	</insertAfter>	
+</configs>
