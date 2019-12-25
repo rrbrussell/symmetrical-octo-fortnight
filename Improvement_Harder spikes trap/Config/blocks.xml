@@ -1,0 +1,12 @@
+<configs>
+
+									<!-- WOODEN SPIKES -->
+			<set xpath="/blocks/block[@name='trapSpikesWoodMaster']/property[@name='Damage']/@value">50</set>
+			<set xpath="/blocks/block[@name='trapSpikesWoodMaster']/property[@name='Damage_received']/@value">20</set>
+			<set xpath="/blocks/block[@name='trapSpikesWoodMaster']/property[@name='MaxDamage']/@value">250</set>
+									<!-- IRON SPIKES -->
+			<set xpath="/blocks/block[@name='trapSpikesScrapIronMaster']/property[@name='Damage']/@value">65</set>						
+			<set xpath="/blocks/block[@name='trapSpikesScrapIronMaster']/property[@name='Damage_received']/@value">10</set>
+			<set xpath="/blocks/block[@name='trapSpikesScrapIronMaster']/property[@name='MaxDamage']/@value">350</set>
+			
+</configs>
