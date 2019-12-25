@@ -1,0 +1,58 @@
+<configs>
+
+	<!-- Reduce the amount of materials need to make a Shotgun slug -->
+	<set xpath="/recipes/recipe[@name='ammoShotgunSlug']/ingredient[@name='resourceBulletTip']/@count">2</set>
+	<set xpath="/recipes/recipe[@name='ammoShotgunSlug']/ingredient[@name='resourceGunPowder']/@count">2</set>
+		
+	<append xpath="/recipes">
+		
+		<recipe name="terrForestGround" count="1" craft_area="cementMixer" craft_time="0.5">
+			<ingredient name="resourceClayLump" count="20"/>
+			<ingredient name="resourceCrushedSand" count="3"/>
+			<ingredient name="resourceYuccaFibers" count="2"/>
+		</recipe>
+		
+		<recipe name="terrSandStone" count="1" craft_area="cementMixer" craft_time="0.5">
+			<ingredient name="resourceRockSmall" count="5"/>
+			<ingredient name="resourceCrushedSand" count="20"/>
+		</recipe>
+		
+		<recipe name="foodCanBeef" count="1" craft_area="campfire" craft_tool="toolCookingPot" >
+			<ingredient name="drinkCanEmpty" count="1"/>
+			<ingredient name="foodRawMeat" count="5"/>
+			<ingredient name="foodCropPotato" count="2"/>
+			<ingredient name="resourceAnimalFat" count="1"/>
+			<ingredient name="resourcePaint" count="1"/>
+		</recipe>
+
+		<recipe name="foodCanChicken" count="1" craft_area="campfire" craft_tool="toolCookingPot" >
+			<ingredient name="drinkCanEmpty" count="1"/>
+			<ingredient name="foodRawMeat" count="5"/>
+			<ingredient name="foodCornMeal" count="2"/>
+			<ingredient name="resourceAnimalFat" count="1"/>
+			<ingredient name="resourcePaint" count="1"/>
+		</recipe>
+
+		<recipe name="foodCanLamb" count="1" craft_area="campfire" craft_tool="toolCookingPot" >
+			<ingredient name="drinkCanEmpty" count="1"/>
+			<ingredient name="foodRawMeat" count="5"/>
+			<ingredient name="foodCropMushrooms" count="2"/>
+			<ingredient name="resourceAnimalFat" count="1"/>
+			<ingredient name="resourcePaint" count="1"/>
+		</recipe>
+		
+		<recipe name="drinkJarRiverWater" count="6"  >
+			<ingredient name="drinkJarEmpty" count="6"/>
+			<ingredient name="bucketRiverWater" count="1"/>
+		</recipe>
+		
+		<recipe name="resourceAcid" count="1" craft_area="chemistryStation" >
+			<ingredient name="drinkJarRiverWater" count="1"/>
+			<ingredient name="drinkJarGrainAlcohol" count="1"/>
+			<ingredient name="resourceGunPowder" count="1"/>
+			<ingredient name="resourceAnimalFat" count="1"/>
+		</recipe>
+		
+	</append>
+
+</configs>
