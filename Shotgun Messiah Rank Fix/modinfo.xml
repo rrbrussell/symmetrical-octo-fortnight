@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml>
+	<ModInfo>
+		<Name value="Fix Boomstick rank name" />
+		<Description value="Changes perk Boomstick rank Level 5 from 'Boomstick' to 'Shotgun Messiah'. Because why not in the first place?" />
+		<Author value="RiGON" />
+		<Version value="1.0(A18)" />
+
+	</ModInfo>
+</xml>

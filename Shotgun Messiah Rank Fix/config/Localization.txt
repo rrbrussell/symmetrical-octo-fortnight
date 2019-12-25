@@ -1,0 +1,2 @@
+Key,Source,Context,Changes,English,French,German,Klingon,Spanish,Polish
+perkBoomstickRank5Desc,progression,Perk,New,Shotgun Messiah,,,,,
