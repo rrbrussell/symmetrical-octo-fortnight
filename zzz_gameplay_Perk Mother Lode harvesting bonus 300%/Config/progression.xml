@@ -1,0 +1,7 @@
+<configs>		
+					
+			<!-- STRENGHT !-->
+					
+			<set xpath="/progression/perks/perk[@name='perkMotherLode']/effect_group/passive_effect[@name='HarvestCount'][@operation='perc_add'][@level='1,5']/@value">0.6,3.0</set>
+			
+</configs>
