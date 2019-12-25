@@ -1,0 +1,10 @@
+<configs>
+
+	<insertAfter xpath="/blocks/block[@name='cropsGrowingMaster']/property[@name='Material']" >
+		<property name="Stacknumber" value="30000"/>
+	</insertAfter>
+	<insertAfter xpath="/blocks/block[@name='treeMaster']/property[@name='Material']" >
+		<property name="Stacknumber" value="30000"/>
+	</insertAfter>
+
+</configs>
