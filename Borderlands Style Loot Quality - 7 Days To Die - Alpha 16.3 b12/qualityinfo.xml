@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+							<!--Bicentricbump's Edits Start-->
+<qualityinfo>
+  <!--Common White-->
+	<quality key="0" color="FFFFFF"/>
+  <!--Uncommon Green-->
+	<quality key="1" color="3DD20D"/>
+  <!--Rare Blue-->
+	<quality key="2" color="2F78FF"/>
+  <!--Epic Purple-->
+	<quality key="3" color="9132C8"/>
+  <!--Legendary Orange-->
+	<quality key="4" color="FF9600"/>
+  <!--Seraph Pink-->
+	<quality key="5" color="FF69B4"/>
+  <!--Pearlescent Cyan-->
+	<quality key="6" color="00FFFF"/>
+							<!--Bicentricbump's Edits End-->
+	</qualityinfo>
