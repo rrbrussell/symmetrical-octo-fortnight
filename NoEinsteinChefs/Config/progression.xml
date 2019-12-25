@@ -1,0 +1,58 @@
+<configs>
+
+<!-- Moves MasterChef into the Recovery Sub Tree -->
+
+
+<!-- delete the old MasterChef perk entirely -->
+<remove xpath="/progression/perks/perk[@name='perkMasterChef']" />
+
+<!-- setup a new MasterChef perk in the place we want -->
+<insertAfter xpath="/progression/perks/perk[@name='perkSlowMetabolism']" >
+<perk name="perkMasterChef" parent="skillRecovery" max_level="5" name_key="perkMasterChefName" desc_key="perkMasterChefDesc" icon="ui_game_symbol_spatula">
+<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="1" desc_key="reqFortitudeLevel1"/></level_requirements>
+<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="3" desc_key="reqFortitudeLevel3"/></level_requirements>
+<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="5" desc_key="reqFortitudeLevel5"/></level_requirements>
+<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="7" desc_key="reqFortitudeLevel7"/></level_requirements>
+<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="10" desc_key="reqFortitudeLevel10"/></level_requirements>
+
+<effect_group>
+<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="foodBaconAndEggs,foodEggBoiled,foodBoiledMea t,foodGrilledMeat,foodBakedPotato,foodCornBread,fo odCornOnTheCob,drinkJarRedTea,drinkJarCoffee,drink JarGoldenRodTea"/>
+<passive_effect name="RecipeTagUnlocked" operation="base_set" level="2,5" value="1" tags="foodSteakAndPotato,foodBlueberryPie,foodMeat Stew,foodVegetableStew"/>
+<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="foodShamChowder,foodHoboStew,foodFishTacos"/>
+<passive_effect name="RecipeTagUnlocked" operation="base_set" level="4,5" value="1" tags="drinkYuccaJuiceSmoothie,foodChiliDog"/>
+<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,5" value="1" tags="drinkJarGrandpasMoonshine,drinkJarGrandpasAw esomeSauce,drinkJarGrandpasLearningElixir"/>
+<effect_description level="1" desc_key="perkMasterChefRank1Desc"/>
+<effect_description level="2" desc_key="perkMasterChefRank2Desc"/>
+<effect_description level="3" desc_key="perkMasterChefRank3Desc"/>
+<effect_description level="4" desc_key="perkMasterChefRank4Desc"/>
+<effect_description level="5" desc_key="perkMasterChefRank5Desc"/>
+</effect_group>
+</perk>
+</insertAfter>
+
+<!-- Moves MasterChef into the Recovery Sub Tree -->
+
+<!-- delete the old SelfMedicated perk entirely -->
+<remove xpath="/progression/perks/perk[@name='perkSelfMedicated']" />
+
+<!-- setup a new SelfMedicated perk in the place we want -->
+<insertAfter xpath="/progression/perks/perk[@name='perkPhysician']" >
+<perk name="perkSelfMedicated" parent="skillCraftsmanship" name_key="perkSelfMedicated" desc_key="perkSelfMedicatedDesc" icon="ui_game_symbol_pills">
+<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="1" desc_key="reqIntellectLevel1"/></level_requirements>
+<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="3" desc_key="reqIntellectLevel3"/></level_requirements>
+<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel5"/></level_requirements>
+<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="7" desc_key="reqIntellectLevel7"/></level_requirements>
+<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="10" desc_key="reqIntellectLevel10"/></level_requirements>
+
+<effect_group>
+<passive_effect name="WaterChangeOT" operation="perc_subtract" value="0.5,0.9" level="1,5" tags="drug"/>
+<effect_description level="1" desc_key="perkSelfMedicatedRank1Desc"/>
+<effect_description level="2" desc_key="perkSelfMedicatedRank2Desc"/>
+<effect_description level="3" desc_key="perkSelfMedicatedRank3Desc"/>
+<effect_description level="4" desc_key="perkSelfMedicatedRank4Desc"/>
+<effect_description level="5" desc_key="perkSelfMedicatedRank5Desc"/>
+</effect_group>
+</perk>
+</insertAfter>
+
+</configs>
