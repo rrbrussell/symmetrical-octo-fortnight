@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+	<configs>
+
+							<!-- BOTTLE OF ACID -->
+							
+		<append xpath="/recipes">
+			<recipe name="resourceAcid" count="2" craft_area="chemistryStation" tags="learnable,chemStationCrafting">
+			<ingredient name="drinkJarRiverWater" count="2"/>
+			<ingredient name="resourcePotassiumNitratePowder" count="20"/>
+			<ingredient name="drinkJarGrainAlcohol" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="15"/>
+			<ingredient name="ammoGasCan" count="5"/>
+			</recipe>
+		</append>
+
+	</configs>
