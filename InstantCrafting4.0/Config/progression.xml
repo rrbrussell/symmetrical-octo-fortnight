@@ -1,0 +1,20 @@
+<configs>
+	<!--<set xpath="/progression/attributes/attribute[@name='attIntellect']/effect_group/passive_effect[@name='CraftingTime']/@value">1</set> -->
+	<set xpath="/progression/perks/perk[@name='perkSalvageOperations']/effect_group/passive_effect[@name='CraftingTime']/@value">-1</set>
+	<set xpath="/progression/perks/perk[@name='perkSalvageOperations']/effect_group/passive_effect[@name='CraftingTime']/@level">0,5</set>
+	
+	<set xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@name='CraftingTime']/@value">-1</set>
+	<set xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@name='CraftingTime']/@level">0,5</set>
+
+	<set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@name='CraftingTime']/@value">-1</set>
+	<set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@name='CraftingTime']/@level">0,5</set>
+
+	<set xpath="/progression/perks/perk[@name='perkYeahScience']/effect_group/passive_effect[@name='CraftingTime']/@value">-1</set>
+	<set xpath="/progression/perks/perk[@name='perkYeahScience']/effect_group/passive_effect[@name='CraftingTime']/@level">0,5</set>
+
+	<insertAfter xpath="/progression/attributes/attribute[@name='attIntellect']/effect_group">
+		<passive_effect name="CraftingTime" operation="perc_add" level="0,10" value="-2"/>
+	</insertAfter>
+	
+	<!--<append xpath="/attributes/attribute[@name='attIntellect']/effect_group/passive_effect[@name='CraftingTime']/@value">,MyNewTag</append> -->
+</configs>

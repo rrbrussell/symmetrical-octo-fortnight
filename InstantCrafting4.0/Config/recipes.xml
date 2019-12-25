@@ -1,0 +1,5 @@
+<configs>
+
+<set xpath="/recipes/recipe/@craft_time">0</set>
+
+</configs>
