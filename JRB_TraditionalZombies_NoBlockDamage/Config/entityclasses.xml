@@ -1,0 +1,272 @@
+<TraditionalZombies_NoBlockDamage>
+
+<!-- AI Re-Tasking
+
+
+	zombieTemplateMale -->
+    <remove xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='AITask-1']" />
+    <remove xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='AITask-2']" />
+    <remove xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='AITask-3']" />
+    <remove xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='AITask-4']" />
+    <remove xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='AITask-5']" />
+    <remove xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='AITask-6']" />
+	<remove xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='AITask-7']" />
+	<remove xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='AITask-8']" />
+	<append xpath="/entity_classes/entity_class[@name='zombieTemplateMale']">
+		<property name="AITask-1" value="Territorial"/>
+		<property name="AITask-2" value="ApproachDistraction"/>
+		<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityNPC,0,EntityEnemyAnimal,0,EntityPlayer,0"/>
+		<property name="AITask-4" value="ApproachSpot"/>
+		<property name="AITask-5" value="Look"/>
+		<property name="AITask-6" value="Wander"/>
+	</append>
+
+
+<!-- zombieSpider -->
+	<remove xpath="/entity_classes/entity_class[@name='zombieSpider']/property[@name='AITask-1']" />
+	<remove xpath="/entity_classes/entity_class[@name='zombieSpider']/property[@name='AITask-2']" />
+	<remove xpath="/entity_classes/entity_class[@name='zombieSpider']/property[@name='AITask-3']" />
+	<remove xpath="/entity_classes/entity_class[@name='zombieSpider']/property[@name='AITask-4']" />
+	<remove xpath="/entity_classes/entity_class[@name='zombieSpider']/property[@name='AITask-5']" />
+	<remove xpath="/entity_classes/entity_class[@name='zombieSpider']/property[@name='AITask-6']" />
+	<remove xpath="/entity_classes/entity_class[@name='zombieSpider']/property[@name='AITask-7']" />
+	<remove xpath="/entity_classes/entity_class[@name='zombieSpider']/property[@name='AITask-8']" />
+	<remove xpath="/entity_classes/entity_class[@name='zombieSpider']/property[@name='AITask-9']" />
+	<remove xpath="/entity_classes/entity_class[@name='zombieSpider']/property[@name='AITask-10']" />
+	<append xpath="/entity_classes/entity_class[@name='zombieSpider']">
+		<property name="AITask-1" value="Leap"/>
+		<property name="AITask-2" value="Territorial"/>
+		<property name="AITask-3" value="ApproachDistraction"/>
+		<property name="AITask-4" value="ApproachAndAttackTarget" data="class=EntityNPC,0,EntityEnemyAnimal,0,EntityPlayer,0"/>
+		<property name="AITask-5" value="ApproachSpot"/>
+		<property name="AITask-6" value="Look"/>
+		<property name="AITask-7" value="Wander"/>
+		<property name="AITask-8" value=""/>
+	</append>
+
+
+<!-- zombieFatCop -->
+	<remove xpath="/entity_classes/entity_class[@name='zombieFatCop']/property[@name='AITask-1']" />
+	<remove xpath="/entity_classes/entity_class[@name='zombieFatCop']/property[@name='AITask-2']" />
+	<remove xpath="/entity_classes/entity_class[@name='zombieFatCop']/property[@name='AITask-3']" />
+	<remove xpath="/entity_classes/entity_class[@name='zombieFatCop']/property[@name='AITask-4']" />
+	<remove xpath="/entity_classes/entity_class[@name='zombieFatCop']/property[@name='AITask-5']" />
+	<remove xpath="/entity_classes/entity_class[@name='zombieFatCop']/property[@name='AITask-6']" />
+	<remove xpath="/entity_classes/entity_class[@name='zombieFatCop']/property[@name='AITask-7']" />
+	<append xpath="/entity_classes/entity_class[@name='zombieFatCop']">
+		<property name="AITask-1" value="RangedAttackTarget" data="itemType=1;cooldown=4;duration=5"/>
+		<property name="AITask-2" value="ApproachAndAttackTarget" data="class=EntityEnemyAnimal,0,EntityPlayer"/>
+		<property name="AITask-3" value="ApproachSpot"/>
+		<property name="AITask-4" value="Look"/>
+		<property name="AITask-5" value="Wander"/>
+		<property name="AITask-6" value=""/>
+	</append>
+
+
+<!-- animalTemplateHostile -->
+	<remove xpath="/entity_classes/entity_class[@name='animalTemplateHostile']/property[@name='AITask-1']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalTemplateHostile']/property[@name='AITask-2']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalTemplateHostile']/property[@name='AITask-3']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalTemplateHostile']/property[@name='AITask-4']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalTemplateHostile']/property[@name='AITask-5']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalTemplateHostile']/property[@name='AITask-6']" />
+	<append xpath="/entity_classes/entity_class[@name='animalTemplateHostile']">
+		<property name="AITask-1" value="Swim"/>
+		<property name="AITask-2" value="ApproachAndAttackTarget"  data="class=EntityNPC,20,EntityPlayer,20"/>
+		<property name="AITask-3" value="ApproachSpot"/>
+		<property name="AITask-4" value="Look"/>
+		<property name="AITask-5" value="Wander"/>
+	</append>
+
+
+<!-- animalBear -->
+	<remove xpath="/entity_classes/entity_class[@name='animalBear']/property[@name='AITask-1']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalBear']/property[@name='AITask-2']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalBear']/property[@name='AITask-3']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalBear']/property[@name='AITask-4']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalBear']/property[@name='AITask-5']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalBear']/property[@name='AITask-6']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalBear']/property[@name='AITask-7']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalBear']/property[@name='AITask-8']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalBear']/property[@name='AITask-9']" />
+	<append xpath="/entity_classes/entity_class[@name='animalBear']">
+		<property name="AITask-1" value="Swim"/>
+		<property name="AITask-2" value="Territorial"/>
+		<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityAnimalStag,40,EntityPlayer,25,EntityZombie,30"/>
+		<property name="AITask-4" value="ApproachSpot"/>
+		<property name="AITask-5" value="Look"/>
+		<property name="AITask-6" value="Wander"/>
+		<property name="AITask-7" value=""/>
+	</append>
+
+
+<!-- animalZombieBear -->
+	<remove xpath="/entity_classes/entity_class[@name='animalZombieBear']/property[@name='AITask-1']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalZombieBear']/property[@name='AITask-2']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalZombieBear']/property[@name='AITask-3']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalZombieBear']/property[@name='AITask-4']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalZombieBear']/property[@name='AITask-5']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalZombieBear']/property[@name='AITask-6']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalZombieBear']/property[@name='AITask-7']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalZombieBear']/property[@name='AITask-8']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalZombieBear']/property[@name='AITask-9']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalZombieBear']/property[@name='AITask-10']" />
+	<append xpath="/entity_classes/entity_class[@name='animalZombieBear']">
+		<property name="AITask-1" value="Swim"/>
+		<property name="AITask-2" value="Territorial"/>
+		<property name="AITask-3" value="ApproachDistraction"/>
+		<property name="AITask-4" value="ApproachAndAttackTarget" data="class=EntityAnimalStag,40,EntityPlayer,0,EntityNPC,0"/>
+		<property name="AITask-5" value="ApproachSpot"/>
+		<property name="AITask-6" value="Look"/>
+		<property name="AITask-7" value="Wander"/>
+		<property name="AITask-8" value=""/>
+	</append>
+
+
+<!-- animalWolf -->
+	<remove xpath="/entity_classes/entity_class[@name='animalWolf']/property[@name='AITask-1']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalWolf']/property[@name='AITask-2']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalWolf']/property[@name='AITask-3']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalWolf']/property[@name='AITask-4']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalWolf']/property[@name='AITask-5']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalWolf']/property[@name='AITask-6']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalWolf']/property[@name='AITask-7']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalWolf']/property[@name='AITask-8']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalWolf']/property[@name='AITask-9']" />
+	<append xpath="/entity_classes/entity_class[@name='animalWolf']">
+		<property name="AITask-1" value="Swim"/>
+		<property name="AITask-2" value="Territorial"/>
+		<property name="AITask-3" value="RunawayWhenHurt" data="runChance=0.5;healthPer=0.3;healthPerMax=0.6"/>
+		<property name="AITask-4" value="ApproachAndAttackTarget" data="class=EntityAnimalStag,20,EntityPlayer,15,EntityZombie,20"/>
+		<property name="AITask-5" value="ApproachSpot"/>
+		<property name="AITask-6" value="Look"/>
+		<property name="AITask-7" value="Wander"/>
+		<property name="AITask-8" value=""/>
+	</append>
+	
+<!-- animalCoyote -->
+	<remove xpath="/entity_classes/entity_class[@name='animalCoyote']/property[@name='AITask-1']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalCoyote']/property[@name='AITask-2']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalCoyote']/property[@name='AITask-3']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalCoyote']/property[@name='AITask-4']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalCoyote']/property[@name='AITask-5']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalCoyote']/property[@name='AITask-6']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalCoyote']/property[@name='AITask-7']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalCoyote']/property[@name='AITask-8']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalCoyote']/property[@name='AITask-9']" />
+	<append xpath="/entity_classes/entity_class[@name='animalCoyote']">
+		<property name="AITask-1" value="Swim"/>
+		<property name="AITask-2" value="Territorial"/>
+		<property name="AITask-3" value="RunawayWhenHurt" data="runChance=0.9;healthPer=0.6;healthPerMax=0.75"/>
+		<property name="AITask-4" value="ApproachAndAttackTarget" data="class=EntityAnimalRabbit,8,EntityPlayer,10"/>
+		<property name="AITask-5" value="ApproachSpot"/>
+		<property name="AITask-6" value="Look"/>
+		<property name="AITask-7" value="Wander"/>
+		<property name="AITask-8" value=""/>
+	</append>
+
+
+<!-- animalDireWolf -->
+	<remove xpath="/entity_classes/entity_class[@name='animalDireWolf']/property[@name='AITask-1']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalDireWolf']/property[@name='AITask-2']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalDireWolf']/property[@name='AITask-3']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalDireWolf']/property[@name='AITask-4']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalDireWolf']/property[@name='AITask-5']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalDireWolf']/property[@name='AITask-6']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalDireWolf']/property[@name='AITask-7']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalDireWolf']/property[@name='AITask-8']" />
+	<append xpath="/entity_classes/entity_class[@name='animalDireWolf']">
+		<property name="AITask-1" value="Swim"/>
+		<property name="AITask-2" value="Territorial"/>
+		<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityAnimalStag,30,EntityPlayer,30"/>
+		<property name="AITask-4" value="ApproachSpot"/>
+		<property name="AITask-5" value="Look"/>
+		<property name="AITask-6" value="Wander"/>
+		<property name="AITask-7" value=""/>
+	</append>
+	
+<!-- animalMountainLion -->
+	<remove xpath="/entity_classes/entity_class[@name='animalMountainLion']/property[@name='AITask-1']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalMountainLion']/property[@name='AITask-2']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalMountainLion']/property[@name='AITask-3']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalMountainLion']/property[@name='AITask-4']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalMountainLion']/property[@name='AITask-5']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalMountainLion']/property[@name='AITask-6']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalMountainLion']/property[@name='AITask-7']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalMountainLion']/property[@name='AITask-8']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalMountainLion']/property[@name='AITask-9']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalMountainLion']/property[@name='AITask-10']" />
+	<append xpath="/entity_classes/entity_class[@name='animalMountainLion']">
+		<property name="AITask-1" value="Leap" data="legs=4"/>
+		<property name="AITask-2" value="Swim"/>
+		<property name="AITask-3" value="Territorial"/>
+		<property name="AITask-5" value="RunawayWhenHurt" data="runChance=.4;healthPer=.1;healthPerMax=.4"/>
+		<property name="AITask-5" value="ApproachAndAttackTarget" data="class=EntityAnimalStag,30,EntityPlayer,15,EntityZombie,20"/>
+		<property name="AITask-6" value="ApproachSpot"/>
+		<property name="AITask-7" value="Look"/>
+		<property name="AITask-8" value="Wander"/>
+		<property name="AITask-9" value=""/>
+	</append>
+
+
+<!-- animalZombieDog -->
+	<remove xpath="/entity_classes/entity_class[@name='animalZombieDog']/property[@name='AITask-1']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalZombieDog']/property[@name='AITask-2']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalZombieDog']/property[@name='AITask-3']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalZombieDog']/property[@name='AITask-4']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalZombieDog']/property[@name='AITask-5']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalZombieDog']/property[@name='AITask-6']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalZombieDog']/property[@name='AITask-7']" />
+	<append xpath="/entity_classes/entity_class[@name='animalZombieDog']">
+		<property name="AITask-1" value="Territorial"/>
+		<property name="AITask-2" value="ApproachAndAttackTarget" data="class=EntityPlayer,20,EntityNPC,20"/>
+		<property name="AITask-3" value="ApproachSpot"/>
+		<property name="AITask-4" value="Look"/>
+		<property name="AITask-5" value="Wander"/>
+		<property name="AITask-6" value=""/>
+	</append>
+
+
+<!-- animalSnake -->
+	<remove xpath="/entity_classes/entity_class[@name='animalSnake']/property[@name='AITask-1']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalSnake']/property[@name='AITask-2']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalSnake']/property[@name='AITask-3']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalSnake']/property[@name='AITask-4']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalSnake']/property[@name='AITask-5']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalSnake']/property[@name='AITask-6']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalSnake']/property[@name='AITask-7']" />
+	<append xpath="/entity_classes/entity_class[@name='animalSnake']">
+		<property name="AITask-1" value="Territorial"/>
+		<property name="AITask-2" value="ApproachAndAttackTarget" data="class=EntityPlayer,15,EntityNPC,15"/>
+		<property name="AITask-3" value="ApproachSpot"/>
+		<property name="AITask-4" value="Look"/>
+		<property name="AITask-5" value="Wander"/>
+		<property name="AITask-6" value=""/>
+	</append>
+	
+	
+<!-- animalBossGrace -->
+	<remove xpath="/entity_classes/entity_class[@name='animalBossGrace']/property[@name='AITask-1']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalBossGrace']/property[@name='AITask-2']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalBossGrace']/property[@name='AITask-3']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalBossGrace']/property[@name='AITask-4']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalBossGrace']/property[@name='AITask-5']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalBossGrace']/property[@name='AITask-6']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalBossGrace']/property[@name='AITask-7']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalBossGrace']/property[@name='AITask-8']" />
+	<remove xpath="/entity_classes/entity_class[@name='animalBossGrace']/property[@name='AITask-9']" />
+	<append xpath="/entity_classes/entity_class[@name='animalBossGrace']">
+		<property name="AITask-1" value="Swim"/>
+		<property name="AITask-2" value="Territorial"/>
+		<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityPlayer,30,EntityZombie,10"/>
+		<property name="AITask-4" value="ApproachSpot"/>
+		<property name="AITask-5" value="Look"/>
+		<property name="AITask-6" value="Wander"/>
+		<property name="AITask-7" value=""/>
+	</append>
+
+
+<!-- Reduces all Fat Cop explosion damage to 1 -->
+	<set xpath="entity_classes/entity_class[contains(@name, 'FatCop')]/property[@name='Explosion.BlockDamage']/@value">0</set>
+
+</TraditionalZombies_NoBlockDamage>

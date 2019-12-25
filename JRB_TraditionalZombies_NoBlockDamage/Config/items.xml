@@ -1,0 +1,28 @@
+<TraditionalZombies_NoBlockDamage>
+
+<!--Reduces zombie block damage to 0-->
+	<set xpath="/items/item[@name='meleeHandMaster']/property[@class='Action0']/property[@name='DamageBlock']/@value">0</set>
+	<set xpath="/items/item[contains(@name, 'HandZombie') or contains(@name, 'HandAnimal')]/property[@class='Action0']/property[@name='DamageBlock']/@value">0</set>
+	<set xpath="/items/item[contains(@name, 'Vomit')]/property[@class='Action1']/property[@name='DamageBlock']/@value">0</set>
+	
+<!-- Removes damage modifiers ('HandZombie' do not have any to remove currently) -->
+	<!-- Zombie Vomit -->
+	<remove xpath="/items/item[@name='ammoProjectileZombieVomit']/effect_group[@name='ammoProjectileZombieVomit']/passive_effect[@name='DamageModifier']" />
+	<remove xpath="/items/item[@name='ammoProjectileZombieVomit']/effect_group[@name='ammoProjectileZombieVomit']/passive_effect[@name='DamageModifier']" />
+	<remove xpath="/items/item[@name='ammoProjectileZombieVomit']/effect_group[@name='ammoProjectileZombieVomit']/passive_effect[@name='DamageModifier']" />
+	<!-- Zombie Vomit Feral -->
+	<remove xpath="/items/item[@name='ammoProjectileZombieVomitFeral']/effect_group[@name='ammoProjectileZombieVomitFeral']/passive_effect[@name='DamageModifier']" />
+	<remove xpath="/items/item[@name='ammoProjectileZombieVomitFeral']/effect_group[@name='ammoProjectileZombieVomitFeral']/passive_effect[@name='DamageModifier']" />
+	<remove xpath="/items/item[@name='ammoProjectileZombieVomitFeral']/effect_group[@name='ammoProjectileZombieVomitFeral']/passive_effect[@name='DamageModifier']" />
+	<!-- Zombie Dog -->
+	<remove xpath="/items/item[@name='meleeHandAnimalZombieDog']/effect_group[@name='meleeHandAnimalZombieDog']/passive_effect[@name='DamageModifier']" />
+	<!-- Coyote -->
+	<remove xpath="/items/item[@name='meleeHandAnimalCoyote']/effect_group[@name='meleeHandAnimalCoyote']/passive_effect[@name='DamageModifier']" />
+	<!-- Vulture Vomit -->
+	<remove xpath="/items/item[@name='ammoProjectileVultureVomit']/effect_group[@name='ammoProjectileVultureVomit']/passive_effect[@name='DamageModifier']" />
+	<remove xpath="/items/item[@name='ammoProjectileVultureVomit']/effect_group[@name='ammoProjectileVultureVomit']/passive_effect[@name='DamageModifier']" />
+	<remove xpath="/items/item[@name='ammoProjectileVultureVomit']/effect_group[@name='ammoProjectileVultureVomit']/passive_effect[@name='DamageModifier']" />
+	<!-- Wolf -->
+	<remove xpath="/items/item[@name='meleeHandAnimalWolf']/effect_group[@name='meleeHandAnimalWolf']/passive_effect[@name='DamageModifier']" />
+
+</TraditionalZombies_NoBlockDamage>
