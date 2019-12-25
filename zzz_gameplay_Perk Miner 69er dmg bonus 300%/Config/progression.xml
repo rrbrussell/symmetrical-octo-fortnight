@@ -1,0 +1,8 @@
+<configs>		
+					
+			<!-- STRENGHT !-->
+					
+			<set xpath="/progression/perks/perk[@name='perkMiner69r']/effect_group/passive_effect[@name='BlockDamage'][@operation='perc_add'][@level='1,5']/@value">0.6,3.0</set>
+			<set xpath="/progression/perks/perk[@name='perkMiner69r']/effect_group/passive_effect[@name='EntityDamage'][@operation='perc_add'][@level='1,5']/@value">0.4,2.0</set>
+		
+</configs>
