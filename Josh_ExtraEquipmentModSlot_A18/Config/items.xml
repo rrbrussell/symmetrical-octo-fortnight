@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+
+	<!--This set command looks through every single item in the game to find items with a modslot value of "112234" it then repalces it with the new value which provdies more slots for the player.-->
+	<!--It does not affect items which don't support slots or have a different base slot setup to this command.-->
+	<set xpath="/items/item/effect_group/passive_effect[contains(@name, 'ModSlots')][@value='1,1,2,2,3,4']/@value">1,2,3,4,5,6</set>
+
+</configs>
