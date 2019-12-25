@@ -1,0 +1,73 @@
+<configs>
+	<append xpath="/recipes">
+
+		<recipe tags="workbenchCrafting" count="1" name="gunBowWoodenParts" craft_area="workbench">
+		<ingredient count="30" name="resourceWood"/>
+		</recipe>
+		
+		<recipe tags="workbenchCrafting" count="1" name="gunPistolParts" craft_area="workbench">
+		<ingredient count="1" name="resourceForgedSteel"/>
+		</recipe>
+		
+		<recipe tags="workbenchCrafting" count="1" name="gunDoubleBarrelShotgunParts" craft_area="workbench">
+		<ingredient count="5" name="resourceForgedSteel"/>
+		</recipe>
+		
+		<recipe tags="workbenchCrafting" count="1" name="gunHuntingRifleParts" craft_area="workbench">
+		<ingredient count="4" name="resourceForgedSteel"/>
+		</recipe>
+		
+		<recipe tags="workbenchCrafting" count="1" name="gunAk47Parts" craft_area="workbench">
+		<ingredient count="3" name="resourceForgedSteel"/>
+		</recipe>
+		
+		<recipe tags="workbenchCrafting" count="1" name="gunRocketLauncherParts" craft_area="workbench">
+		<ingredient count="10" name="resourceForgedSteel"/>
+		</recipe>
+		
+		<recipe tags="workbenchCrafting" count="1" name="gunJunkTurretParts" craft_area="workbench">
+		<ingredient count="10" name="resourceForgedIron"/>
+		</recipe>
+		
+		<recipe tags="workbenchCrafting" count="1" name="meleeStunBatonParts" craft_area="workbench">
+		<ingredient count="1" name="resourceForgedSteel"/>
+		</recipe>
+		
+		<recipe tags="workbenchCrafting" count="1" name="meleeKnucklesSteelParts" craft_area="workbench">
+		<ingredient count="1" name="resourceForgedSteel"/>
+		</recipe>
+		
+		<recipe tags="workbenchCrafting" count="1" name="meleeToolChainsawParts" craft_area="workbench">
+		<ingredient count="10" name="resourceForgedIron"/>
+		</recipe>
+		
+		<recipe tags="workbenchCrafting" count="1" name="meleeToolKnifeMacheteParts" craft_area="workbench">
+		<ingredient count="2" name="resourceForgedSteel"/>
+		</recipe>
+		
+		<recipe tags="workbenchCrafting" count="1" name="meleeThrownSpearSteelParts" craft_area="workbench">
+		<ingredient count="4" name="resourceForgedSteel"/>
+		</recipe>
+		
+		<recipe tags="workbenchCrafting" count="1" name="meleeClubBaseballBatParts" craft_area="workbench">
+		<ingredient count="2" name="resourceForgedIron"/>
+		</recipe>
+		
+		<recipe tags="workbenchCrafting" count="1" name="meleeToolSledgehammerSteelParts" craft_area="workbench">
+		<ingredient count="3" name="resourceForgedSteel"/>
+		</recipe>
+		
+		<recipe tags="workbenchCrafting" count="1" name="meleeToolAllSteelParts" craft_area="workbench">
+		<ingredient count="1" name="resourceForgedSteel"/>
+		</recipe>
+		
+		<recipe tags="workbenchCrafting" count="1" name="armorMilitarySetParts" craft_area="workbench">
+		<ingredient count="1" name="resourceForgedSteel"/>
+		</recipe>
+		
+		<recipe tags="workbenchCrafting" count="1" name="armorSteelSetParts" craft_area="workbench">
+		<ingredient count="2" name="resourceForgedSteel"/>
+		</recipe>
+
+	</append>
+</configs>
