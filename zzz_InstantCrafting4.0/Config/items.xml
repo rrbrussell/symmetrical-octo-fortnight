@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <configs>
-	<set xpath="/items/item/effect_group/passive_effect[@name='CraftingTime']/@value">-1</set>
-	<set xpath="/items/item/effect_group/display_value[@name='dCraftingTime']/@value">-1</set>
+	<!--<set xpath="/items/item/effect_group/passive_effect[@name='CraftingTime']/@value">-1</set>
+	<set xpath="/items/item/effect_group/display_value[@name='dCraftingTime']/@value">-1</set>-->
 
 	<set xpath="/items/item/property[@name='CraftingIngredientTime']/@value">0</set>     <!--This single line does the same thing that the lines below did collectively.-->
 	
