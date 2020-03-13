@@ -2,9 +2,9 @@
 <xml>
 	<ModInfo>
 		<Name value="PhD Bigger Crafting Queue" />
-		<Description value="Increases the size of the crafting queue to 10" />
+		<Description value="Increases the size of the crafting queue to 20" />
 		<Author value="PhDGaming" />
-		<Version value="1.1" />
+		<Version value="1.2" />
 		<Website value="https://www.patreon.com/PhDGaming" />
 	</ModInfo>
 </xml>

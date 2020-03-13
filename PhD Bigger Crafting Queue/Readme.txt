@@ -1,5 +1,5 @@
-PhD Bigger Crafting Queue - 1.1
-This simple mod expands the players crafting queue from 4 slots to 10 slots. 
+PhD Bigger Crafting Queue - 1.2
+This simple mod expands the players crafting queue from 4 slots to 20 slots. 
 
 I made this mod because I was always filling my queue when working my way through a POI and having to wait for a slot to become available. Other mods are available that gave me five slots which weren't much help. Seriously what's one more slot going to do? But six more? Now that really helps. 
 
@@ -10,8 +10,9 @@ If you use the mod and enjoy it, please feel free to endorse it and leave any fe
 :: REQUIREMENTS::
 • Version 17.4
 • Version 18
+• I have only been able to test this using 16:9 resolution so I do not know if it works with any others.
 
 
 :: FEATURES::
-• Expands the Player's crafting queue to 10 slots
+• Expands the Player's crafting queue to 20 slots
 
