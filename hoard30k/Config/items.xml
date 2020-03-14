@@ -76,7 +76,7 @@
 	<set xpath="/items/item[@name='foodCropPotato']/property[@name='Stacknumber']/@value">30000</set>
 	<set xpath="/items/item[@name='foodCropMushrooms']/property[@name='Stacknumber']/@value">30000</set>
 	<set xpath="/items/item[@name='foodCropYuccaFruit']/property[@name='Stacknumber']/@value">30000</set>
-	<set xpath="/items/item[@name='foodCropPumpkin']/property[@name='Stacknumber']/@value">30000</set>
+	<!-- <set xpath="/items/item[@name='foodCropPumpkin']/property[@name='Stacknumber']/@value">30000</set> -->
 	<set xpath="/items/item[@name='drinkCanEmpty']/property[@name='Stacknumber']/@value">30000</set>
 	<set xpath="/items/item[@name='drinkJarEmpty']/property[@name='Stacknumber']/@value">30000</set>
 	<set xpath="/items/item[@name='drinkJarRiverWater']/property[@name='Stacknumber']/@value">30000</set>
@@ -96,7 +96,7 @@
 	<set xpath="/items/item[@name='bucketEmpty']/property[@name='Stacknumber']/@value">30000</set>
 	<set xpath="/items/item[@name='bucketRiverWater']/property[@name='Stacknumber']/@value">30000</set>
 	<set xpath="/items/item[@name='schematicMaster']/property[@name='Stacknumber']/@value">30000</set>
-	<set xpath="/items/item[@name='blankNoteMaster']/property[@name='Stacknumber']/@value">30000</set>
+	<!-- <set xpath="/items/item[@name='blankNoteMaster']/property[@name='Stacknumber']/@value">30000</set> -->
 	<set xpath="/items/item[@name='questMaster']/property[@name='Stacknumber']/@value">30000</set>
 	<set xpath="/items/item[@name='resourceRockSmall']/property[@name='Stacknumber']/@value">30000</set>
 	<set xpath="/items/item[@name='resourceSnowBall']/property[@name='Stacknumber']/@value">30000</set>

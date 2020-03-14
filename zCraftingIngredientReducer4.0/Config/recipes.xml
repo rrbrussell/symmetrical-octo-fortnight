@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<configs>
-
-<set xpath="/recipes/recipe[not (contains(@name, 'Bundle'))]/ingredient/@count">1</set>
-
-<set xpath="/recipes/recipe[contains(@name, 'AloeCream')]/effect_group/passive_effect/@value">0</set>
-
-</configs>

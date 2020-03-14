@@ -132,7 +132,7 @@
 	<remove xpath="/entity_classes/entity_class[@name='animalWolf']/property[@name='AITask-6']" />
 	<remove xpath="/entity_classes/entity_class[@name='animalWolf']/property[@name='AITask-7']" />
 	<remove xpath="/entity_classes/entity_class[@name='animalWolf']/property[@name='AITask-8']" />
-	<remove xpath="/entity_classes/entity_class[@name='animalWolf']/property[@name='AITask-9']" />
+	<!-- <remove xpath="/entity_classes/entity_class[@name='animalWolf']/property[@name='AITask-9']" /> -->
 	<append xpath="/entity_classes/entity_class[@name='animalWolf']">
 		<property name="AITask-1" value="Swim"/>
 		<property name="AITask-2" value="Territorial"/>
