@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+							<!--Bicentricbump's Edits Start-->
+<qualityinfo>
+  <!--Common White-->
+	<set xpath="/qualityinfo/quality[@key='0']/property[@name='color']/@value">FFFFFF</set>
+  <!--Uncommon Green-->
+	<set xpath="/qualityinfo/quality[@key='1']/property[@name='color']/@value">3DD20D</set>
+  <!--Rare Blue-->
+	<set xpath="/qualityinfo/quality[@key='2']/property[@name='color']/@value">2F78FF</set>
+  <!--Epic Purple-->
+	<set xpath="/qualityinfo/quality[@key='3']/property[@name='color']/@value">9132C8</set>
+  <!--Legendary Orange-->
+	<set xpath="/qualityinfo/quality[@key='4']/property[@name='color']/@value">FF9600</set>
+  <!--Seraph Pink-->
+	<set xpath="/qualityinfo/quality[@key='5']/property[@name='color']/@value">FF69B4</set>
+  <!--Pearlescent Cyan-->
+	<set xpath="/qualityinfo/quality[@key='6']/property[@name='color']/@value">00FFFF</set>
+							<!--Bicentricbump's Edits End-->
+	</qualityinfo>

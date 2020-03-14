@@ -145,7 +145,7 @@
 	</append>
 	
 <!-- animalCoyote -->
-	<remove xpath="/entity_classes/entity_class[@name='animalCoyote']/property[@name='AITask-1']" />
+	<!-- <remove xpath="/entity_classes/entity_class[@name='animalCoyote']/property[@name='AITask-1']" />
 	<remove xpath="/entity_classes/entity_class[@name='animalCoyote']/property[@name='AITask-2']" />
 	<remove xpath="/entity_classes/entity_class[@name='animalCoyote']/property[@name='AITask-3']" />
 	<remove xpath="/entity_classes/entity_class[@name='animalCoyote']/property[@name='AITask-4']" />
@@ -163,7 +163,7 @@
 		<property name="AITask-6" value="Look"/>
 		<property name="AITask-7" value="Wander"/>
 		<property name="AITask-8" value=""/>
-	</append>
+	</append> -->
 
 
 <!-- animalDireWolf -->
@@ -186,7 +186,7 @@
 	</append>
 	
 <!-- animalMountainLion -->
-	<remove xpath="/entity_classes/entity_class[@name='animalMountainLion']/property[@name='AITask-1']" />
+	<!-- <remove xpath="/entity_classes/entity_class[@name='animalMountainLion']/property[@name='AITask-1']" />
 	<remove xpath="/entity_classes/entity_class[@name='animalMountainLion']/property[@name='AITask-2']" />
 	<remove xpath="/entity_classes/entity_class[@name='animalMountainLion']/property[@name='AITask-3']" />
 	<remove xpath="/entity_classes/entity_class[@name='animalMountainLion']/property[@name='AITask-4']" />
@@ -207,7 +207,7 @@
 		<property name="AITask-8" value="Wander"/>
 		<property name="AITask-9" value=""/>
 	</append>
-
+ -->
 
 <!-- animalZombieDog -->
 	<remove xpath="/entity_classes/entity_class[@name='animalZombieDog']/property[@name='AITask-1']" />
@@ -246,7 +246,7 @@
 	
 	
 <!-- animalBossGrace -->
-	<remove xpath="/entity_classes/entity_class[@name='animalBossGrace']/property[@name='AITask-1']" />
+	<!-- <remove xpath="/entity_classes/entity_class[@name='animalBossGrace']/property[@name='AITask-1']" />
 	<remove xpath="/entity_classes/entity_class[@name='animalBossGrace']/property[@name='AITask-2']" />
 	<remove xpath="/entity_classes/entity_class[@name='animalBossGrace']/property[@name='AITask-3']" />
 	<remove xpath="/entity_classes/entity_class[@name='animalBossGrace']/property[@name='AITask-4']" />
@@ -263,7 +263,7 @@
 		<property name="AITask-5" value="Look"/>
 		<property name="AITask-6" value="Wander"/>
 		<property name="AITask-7" value=""/>
-	</append>
+	</append> -->
 
 
 <!-- Reduces all Fat Cop explosion damage to 1 -->
