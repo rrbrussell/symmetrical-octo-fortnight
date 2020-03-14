@@ -36,7 +36,7 @@
 				<triggered_effect trigger="onSelfBuffStart" action="RemovePrefabFromEntity" target="self" prefab="/HitMarkerGreen" parent_transform="CameraNode"/> 
 				<triggered_effect trigger="onSelfBuffStart" action="RemovePrefabFromEntity" target="self" prefab="/HitMarkerBlack" parent_transform="CameraNode"/> 
 				<triggered_effect trigger="onSelfBuffFinish" action="AttachPrefabToEntity" target="self" prefab="#@modfolder:Resources/Hitmarker.unity3d?HitMarker" parent_transform="CameraNode"/> 
-				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="HitmarkerCleaner"/>
+				<!-- <triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" target="self" prefab="/HitMarker" parent_transform="CameraNode"/>  -->
 			</effect_group>
 	</buff>
 	
@@ -51,7 +51,7 @@
 				<triggered_effect trigger="onSelfBuffStart" action="RemovePrefabFromEntity" target="self" prefab="/HitMarkerGreen" parent_transform="CameraNode"/> 
 				<triggered_effect trigger="onSelfBuffStart" action="RemovePrefabFromEntity" target="self" prefab="/HitMarkerBlack" parent_transform="CameraNode"/> 
 				<triggered_effect trigger="onSelfBuffFinish" action="AttachPrefabToEntity" target="self" prefab="#@modfolder:Resources/Hitmarker.unity3d?HitMarkerGreen" parent_transform="CameraNode"/> 
-				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="HitmarkerCleaner"/>
+				<!-- <triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" target="self" prefab="/HitMarker" parent_transform="CameraNode"/>  -->
 			</effect_group>
 	</buff>	
 	
@@ -66,19 +66,7 @@
 				<triggered_effect trigger="onSelfBuffStart" action="RemovePrefabFromEntity" target="self" prefab="/HitMarkerGreen" parent_transform="CameraNode"/> 
 				<triggered_effect trigger="onSelfBuffStart" action="RemovePrefabFromEntity" target="self" prefab="/HitMarkerBlack" parent_transform="CameraNode"/> 
 				<triggered_effect trigger="onSelfBuffFinish" action="AttachPrefabToEntity" target="self" prefab="#@modfolder:Resources/Hitmarker.unity3d?HitMarkerRed" parent_transform="CameraNode"/> 
-				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="HitmarkerCleaner"/>
-			</effect_group>
-	</buff>		
-	
-			<buff name="HitmarkerCleaner">
-		<stack_type value="replace"/>
-		<duration value="1"/>
-		<effect_group>
-		<requirement name="IsLocalPlayer"/>
-				<triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" target="self" prefab="/HitMarker" parent_transform="CameraNode"/> 
-				<triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" target="self" prefab="/HitMarkerRed" parent_transform="CameraNode"/> 
-				<triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" target="self" prefab="/HitMarkerGreen" parent_transform="CameraNode"/> 
-				<triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" target="self" prefab="/HitMarkerBlack" parent_transform="CameraNode"/> 
+				<!-- <triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" target="self" prefab="/HitMarker" parent_transform="CameraNode"/>  -->
 			</effect_group>
 	</buff>		
 
