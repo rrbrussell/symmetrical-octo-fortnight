@@ -16,7 +16,7 @@
 			<rect width="683" height="12" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
 				<sprite depth="1" name="border" color="0,0,0,100" height="12" type="sliced"/>
 				<sprite depth="2" pos="2,-2"  name="background" height="8" width="679" color="64,64,64,100" type="sliced" />
-				<sprite depth="3" pos="2,-2" height="8" width="679" color="{xpcolor}" sprite="menu_empty3px" foregroundlayer="true" type="filled" fill="{xp}" />
+				<sprite depth="3" pos="2,-2"  color="255,239,0,128" type="filled" height="8" width="679" fill="{playerlevelfill}" controller="PlayerStatsWindow" />
 			</rect>
 
 			<rect pos="685,12" width="32" height="32" >

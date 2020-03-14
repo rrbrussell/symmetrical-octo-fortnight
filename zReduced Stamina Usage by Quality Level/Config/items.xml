@@ -1,0 +1,5 @@
+<configs>
+	<append xpath="/items/item/effect_group[@name='Base Effects']">
+		<passive_effect name="StaminaLoss" operation="perc_subtract" value="0,.15" tier="1,6"/>
+	</append>
+</configs>

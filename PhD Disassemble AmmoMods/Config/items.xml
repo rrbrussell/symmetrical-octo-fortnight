@@ -1,0 +1,1299 @@
+<configs>
+<!-- Add Disassembly items -->
+	<append xpath="/items">
+		<!-- Vanilla Ammo -->
+		<item name="Disassemble 7.62mm (10)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="smallammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemble762x10"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble 7.62mm (50)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="mediumammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemble762x50"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble 7.62mm (250)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="largeammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemble762x250"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble 7.62mm (1000)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="extralargeammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemble762x1000"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+
+		<item name="Disassemble 7.62mm Steel (10)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="smallammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemble762Steelx10"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble 7.62mm Steel (50)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="mediumammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemble762Steelx50"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble 7.62mm Steel (250)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="largeammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemble762Steelx250"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble 7.62mm Steel (1000)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="extralargeammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemble762Steelx1000"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+
+		<item name="Disassemble 9mm (10)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="smallammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemble9mmx10"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble 9mm (50)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="mediumammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemble9mmx50"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble 9mm (250)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="largeammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemble9mmx250"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble 9mm (1000)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="extralargeammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemble9mmx1000"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+
+		<item name="Disassemble 9mm Steel (10)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="smallammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemble9mmSteelx10"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble 9mm Steel (50)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="mediumammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemble9mmSteelx50"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble 9mm Steel (250)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="largeammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemble9mmSteelx250"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble 9mm Steel (1000)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="extralargeammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemble9mmSteelx1000"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+
+		<item name="Disassemble 44Magnum (10)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="smallammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemble44Magnumx10"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble 44Magnum (50)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="mediumammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemble44Magnumx50"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble 44Magnum (250)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="largeammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemble44Magnumx250"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble 44Magnum (1000)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="extralargeammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemble44Magnumx1000"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+
+		<item name="Disassemble 44Magnum Steel (10)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="smallammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemble44MagnumSteelx10"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble 44Magnum Steel (50)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="mediumammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemble44MagnumSteelx50"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble 44Magnum Steel (250)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="largeammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemble44MagnumSteelx250"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble 44Magnum Steel (1000)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="extralargeammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemble44MagnumSteelx1000"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+
+		<item name="Disassemble 44Magnum AP (10)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="smallammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemble44MagnumAPx10"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble 44Magnum AP (50)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="mediumammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemble44MagnumAPx50"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble 44Magnum AP (250)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="largeammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemble44MagnumAPx250"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble 44Magnum AP (1000)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="extralargeammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemble44MagnumAPx1000"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+
+		<item name="Disassemble Shotgun Shells (10)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="smallammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassembleShotgunShellx10"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Shotgun Shells (50)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="mediumammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassembleShotgunShellx50"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Shotgun Shells (250)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="largeammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassembleShotgunShellx250"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Shotgun Shells (1000)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="extralargeammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassembleShotgunShellx1000"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+
+		<item name="Disassemble Shotgun Slugs (10)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="smallammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassembleShotgunSlugx10"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Shotgun Slugs (50)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="mediumammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassembleShotgunSlugx50"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Shotgun Slugs (250)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="largeammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassembleShotgunSlugx250"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Shotgun Slugs (1000)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="extralargeammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassembleShotgunSlugx1000"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+
+		<item name="Disassemble Blunderbuss (10)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="smallammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassembleBlunderbussx10"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Blunderbuss (50)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="mediumammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassembleBlunderbussx50"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Blunderbuss (250)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="largeammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassembleBlunderbussx250"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+
+		<item name="Disassemble Stone Arrow (10)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="smallarrows"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassembleStoneArrowx10"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Stone Arrow (50)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="mediumarrows"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassembleStoneArrowx50"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Stone Arrow (250)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="largearrows"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassembleStoneArrowx250"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+
+		<item name="Disassemble Iron Arrow (10)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="smallarrows"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassembleIronArrowx10"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Iron Arrow (50)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="mediumarrows"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassembleIronArrowx50"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Iron Arrow (250)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="largearrows"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassembleIronArrowx250"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+
+		<item name="Disassemble Steel Arrow (10)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="smallarrows"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassembleSteelArrowx10"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Steel Arrow (50)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="mediumarrows"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassembleSteelArrowx50"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Steel Arrow (250)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="largearrows"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassembleSteelArrowx250"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+
+		<item name="Disassemble Flaming Arrow (10)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="smallarrows"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassembleFlamingArrowx10"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Flaming Arrow (50)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="mediumarrows"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassembleFlamingArrowx50"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Flaming Arrow (250)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="largearrows"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassembleFlamingArrowx250"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+
+		<item name="Disassemble Stone Bolt (10)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="smallarrows"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassembleStoneBoltx10"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Stone Bolt (50)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="mediumarrows"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassembleStoneBoltx50"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Stone Bolt (250)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="largearrows"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassembleStoneBoltx250"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+
+		<item name="Disassemble Iron Bolt (10)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="smallarrows"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassembleIronBoltx10"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Iron Bolt (50)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="mediumarrows"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassembleIronBoltx50"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Iron Bolt (250)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="largearrows"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassembleIronBoltx250"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+
+		<item name="Disassemble Steel Bolt (10)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="smallarrows"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassembleSteelBoltx10"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Steel Bolt (50)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="mediumarrows"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassembleSteelBoltx50"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Steel Bolt (250)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="largearrows"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassembleSteelBoltx250"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+
+		<item name="Disassemble Exploding Bolt (10)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="smallarrows"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassembleExplodingBoltx10"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Exploding Bolt (50)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="mediumarrows"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassembleExplodingBoltx50"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Exploding Bolt (250)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="largearrows"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassembleExplodingBoltx250"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+
+		<item name="Disassemble High Explosive Rocket (10)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="smallammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassembleHERocketx10"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble High Explosive Rocket (50)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="mediumammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassembleHERocketx50"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble High Explosive Rocket (250)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="largeammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassembleHERocketx250"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+
+		<item name="Disassemble Fragmentation Rocket (10)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="smallammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassembleFragRocketx10"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Fragmentation Rocket (50)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="mediumammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassembleFragRocketx50"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Fragmentation Rocket (250)">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="largeammo"/>
+			<property name="DescriptionKey" value="Disassemble Ammo to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassembleFragRocketx250"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+
+		<!-- Vanilla Mods -->
+		<item name="Disassemble Armor Advanced Muffled Connectors">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questArmorAdvancedMuffledConnectors"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodArmorAdvancedMuffledConnectors"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Armor Bandolier">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questArmorBandolier"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodArmorBandolier"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Armor Cooling Mesh">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questArmorCoolingMesh"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodArmorCoolingMesh"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Armor Customized Fittings">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questArmorCustomizedFittings"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodArmorCustomizedFittings"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Armor Double Storage Pocket">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questArmorDoubleStoragePocket"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodArmorDoubleStoragePocket"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Armor Helmet Light">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questArmorHelmetLight"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodArmorHelmetLight"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Armor Impact Bracing">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questArmorImpactBracing"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodArmorImpactBracing"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Armor Improved Fittings">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questArmorImprovedFittings"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodImprovedFittings"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Armor Insulated Liner">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questArmorInsulatedLiner"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodArmorInsulatedLiner"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Armor Iron Plating">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questArmorIronPlating"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodArmorIronPlating"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Armor Military Plating">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questArmorMilitaryPlating"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodArmorMilitaryPlating"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Armor Muffled Connectors">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questArmorMuffledConnectors"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodArmorMuffledConnectors"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Armor Plastic Plating">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questArmorPlasticPlating"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodArmorPlasticPlating"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Armor Reinforced Padding">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questArmorReinforcedPadding"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodArmorReinforcedPadding"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Armor Scrap Plating">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questArmorScrapPlating"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodArmorScrapPlating"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Armor Spiked Knuckles">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questArmorSpikedKnuckles"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodArmorSpikedKnuckles"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Armor Steel Plating">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questArmorSteelPlating"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodArmorSteelPlating"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Armor Storage Pocket">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questArmorStoragePocket"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodArmorStoragePocket"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Armor Triple Storage Pocket">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questArmorTripleStoragePocket"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodArmorTripleStoragePocket"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Armor Water Purifier">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questArmorWaterPurifier"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodArmorWaterPurifier"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Gun Barrel Extender">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questGunBarrelExtender"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodGunBarrelExtender"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Gun Bipod">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questGunBipod"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodGunBipod"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Gun Bow Arrow Rest">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questGunBowArrowRest"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodGunBowArrowRest"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Gun Bow Polymer String">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questGunBowPolymerString"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodGunBowPolymerString"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Gun Choke">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questGunChoke"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodGunChoke"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Gun Cripple Em">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questGunCrippleEm"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodGunCrippleEm"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Gun Duckbill">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questGunDuckbill"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodGunDuckbill"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Gun Flashlight">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questGunFlashlight"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodGunFlashlight"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Gun Foregrip">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questGunForegrip"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodGunForegrip"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Gun Laser Sight">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questGunLaserSight"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodGunLaserSight"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Gun Magazine Extender">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questGunMagazineExtender"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodGunMagazineExtender"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Gun Melee Rad Remover">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questGunMeleeRadRemover"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodGunMeleeRadRemover"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Gun Melee The Hunter">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questGunMeleeTheHunter"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodGunMeleeTheHunter"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Gun Muzzle Brake">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questGunMuzzleBrake"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodGunMuzzleBrake"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Gun Reflex Sight">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questGunReflexSight"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodGunReflexSight"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Gun Retracting Stock">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questGunRetractingStock"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodGunRetractingStock"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Gun Rod and Spring">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questGunRodAndSpring"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodGunRodAndSpring"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Gun Scope Large">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questGunScopeLarge"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodGunScopeLarge"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Gun Scope Medium">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questGunScopeMedium"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodGunScopeMedium"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Gun Scope Small">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questGunScopeSmall"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodGunScopeSmall"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Gun Silencer">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questGunSoundSuppressorSilencer"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodGunSoundSuppressorSilencer"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Gun Trigger Group Automatic">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questGunTriggerGroupAutomatic"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodGunTriggerGroupAutomatic"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Gun Trigger Group Burst">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questGunTriggerGroupBurst"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodGunTriggerGroupBurst"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Gun Trigger Group Semi">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questGunTriggerGroupSemi"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodGunTriggerGroupSemi"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Melee Bunker Buster">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questMeleeBunkerBuster"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodMeleeBunkerBuster"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Melee Club Barbed Wire">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questMeleeClubBarbedWire"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodMeleeClubBarbedWire"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Melee Club Burning Shaft">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questMeleeClubBurningShaft"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodMeleeClubBurningShaft"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Melee Club Metal Spikes">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questMeleeClubMetalSpikes"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodMeleeClubMetalSpikes"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Melee Ergonomic Grip">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questMeleeErgonomicGrip"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodMeleeErgonomicGrip"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Melee Fortifying Grip">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questMeleeFortifyingGrip"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodMeleeFortifyingGrip"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Melee Grave Digger">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questMeleeGraveDigger"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodMeleeGraveDigger"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Melee Iron Breaker">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questMeleeIronBreaker"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodMeleeIronBreaker"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Melee Serrated Blade">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questMeleeSerratedBlade"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodMeleeSerratedBlade"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Melee Structural Brace">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questMeleeStructuralBrace"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodMeleeStructuralBrace"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Melee Tempered Blade">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questMeleeTemperedBlade"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodMeleeTemperedBlade"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Melee Weighted Head">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questMeleeWeightedHead"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodMeleeWeightedHead"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Melee Wood Splitter">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questMeleeWoodSplitter"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodMeleeWoodSplitter"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Disassemble Shotgun SawedOff Barrel">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="questShotgunSawedOffBarrel"/>
+			<property name="DescriptionKey" value="Disassemble a Mod to get back the resources used to create them."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="disassemblemodShotgunSawedOffBarrel"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+
+	</append>
+
+</configs>

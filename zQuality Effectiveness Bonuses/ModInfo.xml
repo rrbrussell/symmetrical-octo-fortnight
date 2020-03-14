@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <ModInfo>
+        <Name value="Quality Effectiveness Bonuses" />
+        <Description value="Added back a quality bonus to entity damage (+10% per quality level).  Block damage also got a boost of 40% per quality level.  All items use 5% less Durability per use per quality level.  All ranged weapons have a 5% bonus per quality level to Range, RPM, Reload Speed, Spread, and Weapon Handling." />
+        <Author value="Elucidus" />
+        <Version value="1.0.4" />
+    </ModInfo>
+</xml>
