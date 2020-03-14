@@ -1,5 +1,0 @@
-<configs>
-	<!-- Make Dyes stackable by request -->
-	<set xpath="/item_modifiers/item_modifier[contains(@name, 'modDye')]/property[@name='Stacknumber']/@value">50</set>
-
-</configs>
