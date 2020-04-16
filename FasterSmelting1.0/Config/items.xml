@@ -36,7 +36,7 @@
 	</insertAfter>
 	
 	<set xpath="/items/item[@name='unit_iron']/property[@name='MeltTimePerUnit']/@value">0.1</set>
-	<!-- <set xpath="/items/item[@name='resourceRockSmall']/property[@name='MeltTimePerUnit']/@value">0.1</set> -->
+	<set xpath="/items/item[@name='resourceRockSmall']/property[@name='MeltTimePerUnit']/@value">0.1</set>
 	
 	<!-- Lootable Scrap Items -->
 	

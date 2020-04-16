@@ -55,8 +55,8 @@
 			<!-- Grass !-->
 			<set xpath="/blocks/block[@name='treeGrassMaster']/drop[@name='resourceYuccaFibers']/@count">4</set>
 			
-			<!-- Pumpkin - Alpha 18 only !-->
-			<!--<set xpath="/blocks/block[@name='plantedPumpkin3Harvest']/drop[@name='foodCropPumpkin']/@count">1</set>
-			<set xpath="/blocks/block[@name='plantedPumpkin3HarvestPlayer']/drop[@name='foodCropPumpkin']/@count">2</set>-->
+			<!-- Pumpkin !-->
+			<set xpath="/blocks/block[@name='plantedPumpkin3Harvest']/drop[@name='foodCropPumpkin']/@count">1</set>
+			<set xpath="/blocks/block[@name='plantedPumpkin3HarvestPlayer']/drop[@name='foodCropPumpkin']/@count">2</set>
 			
 </configs>
