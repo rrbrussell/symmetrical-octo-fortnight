@@ -1,5 +1,0 @@
-<TireFix>
-	<append xpath="/blocks/block[@name='tire']" >
-		<property name="CanPickup" value="true"/>
-	</append>
-</TireFix>	

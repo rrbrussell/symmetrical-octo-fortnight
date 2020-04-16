@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FatCustomRecipes>
+	<append xpath="/recipes">
+		<recipe count="1" craft_area="workbench" craft_time="240" name="solarCell" tags="perkYeahScience,workbenchCrafting">
+			<ingredient count="15" name="resourceElectricParts"/>
+			<ingredient count="5" name="resourceMechanicalParts"/>
+			<ingredient count="50" name="resourceScrapPolymers"/>
+			<ingredient count="30" name="resourceForgedSteel"/>
+			<ingredient count="10" name="resourceDuctTape"/>
+		</recipe>
+		<recipe count="1" craft_area="workbench" craft_time="600" name="solarbank" tags="workbenchCrafting">
+			<ingredient count="20" name="resourceElectricParts"/>
+			<ingredient count="30" name="resourceScrapPolymers"/>
+			<ingredient count="50" name="resourceForgedIron"/>
+			<ingredient count="50" name="resourceForgedSteel"/>
+			<ingredient count="50" name="resourceScrapBrass"/>
+		</recipe>
+		<recipe count="1" craft_time="2" name="window03Wood">
+			<ingredient count="4" name="resourceWood"/>
+			<ingredient count="5" name="resourceBrokenGlass"/>
+			<ingredient count="1" name="resourceGlue"/>
+		</recipe>
+		<recipe count="1" craft_area="workbench" craft_time="600" name="smallEngine" tags="workbenchCrafting">
+			<ingredient count="15" name="resourceElectricParts"/>
+			<ingredient count="30" name="resourceMechanicalParts"/>
+			<ingredient count="35" name="resourceForgedIron"/>
+			<ingredient count="50" name="resourceForgedSteel"/>
+			<ingredient count="25" name="resourceOil"/>
+		</recipe>
+		<recipe count="1" craft_area="chemistryStation" craft_time="10" name="foodRottingFlesh" tags="chemStationCrafting">
+			<ingredient count="5" name="foodRawMeat"/>
+			<ingredient count="5" name="drinkJarRiverWater"/>
+		</recipe>
+	</append>
+	<!-- Farm Plot Custom Recipe -->
+	<set xpath="/recipes/recipe[@name='farmPlotBlockPlayer']/ingredient[@name='resourceWood' and @count='4']/@count">8</set>
+	<set xpath="/recipes/recipe[@name='farmPlotBlockPlayer']/ingredient[@name='resourcePotassiumNitratePowder' and @count='25']/@count">5</set>
+	<set xpath="/recipes/recipe[@name='farmPlotBlockPlayer']/ingredient[@name='resourceClayLump' and @count='100']/@count">25</set>
+</FatCustomRecipes>
