@@ -1,1 +1,0 @@
-To install just replace the qualityinfo.xml file (7 Days To Die\Data\Config\qualityinfo.xml).

@@ -1,0 +1,8 @@
+<!-- Xpath code for traders.xml for AlwaysOpenTraders -->
+
+<configs>
+	<!-- The time the trader officially opens -->
+		<set xpath="/traders/trader_info[@id='1']/@open_time">07:01</set>
+	<!-- The time the trader officially closes -->
+		<set xpath="/traders/trader_info[@id='1']/@close_time">07:00</set>
+</configs>
