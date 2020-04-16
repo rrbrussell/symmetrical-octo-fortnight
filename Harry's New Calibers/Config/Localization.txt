@@ -1,0 +1,1261 @@
+﻿Key,Source,Context,Changes,English,French,German,Klingon,Spanish,Polish
+
+
+
+
+
+ammoShotgunShell,items,Ammo,New,12 Gauge Shotgun Shell (AMMO),,,,,
+ammoShotgunShellSchematic,items,Ammo,New,12 Gauge Shotgun Shell Schematic,,,,,
+ammoShotgunShellDesc,items,Ammo,New,12 Gauge Shotgun Shell Ammo\nCan be crafted at a workbench.\n\nBace Damage: 14\nPellet Count: 10\nArmor-piercing: 40%\nPenetration Count: 2,,,,,
+ammoBundleShotgunShell,items,Ammo,New,Box of 12 Gauge Shotgun Shells (100),,,,,
+
+ammoShotgunSlug,items,Ammo,New,12 Gauge Shotgun Slug (AMMO),,,,,
+ammoShotgunSlugDesc,items,Ammo,New,12 Gauge Shotgun Slug Ammo\nCan be crafted at a workbench.\n\nBace Damage: 120\nPellet Count: 1\nArmor-piercing: -20%\nPenetration Count: 2,,,,,
+ammoBundleShotgunSlug,items,Ammo,New,Box of 12 Gauge Shotgun Slugs (100),,,,,
+
+ammoShotgunBreachingSlug,items,Ammo,New,12 Gauge Breaching Slug (AMMO),,,,,
+ammoShotgunBreachingSlugDesc,items,Ammo,New,12 Gauge Breaching Slug Ammo\nCan be crafted at a workbench.\n\nBace Damage: 120\nBace Block Damage: 80\nBace Door&Wood Damage: 1000\nPellet Count: 1\nArmor-piercing: 0%\nPenetration Count: 0,,,,,
+ammoBundleShotgunBreachingSlug,items,Ammo,New,Box of 12 Gauge Breaching Slugs (100),,,,,
+
+
+
+
+
+ammo762mmBulletBall,items,Ammo,New,7.62x39mm (AMMO),,,,,
+ammo762mmBulletBallSchematic,items,Ammo,New,7.62x39mm Schematic,,,,,
+ammo762mmBulletBallDesc,items,Ammo,New,7.62x39mm Ammo\nCan be crafted at a workbench.\n\nBace Damage: 50\nArmor-piercing: 0%\nPenetration Count: 0,,,,,
+ammoBundle762mmBulletBall,items,Ammo,New,Box of 7.62x39mm (100),,,,,
+
+ammo762mmBulletHP,items,Ammo,New,7.62x39mm Hollow Point (AMMO),,,,,
+ammo762mmBulletHPDesc,items,Ammo,New,7.62x39mm Hollow Point Ammo\nCan be crafted at a workbench.\n\nBace Damage: 65\nArmor-piercing: 100%\nPenetration Count: 0,,,,,
+ammoBundle762mmBulletHP,items,Ammo,New,Box of 7.62x39mm Hollow Points (100),,,,,
+
+ammo762mmBulletAP,items,Ammo,New,Armor Piercing 7.62x39mm (AMMO),,,,,
+ammo762mmBulletAPDesc,items,Ammo,New,Armor Piercing 7.62x39mm Ammo\nCan be crafted at a workbench.\n\nBace Damage: 50\nArmor-piercing: -20%\nPenetration Count: 1\nDegradation: 30%,,,,,
+ammoBundle762mmBulletAP,items,Ammo,New,Box of Armor Piercing 7.62x39mm (100),,,,,
+
+
+Receiver762x39mm,items,Ammo,New,Receiver [7.62x39mm],,,,,
+Receiver762x39mmDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel762x39mm,items,Ammo,New,Barrel [7.62x39mm],,,,,
+Barrel762x39mmDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit762x39mm,items,Ammo,New,Conversion kit [7.62x39mm],,,,,
+Conversionkit762x39mmDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+Receiver762x39mmSchematic,items,Ammo,New,7.62x39mm Receiver Schematic,,,,,
+Barrel762x39mmSchematic,items,Ammo,New,7.62x39mm Barrel Schematic,,,,,
+Conversionkit762x39mmSchematic,items,Ammo,New,7.62x39mm Conversion kit Schematic,,,,,
+
+
+
+
+
+ammo9mmBulletBall,items,Ammo,New,9mm Luger (AMMO),,,,,
+ammo9mmBulletBallSchematic,items,Ammo,New,9mm Luger Schematic,,,,,
+ammo9mmBulletBallDesc,items,Ammo,New,9mm Luger Ammo\nCan be crafted at a workbench.\n\nBace Damage: 32\nArmor-piercing: 0%\nPenetration Count: 0,,,,,
+ammoBundle9mmBulletBall,items,Ammo,New,Box of 9mm Luger (100),,,,,
+
+ammo9mmBulletHP,items,Ammo,New,9mm Luger Hollow Point (AMMO),,,,,
+ammo9mmBulletHPDesc,items,Ammo,New,9mm Luger Hollow Point Ammo\nCan be crafted at a workbench.\n\nBace Damage: 41.6\nArmor-piercing: 100%\nPenetration Count: 0,,,,,
+ammoBundle9mmBulletHP,items,Ammo,New,Box of 9mm Luger Hollow Points (100),,,,,
+
+ammo9mmBulletAP,items,Ammo,New,Armor Piercing 9mm Luger (AMMO),,,,,
+ammo9mmBulletAPDesc,items,Ammo,New,Armor Piercing 9mm Luger Ammo\nCan be crafted at a workbench.\n\nBace Damage: 32\nArmor-piercing: -20%\nPenetration Count: 1\nDegradation: 30%,,,,,
+ammoBundle9mmBulletAP,items,Ammo,New,Box of Armor Piercing 9mm Luger (100),,,,,
+
+
+Receiver9mmLuger,items,Ammo,New,Receiver [9mm Luger],,,,,
+Receiver9mmLugerDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel9mmLuger,items,Ammo,New,Barrel [9mm Luger],,,,,
+Barrel9mmLugerDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit9mmLuger,items,Ammo,New,Conversion kit [9mm Luger],,,,,
+Conversionkit9mmLugerDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+Receiver9mmLugerSchematic,items,Ammo,New,9mm Luger Receiver Schematic,,,,,
+Barrel9mmLugerSchematic,items,Ammo,New,9mm Luger Barrel Schematic,,,,,
+Conversionkit9mmLugerSchematic,items,Ammo,New,9mm Luger Conversion kit Schematic,,,,,
+
+
+
+
+
+ammo44MagnumBulletBall,items,Ammo,New,.44 Remington Magnum (AMMO),,,,,
+ammo44MagnumBulletBallSchematic,items,Ammo,New,.44 Remington Magnum Schematic,,,,,
+ammo44MagnumBulletBallDesc,items,Ammo,New,.44 Remington Magnum Ammo\nCan be crafted at a workbench.\n\nBace Damage: 65\nArmor-piercing: 0%\nPenetration Count: 0,,,,,
+ammoBundle44MagnumBulletBall,items,Ammo,New,Box of .44 Remington Magnum (100),,,,,
+
+ammo44MagnumBulletHP,items,Ammo,New,.44 Remington Magnum Hollow Point (AMMO),,,,,
+ammo44MagnumBulletHPDesc,items,Ammo,New,.44 Remington Magnum Hollow Point Ammo\nCan be crafted at a workbench.\n\nBace Damage: 84.5\nArmor-piercing: 100%\nPenetration Count: 1,,,,,
+ammoBundle44MagnumBulletHP,items,Ammo,New,Box of .44 Remington Magnum Hollow Points (100),,,,,
+
+ammo44MagnumBulletAP,items,Ammo,New,Armor Piercing .44 Remington Magnum (AMMO),,,,,
+ammo44MagnumBulletAPDesc,items,Ammo,New,Armor Piercing .44 Remington Magnum Ammo\nCan be crafted at a workbench.\n\nBace Damage: 65\nArmor-piercing: -20%\nPenetration Count: 1\nDegradation: 30%,,,,,
+ammoBundle44MagnumBulletAP,items,Ammo,New,Box of Armor Piercing .44 Remington Magnum (100),,,,,
+
+
+Receiver44remMagnum,items,Ammo,New,Receiver [.44 Remington Magnum],,,,,
+Receiver44remMagnumDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel44remMagnum,items,Ammo,New,Barrel [.44 Remington Magnum],,,,,
+Barrel44remMagnumDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit44remMagnum,items,Ammo,New,Conversion kit [.44 Remington Magnum],,,,,
+Conversionkit44remMagnumDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+Receiver44remMagnumSchematic,items,Ammo,New,.44 Remington Magnum Receiver Schematic,,,,,
+Barrel44remMagnumSchematic,items,Ammo,New,.44 Remington Magnum Barrel Schematic,,,,,
+Conversionkit44remMagnumSchematic,items,Ammo,New,.44 Remington Magnum Conversion kit Schematic,,,,,
+
+
+
+
+
+PistolframeDesc,items,Ammo,New,Used for creating Pistols.,,,,,
+MagnumframeDesc,items,Ammo,New,Used for creating Magnums.,,,,,
+SMGframeDesc,items,Ammo,New,Used for creating SMGs.,,,,,
+RifleframeDesc,items,Ammo,New,Used for creating Rifles.,,,,,
+DMRframeDesc,items,Ammo,New,Used for creating DMRs.,,,,,
+AKframeDesc,items,Ammo,New,Used for creating Assault Rifles.,,,,,
+LMGframeDesc,items,Ammo,New,Used for creating LMGs.,,,,,
+PumpshotgunframeDesc,items,Ammo,New,Used for creating pump action weapons.,,,,,
+SxSshotgunframeDesc,items,Ammo,New,Used for creating double barrel weapons.,,,,,
+
+
+
+
+
+gunPumpShotgun,items,GunShotgun,KgNone,Mossberg 590 [12 Gauge],Fusil à pompe,Schrotflinte,,Escopeta,
+gunPumpShotgunSchematic,items,GunShotgun,KgNone,Mossberg 590 [12 Gauge] Schematic,Schéma de fusil à pompe,Bauplan – Schrotflinte,,Esquema de escopeta,
+
+gunPistol,items,GunPistol,KgNone,Beretta M9 [9mm Luger],Pistolet,Pistole,,Revólver,
+gunPistolSchematic,items,GunPistol,New,Beretta M9 [9mm Luger] Schematic,,,,,
+
+gun44Magnum,items,GunPistol,KgNone,S&W Model 629 [.44 Remington Magnum],.44 magnum,.44 Magnum,,Magnum .44,
+gun44MagnumSchematic,items,GunPistol,New,S&W Model 629 [.44 Remington Magnum] Schematic,,,,,
+
+gunSMG5,items,GunPistol,KgNone,MP5 [9mm Luger],Mitraillette,Maschinenpistole,,Metralleta,
+gunSMG5Schematic,items,GunPistol,KgNone,MP5 [9mm Luger] Schematic,Schéma de mitraillette,Bauplan – Maschinenpistole,,Esquema de metralleta,
+
+gunDoubleBarrelShotgun,items,GunShotgun,New,Remington Model-1887 [12 Gauge],,,,,
+gunDoubleBarrelShotgunSchematic,items,GunShotgun,New,Remington Model-1887 [12 Gauge] Schematic,,,,,
+
+gunHuntingRifle,items,GunRifle,KgNone,Remington 700 [7.62x39mm],Fusil de chasse,Jagdgewehr,,Rifle de caza,
+gunHuntingRifleSchematic,items,GunRifle,New,Remington 700 [7.62x39mm] Schematic,,,,,
+
+gunMR10,items,GunRifle,KgNone,R11 RSASS [7.62x39mm],MR-10,MR-10,,MR-10,
+gunMR10Schematic,items,GunRifle,KgNone,R11 RSASS [7.62x39mm] Schematic,Schéma de fusil de précision,Bauplan – Präzisionsgewehr,,Esquema de rifle de francotirador,
+
+gunAK47,items,GunMG,KgNone,Kalashnikov AK-47 [7.62x39mm],Fusil d'assaut AK-47,AK-47 Sturmgewehr,,Rifle de asalto AK-47,
+gunAK47Schematic,items,GunMG,KgNone,Kalashnikov AK-47 [7.62x39mm] Schematic,Schéma d'AK-47,Bauplan – AK-47,,Esquema de AK-47,
+
+gunM60,items,GunMG,New,M60E4 [7.62x39mm],,M60 Maschinengewehr,,,
+
+
+
+
+
+
+M922Desc,items,Ammo,New,This Beretta M9 can use .22 Short and Long-Rifle ammo.\n\nRepair with a Repair Kit.\nScrap to Handgun Parts.,,,,,
+M9380Desc,items,Ammo,New,This Beretta M9 uses .380 ACP ammo.\n\nRepair with a Repair Kit.\nScrap to Handgun Parts.,,,,,
+M940swDesc,items,Ammo,New,This Beretta M9 uses .40 Smith & Wesson ammo.\n\nRepair with a Repair Kit.\nScrap to Handgun Parts.,,,,,
+
+10mmAutoPistol,items,Ammo,New,Beretta M9 [10mm Auto],,,,,
+10mmautopistolDesc,items,Ammo,New,This Beretta M9 uses 10mm Auto ammo.\n\nRepair with a Repair Kit.\nScrap to Handgun Parts.,,,,,
+10mmAutoPistolSchematic,items,Ammo,New,Beretta M9 [10mm Auto] Schematic,,,,,
+
+M945acpDesc,items,Ammo,New,This Beretta M9 uses .45 ACP ammo.\n\nRepair with a Repair Kit.\nScrap to Handgun Parts.,,,,,
+M950aeDesc,items,Ammo,New,This Beretta M9 uses .50 Action Express ammo.\n\nRepair with a Repair Kit.\nScrap to Handgun Parts.,,,,,
+
+17HMRPistolm9,items,Ammo,New,Beretta M9 [.17 HMR],,,,,
+17HMRPistolm9Schematic,items,Ammo,New,Beretta M9 [.17 HMR] Schematic,,,,,
+17HMRPistolm9Desc,items,Ammo,New,This Beretta M9 uses .17 HMR ammo.\n\nRepair with a Repair Kit.\nScrap to Handgun Parts.,,,,,
+
+22WMRPistolm9,items,Ammo,New,Beretta M9 [.22 WMR],,,,,
+22WMRPistolm9Schematic,items,Ammo,New,Beretta M9 [.22 WMR] Schematic,,,,,
+22WMRPistolm9Desc,items,Ammo,New,This Beretta M9 uses .22 WMR ammo.\n\nRepair with a Repair Kit.\nScrap to Handgun Parts.,,,,,
+
+30LugerPistolm9,items,Ammo,New,Beretta M9 [.30 Luger],,,,,
+30LugerPistolm9Schematic,items,Ammo,New,Beretta M9 [.30 Luger] Schematic,,,,,
+30LugerPistolm9Desc,items,Ammo,New,This Beretta M9 uses .30 Luger ammo.\n\nRepair with a Repair Kit.\nScrap to Handgun Parts.,,,,,
+
+
+
+Revolver410Desc,items,Ammo,New,This S&W Governor uses .410 Shotgun Shells.\n\nRepair with a Repair Kit.\nScrap to Handgun Parts.,,,,,
+Revolver22Desc,items,Ammo,New,This S&W Model 617 uses .22 Short and Long-Rifle ammo.\n\nRepair with a Repair Kit.\nScrap to Handgun Parts.,,,,,
+Revolver327Desc,items,Ammo,New,This Ruger GP100 uses .327 Magnum ammo.\n\nRepair with a Repair Kit.\nScrap to Handgun Parts.,,,,,
+Revolver35738Desc,items,Ammo,New,This S&W Model 686 can use .357 Magnum and .38 Special ammo.\n\nRepair with a Repair Kit.\nScrap to Handgun Parts.,,,,,
+Revolver500swDesc,items,Ammo,New,This S&W 500 uses .500 Smith & Wesson Magnum ammo.\n\nRepair with a Repair Kit.\nScrap to Handgun Parts.,,,,,
+
+S/W Governor [.410 Gauge],items,Weapons,New,S&W Governor [.410 Gauge],,,,,
+S/W Model 617 [.22 S/LR],items,Weapons,New,S&W Model 617 [.22 S/LR],,,,,
+Ruger GP100 [.327 Magnum],items,Weapons,New,Ruger GP100 [.327 Magnum],,,,,
+S/W Model 686 [.357 MAG/.38 SP],items,Weapons,New,S&W Model 686 [.357 MAG/.38 SP],,,,,
+S/W 500 [.500 S/W Magnum],items,Weapons,New,S&W 500 [.500 S&W Magnum],,,,,
+
+BFR4570,items,Ammo,New,Magnum Research BFR [.45-70 Government],,,,,
+BFR4570Schematic,items,Ammo,New,Magnum Research BFR [.45-70 Government] Schematic,,,,,
+BFR4570Desc,items,Ammo,New,This Magnum Research BFR uses .45-70 Government ammo.\n\nRepair with a Repair Kit.\nScrap to Handgun Parts.,,,,,
+
+EZR458WinMag,items,Ammo,New,Express Zeliska Revolver [.458 Winchester Magnum],,,,,
+EZR458WinMagSchematic,items,Ammo,New,Express Zeliska Revolver [.458 Winchester Magnum] Schematic,,,,,
+EZR458WinMagDesc,items,Ammo,New,This Express Zeliska Revolver uses .458 Winchester Magnum ammo.\n\nRepair with a Repair Kit.\nScrap to Handgun Parts.,,,,,
+
+
+
+Mp522Desc,items,Ammo,New,This MP5 can use .22 Short and Long-Rifle ammo.\n\nRepair with a Repair Kit.\nScrap to Handgun Parts.,,,,,
+Mp5380Desc,items,Ammo,New,This MP5 uses .380 ACP ammo.\n\nRepair with a Repair Kit.\nScrap to Handgun Parts.,,,,,
+Mp5357Desc,items,Ammo,New,This MP5 uses .357 SIG ammo.\n\nRepair with a Repair Kit.\nScrap to Handgun Parts.,,,,,
+Mp540swDesc,items,Ammo,New,This MP5 uses .40 Smith & Wesson ammo.\n\nRepair with a Repair Kit.\nScrap to Handgun Parts.,,,,,
+Mp510mmautoDesc,items,Ammo,New,This MP5 uses 10mm Auto ammo.\n\nRepair with a Repair Kit.\nScrap to Handgun Parts.,,,,,
+Mp545acpDesc,items,Ammo,New,This MP5 uses .45 ACP ammo.\n\nRepair with a Repair Kit.\nScrap to Handgun Parts.,,,,,
+
+
+
+Rem70030carbDesc,items,Ammo,New,This Remington 700 uses .30 Carbine ammo.\n\nRepair with a Repair Kit.\nScrap to Rifle parts.,,,,,
+Rem700223556Desc,items,Ammo,New,This Remington 700 can use .223 Remington and 5.56x45mm NATO ammo.\n\nRepair with a Repair Kit.\nScrap to Rifle parts.,,,,,
+Rem7003030winDesc,items,Ammo,New,This Remington 700 uses .30-30 Winchester ammo.\n\nRepair with a Repair Kit.\nScrap to Rifle parts.,,,,,
+Rem70076254rDesc,items,Ammo,New,This Remington 700 uses 7.62x54R ammo.\n\nRepair with a Repair Kit.\nScrap to Rifle parts.,,,,,
+Rem7009x39Desc,items,Ammo,New,This Remington 700 uses 9x39mm ammo.\n\nRepair with a Repair Kit.\nScrap to Rifle parts.,,,,,
+Rem700308762Desc,items,Ammo,New,This Remington 700 can use .308 Winchester and 7.62x51mm NATO ammo.\n\nRepair with a Repair Kit.\nScrap to Rifle parts.,,,,,
+Rem7004570Desc,items,Ammo,New,This Remington 700 uses .45-70 Government ammo.\n\nRepair with a Repair Kit.\nScrap to Rifle parts.,,,,,
+Rem700458winmagDesc,items,Ammo,New,This Remington 700 uses .458 Winchester Magnum ammo.\n\nRepair with a Repair Kit.\nScrap to Rifle parts.,,,,,
+Rem700500nitroDesc,items,Ammo,New,Well hot dam! This Remington 700 uses 500 Nitro Express ammo.\n\nRepair with a Repair Kit.\nScrap to Rifle parts.,,,,,
+
+5mmremingtonriflerem700,items,Ammo,New,Remington 700 [5mm Remington Magnum],,,,,
+5mmremingtonriflerem700Schematic,items,Ammo,New,Remington 700 [5mm Remington Magnum] Schematic,,,,,
+5mmremingtonriflerem700Desc,items,Ammo,New,This Remington 700 uses 5mm Remington Magnum ammo.\n\nRepair with a Repair Kit.\nScrap to Rifle parts.,,,,,
+
+17HMRriflerem700,items,Ammo,New,Remington 700 [.17 HMR],,,,,
+17HMRriflerem700Schematic,items,Ammo,New,Remington 700 [.17 HMR] Schematic,,,,,
+17HMRriflerem700Desc,items,Ammo,New,This Remington 700 uses .17 HMR ammo.\n\nRepair with a Repair Kit.\nScrap to Rifle parts.,,,,,
+
+22WMRriflerem700,items,Ammo,New,Remington 700 [.22 WMR],,,,,
+22WMRriflerem700Schematic,items,Ammo,New,Remington 700 [.22 WMR] Schematic,,,,,
+22WMRriflerem700Desc,items,Ammo,New,This Remington 700 uses .22 WMR ammo.\n\nRepair with a Repair Kit.\nScrap to Rifle parts.,,,,,
+
+
+Rem760022Desc,items,Ammo,New,What was remington thinking! This .22 S/LR rifle-barreled shotgun SUCKS against zombies.\nThis Remington 7600 uses 22 LR ammo.\n\nRepair with a Repair Kit.\nScrap to Shotgun Parts.,,,,,
+Rem7600223556Desc,items,Ammo,New,What was remington thinking! A rifle-barreled shotgun can't be as good as it sounds? I'll Take 10.\nThis Remington 7600 can use .223 Remington and 5.56x45mm NATO ammo.\n\nRepair with a Repair Kit.\nScrap to Shotgun Parts.,,,,,
+Rem76003030winDesc,items,Ammo,New,What was remington thinking! A rifle-barreled shotgun can't be as good as it sounds? I'll Take 10.\nThis Remington 7600 uses .30-30 Winchester ammo.\n\nRepair with a Repair Kit.\nScrap to Shotgun Parts.,,,,,
+Rem7600308762Desc,items,Ammo,New,What was remington thinking! A rifle-barreled shotgun can't be as good as it sounds? I'll Take 10.\nThis Remington 7600 can use .308 Winchester and 7.62x51mm NATO ammo.\n\nRepair with a Repair Kit.\nScrap to Shotgun Parts.,,,,,
+Rem76003006Desc,items,Ammo,New,What was remington thinking! A rifle-barreled shotgun can't be as good as it sounds? I'll Take 10.\nThis Remington 7600 uses 30-06 Springfield ammo.\n\nRepair with a Repair Kit.\nScrap to Shotgun Parts.,,,,,
+Rem7600300winmagDesc,items,Ammo,New,What was remington thinking! A rifle-barreled shotgun can't be as good as it sounds? I'll Take 10.\nThis Remington 7600 uses .300 Winchester Magnum ammo.\n\nRepair with a Repair Kit.\nScrap to Shotgun Parts.,,,,,
+Rem76004570Desc,items,Ammo,New,What was remington thinking! A rifle-barreled shotgun can't be as good as it sounds? I'll Take 10.\nThis Remington 7600 uses .45-70 Government ammo.\n\nRepair with a Repair Kit.\nScrap to Shotgun Parts.,,,,,
+
+
+
+RSASS223556Desc,items,Ammo,New,This Remington R11 RSASS can use .223 Remington and 5.56x45mm NATO ammo.\n\nRepair with a Repair Kit.\nScrap to Rifle parts.,,,,,
+RSASS65creeDesc,items,Ammo,New,This Remington R11 RSASS uses 6.5 Creedmoor ammo.\n\nRepair with a Repair Kit.\nScrap to Rifle parts.,,,,,
+RSASS308762Desc,items,Ammo,New,This Remington R11 RSASS can use .308 Winchester and 7.62x51mm NATO ammo.\n\nRepair with a Repair Kit.\nScrap to Rifle parts.,,,,,
+RSASS8mmDesc,items,Ammo,New,This Remington R11 RSASS uses 7.92x57mm Mauser ammo.\n\nRepair with a Repair Kit.\nScrap to Rifle parts.,,,,,
+RSASS3006Desc,items,Ammo,New,This Remington R11 RSASS uses 30-06 Springfield ammo.\n\nRepair with a Repair Kit.\nScrap to Rifle parts.,,,,,
+RSASS300winmagDesc,items,Ammo,New,This Remington R11 RSASS uses .300 Winchester Magnum ammo.\n\nRepair with a Repair Kit.\nScrap to Rifle parts.,,,,,
+RSASS338lapuamagDesc,items,Ammo,New,This Remington R11 RSASS uses .338 Lapua Magnum ammo.\n\nRepair with a Repair Kit.\nScrap to Rifle parts.,,,,,
+RSASS50calDesc,items,Ammo,New,This Remington R11 RSASS uses 50 BMG ammo.\n\nRepair with a Repair Kit.\nScrap to Rifle parts.,,,,,
+
+
+
+AK4730carbHarryDesc,items,Ammo,New,This badass AK-47 Machine Gun uses .30 Carbine ammo.\n\nRepair with a Repair Kit.\nScrap to Machine Gun Parts.,,,,,
+AK47223556HarryDesc,items,Ammo,New,This badass AK-47 Machine Gun can use .223 Remington and 5.56x45mm NATO ammo.\n\nRepair with a Repair Kit.\nScrap to Machine Gun Parts.,,,,,
+AK4754539HarryDesc,items,Ammo,New,This badass AK-47 Machine Gun uses 5.45x39mm ammo.\n\nRepair with a Repair Kit.\nScrap to Machine Gun Parts.,,,,,
+AK47300boHarryDesc,items,Ammo,New,This badass AK-47 Machine Gun uses .300 AAC Blackout ammo.\n\nRepair with a Repair Kit.\nScrap to Machine Gun Parts.,,,,,
+AK479x39HarryDesc,items,Ammo,New,This badass AK-47 Machine Gun uses 9x39mm ammo.\n\nRepair with a Repair Kit.\nScrap to Machine Gun Parts.,,,,,
+AK47458socomHarryDesc,items,Ammo,New,This badass AK-47 Machine Gun uses .458 SOCOM ammo.\n\nRepair with a Repair Kit.\nScrap to Machine Gun Parts.,,,,,
+AK4750beoHarryDesc,items,Ammo,New,This badass AK-47 Machine Gun uses .50 Beowulf ammo.\n\nRepair with a Repair Kit.\nScrap to Machine Gun Parts.,,,,,
+
+AK-47 [.30 Carbine],items,Ammo,New,Kalashnikov AK-47 [.30 Carbine],,,,,
+AK-47 [.223 Rem/5.56 NATO],items,Ammo,New,Kalashnikov AK-47 [.223 Rem/5.56 NATO],,,,,
+AK-47 [5.45x39mm],items,Ammo,New,Kalashnikov AK-47 [5.45x39mm],,,,,
+AK-47 [.300 AAC Blackout],items,Ammo,New,Kalashnikov AK-47 [.300 AAC Blackout],,,,,
+AK-47 [9x39mm],items,Ammo,New,Kalashnikov AK-47 [9x39mm],,,,,
+AK-47 [.458 SOCOM],items,Ammo,New,Kalashnikov AK-47 [.458 SOCOM],,,,,
+AK-47 [.50 Beowulf],items,Ammo,New,Kalashnikov AK-47 [.50 Beowulf],,,,,
+
+AK-47 [.30 Carbine] Schematic,items,Ammo,New,Kalashnikov AK-47 [.30 Carbine] Schematic,,,,,
+AK-47 [.223 Rem/5.56 NATO] Schematic,items,Ammo,New,Kalashnikov AK-47 [.223 Rem/5.56 NATO] Schematic,,,,,
+AK-47 [5.45x39mm] Schematic,items,Ammo,New,Kalashnikov AK-47 [5.45x39mm] Schematic,,,,,
+AK-47 [.300 AAC Blackout] Schematic,items,Ammo,New,Kalashnikov AK-47 [.300 AAC Blackout] Schematic,,,,,
+AK-47 [9x39mm] Schematic,items,Ammo,New,Kalashnikov AK-47 [9x39mm] Schematic,,,,,
+AK-47 [.458 SOCOM] Schematic,items,Ammo,New,Kalashnikov AK-47 [.458 SOCOM] Schematic,,,,,
+AK-47 [.50 Beowulf] Schematic,items,Ammo,New,Kalashnikov AK-47 [.50 Beowulf] Schematic,,,,,
+
+22WMRak47,items,Ammo,New,Kalashnikov AK-47 [.22 WMR],,,,,
+22WMRak47Schematic,items,Ammo,New,Kalashnikov AK-47 [.22 WMR] Schematic,,,,,
+22WMRak47Desc,items,Ammo,New,This badass AK-47 Machine Gun uses .22 WMR ammo.\n\nRepair with a Repair Kit.\nScrap to Machine Gun Parts.,,,,,
+
+792x33Kurzak47,items,Ammo,New,Kalashnikov AK-47 [7.92x33mm Kurz],,,,,
+792x33Kurzak47Schematic,items,Ammo,New,Kalashnikov AK-47 [7.92x33mm Kurz] Schematic,,,,,
+792x33Kurzak47Desc,items,Ammo,New,This badass AK-47 Machine Gun uses 7.92x33mm Kurz ammo.\n\nRepair with a Repair Kit.\nScrap to Machine Gun Parts.,,,,,
+
+
+
+M60E4223556Desc,items,Ammo,New,Machine guns are somewhat cumbersome to use but excel at automatic fire. This one can use .223 Remington and 5.56x45mm NATO ammo.\n\nRepair with a Repair Kit.\nScrap to Machine Gun Parts.,,,,,
+M60E4300boDesc,items,Ammo,New,Machine guns are somewhat cumbersome to use but excel at automatic fire. This one uses .300 AAC Blackout ammo.\n\nRepair with a Repair Kit.\nScrap to Machine Gun Parts.,,,,,
+M60E4458socomDesc,items,Ammo,New,Machine guns are somewhat cumbersome to use but excel at automatic fire. This one uses .458 SOCOM ammo.\n\nRepair with a Repair Kit.\nScrap to Machine Gun Parts.,,,,,
+M60E450beoDesc,items,Ammo,New,Machine guns are somewhat cumbersome to use but excel at automatic fire. This one uses .50 Beowulf ammo.\n\nRepair with a Repair Kit.\nScrap to Machine Gun Parts.,,,,,
+M60E4308762Desc,items,Ammo,New,Machine guns are somewhat cumbersome to use but excel at automatic fire. This one can use .308 Winchester and 7.62x51mm NATO ammo.\n\nRepair with a Repair Kit.\nScrap to Machine Gun Parts.,,,,,
+M60E48mmDesc,items,Ammo,New,Machine guns are somewhat cumbersome to use but excel at automatic fire. This one uses 7.92x57mm Mauser ammo.\n\nRepair with a Repair Kit.\nScrap to Machine Gun Parts.,,,,,
+M60E43006Desc,items,Ammo,New,Machine guns are somewhat cumbersome to use but excel at automatic fire. This one uses 30-06 Springfield ammo.\n\nRepair with a Repair Kit.\nScrap to Machine Gun Parts.,,,,,
+
+
+
+Saiga12410Desc,items,Ammo,New,This badass Saiga-12 uses .410 Shotgun Shells.\n\nRepair with a Repair Kit.\nScrap to Machine Gun Parts.,,,,,
+Saiga1220Desc,items,Ammo,New,This badass Saiga-12 uses 20 Shotgun Shells.\n\nRepair with a Repair Kit.\nScrap to Machine Gun Parts.,,,,,
+Saiga1216Desc,items,Ammo,New,This badass Saiga-12 uses 16 Shotgun Shells.\n\nRepair with a Repair Kit.\nScrap to Machine Gun Parts.,,,,,
+Saiga1212Desc,items,Ammo,New,This badass Saiga-12 uses 12 Shotgun Shells.\n\nRepair with a Repair Kit.\nScrap to Machine Gun Parts.,,,,,
+Saiga1210Desc,items,Ammo,New,This badass Saiga-12 uses 10 Shotgun Shells.\n\nRepair with a Repair Kit.\nScrap to Machine Gun Parts.,,,,,
+
+
+
+Mossberg590410Desc,items,Ammo,New,This Mossberg 590 shotgun uses .410 Shotgun Shells.\n\nRepair with a Repair Kit.\nScrap to Shotgun Parts.,,,,,
+Mossberg59020Desc,items,Ammo,New,This Mossberg 590 shotgun uses 20 Shotgun Shells.\n\nRepair with a Repair Kit.\nScrap to Shotgun Parts.,,,,,
+Mossberg59016Desc,items,Ammo,New,This Mossberg 590 shotgun uses 16 Shotgun Shells.\n\nRepair with a Repair Kit.\nScrap to Shotgun Parts.,,,,,
+Mossberg59010Desc,items,Ammo,New,This Mossberg 590 shotgun uses 10 Shotgun Shells.\n\nRepair with a Repair Kit.\nScrap to Shotgun Parts.,,,,,
+
+
+
+KodiakMark300winmagDesc,items,Ammo,New,Just another old rusty double barrel, but wait its chambered for .300 Winchester Magnum! Uses .300 Winchester Magnum ammo.\n\nRepair with a Repair Kit.\nScrap to Shotgun Parts.,,,,,
+
+
+
+Rem188710Desc,items,Ammo,New,A rusty old double barrel shotgun, great for close range carnage. Uses 10 Shotgun Shells.\n\nRepair with a Repair Kit.\nScrap to Shotgun Parts.,,,,,
+Rem188716Desc,items,Ammo,New,A rusty old double barrel shotgun, great for close range carnage. Uses 16 Shotgun Shells.\n\nRepair with a Repair Kit.\nScrap to Shotgun Parts.,,,,,
+Rem188720Desc,items,Ammo,New,A rusty old double barrel shotgun, great for close range carnage. Uses 20 Shotgun Shells.\n\nRepair with a Repair Kit.\nScrap to Shotgun Parts.,,,,,
+Rem1887410Desc,items,Ammo,New,A rusty old double barrel shotgun, great for close range carnage. Uses .410 Shotgun Shells.\n\nRepair with a Repair Kit.\nScrap to Shotgun Parts.,,,,,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+30Luger,items,Ammo,New,.30 Luger (AMMO),,,,,
+30LugerDesc,items,Ammo,New,.30 Luger Ammo\nCan be crafted at a workbench.\n\nBace Damage: 20\nArmor-piercing: 30%\nPenetration Count: 0,,,,,
+30LugerSchematic,items,Ammo,New,.30 Luger Schematic,,,,,
+
+30LugerBundle,items,Ammo,New,Box of .30 Luger (100),,,,,
+
+Receiver30Luger,items,Ammo,New,Receiver [.30 Luger],,,,,
+Receiver30LugerDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel30Luger,items,Ammo,New,Barrel [.30 Luger],,,,,
+Barrel30LugerDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit30Luger,items,Ammo,New,Conversion kit [.30 Luger],,,,,
+Conversionkit30LugerDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+Receiver30LugerSchematic,items,Ammo,New,.30 Luger Receiver Schematic,,,,,
+Barrel30LugerSchematic,items,Ammo,New,.30 Luger Barrel Schematic,,,,,
+Conversionkit30LugerSchematic,items,Ammo,New,.30 Luger Conversion kit Schematic,,,,,
+
+
+
+380ACP,items,Ammo,New,.380 ACP (AMMO),,,,,
+380ACPDesc,items,Ammo,New,.380 ACP Ammo\nCan be crafted at a workbench.\n\nBace Damage: 21\nArmor-piercing: 0%\nPenetration Count: 0,,,,,
+
+ammoBundle380ACP,items,Ammo,New,Box of .380 ACP (100),,,,,
+
+Receiver380ACP,items,Ammo,New,Receiver [.380 ACP],,,,,
+Receiver380ACPDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel380ACP,items,Ammo,New,Barrel [.380 ACP],,,,,
+Barrel380ACPDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit380ACP,items,Ammo,New,Conversion kit [.380 ACP],,,,,
+Conversionkit380ACPDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+357SIG,items,Ammo,New,.357 SIG (AMMO),,,,,
+357SIGDesc,items,Ammo,New,.357 SIG Ammo\nCan be crafted at a workbench.\n\nBace Damage: 25\nArmor-piercing: 0%\nPenetration Count: 0,,,,,
+
+ammoBundle357SIG,items,Ammo,New,Box of .357 SIG (100),,,,,
+
+Receiver357SIG,items,Ammo,New,Receiver [.357 SIG],,,,,
+Receiver357SIGDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel357SIG,items,Ammo,New,Barrel [.357 SIG],,,,,
+Barrel357SIGDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit357SIG,items,Ammo,New,Conversion kit [.357 SIG],,,,,
+Conversionkit357SIGDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+40S_W,items,Ammo,New,.40 Smith & Wesson (AMMO),,,,,
+40S_WDesc,items,Ammo,New,.40 Smith & Wesson Ammo\nCan be crafted at a workbench.\n\nBace Damage: 34\nArmor-piercing: 0%\nPenetration Count: 0,,,,,
+
+ammoBundle40S_W,items,Ammo,New,Box of .40 Smith & Wesson (100),,,,,
+
+Receiver40S_W,items,Ammo,New,Receiver [.40 Smith & Wesson],,,,,
+Receiver40S_WDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel40S_W,items,Ammo,New,Barrel [.40 Smith & Wesson],,,,,
+Barrel40S_WDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit40S_W,items,Ammo,New,Conversion kit [.40 Smith & Wesson],,,,,
+Conversionkit40S_WDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+.40SmithWessonReceiverSchematic,items,Ammo,New,.40 Smith & Wesson Receiver Schematic,,,,,
+.40SmithWessonBarrelSchematic,items,Ammo,New,.40 Smith & Wesson Barrel Schematic,,,,,
+.40SmithWessonConversionkitSchematic,items,Ammo,New,.40 Smith & Wesson Conversion kit Schematic,,,,,
+
+.40SWSchematic,items,Ammo,New,.40 Smith & Wesson Schematic,,,,,
+
+
+
+10mmauto,items,Ammo,New,10mm Auto (AMMO),,,,,
+10mmautoDesc,items,Ammo,New,10mm Auto Ammo\nCan be crafted at a workbench.\n\nBace Damage: 37\nArmor-piercing: -5%\nPenetration Count: 0,,,,,
+10mmautoSchematic,items,Ammo,New,10mm Auto Schematic,,,,,
+
+10mmautoBundle,items,Ammo,New,Box of 10mm Auto (100),,,,,
+
+Receiver10mmAuto,items,Ammo,New,Receiver [10mm Auto],,,,,
+Receiver10mmAutoDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel10mmAuto,items,Ammo,New,Barrel [10mm Auto],,,,,
+Barrel10mmAutoDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit10mmAuto,items,Ammo,New,Conversion kit [10mm Auto],,,,,
+Conversionkit10mmAutoDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+Receiver10mmAutoSchematic,items,Ammo,New,Receiver [10mm Auto],,,,,
+Barrel10mmAutoSchematic,items,Ammo,New,Barrel [10mm Auto],,,,,
+Conversionkit10mmAutoSchematic,items,Ammo,New,Conversion kit [10mm Auto],,,,,
+
+
+
+45ACP,items,Ammo,New,.45 ACP (AMMO),,,,,
+45ACPDesc,items,Ammo,New,.45 ACP Ammo\nCan be crafted at a workbench.\n\nBace Damage: 48\nArmor-piercing: -8%\nPenetration Count: 0,,,,,
+
+ammoBundle45ACP,items,Ammo,New,Box of .45 ACP (100),,,,,
+
+Receiver45ACP,items,Ammo,New,Receiver [.45 ACP],,,,,
+Receiver45ACPDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel45ACP,items,Ammo,New,Barrel [.45 ACP],,,,,
+Barrel45ACPDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit45ACP,items,Ammo,New,Conversion kit [.45 ACP],,,,,
+Conversionkit45ACPDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+50ActionExpress,items,Ammo,New,.50 Action Express (AMMO),,,,,
+50ActionExpressDesc,items,Ammo,New,.50 Action Express Ammo\nCan be crafted at a workbench.\n\nBace Damage: 70\nArmor-piercing: -12%\nPenetration Count: 1,,,,,
+
+ammoBundle50ActionExpress,items,Ammo,New,Box of .50 Action Express (100),,,,,
+
+Receiver50ActionExpress,items,Ammo,New,Receiver [.50 Action Express],,,,,
+Receiver50ActionExpressDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel50ActionExpress,items,Ammo,New,Barrel [.50 Action Express],,,,,
+Barrel50ActionExpressDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit50ActionExpress,items,Ammo,New,Conversion kit [.50 Action Express],,,,,
+Conversionkit50ActionExpressDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+
+
+327Magnum,items,Ammo,New,.327 Magnum (AMMO),,,,,
+327MagnumDesc,items,Ammo,New,.327 Magnum Ammo\nCan be crafted at a workbench.\n\nBace Damage: 42\nArmor-piercing: 0%\nPenetration Count: 0,,,,,
+
+ammoBundle327Magnum,items,Ammo,New,Box of .327 Magnum (100),,,,,
+
+Receiver327Magnum,items,Ammo,New,Receiver [.327 Magnum],,,,,
+Receiver327MagnumDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel327Magnum,items,Ammo,New,Barrel [.327 Magnum],,,,,
+Barrel327MagnumDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit327Magnum,items,Ammo,New,Conversion kit [.327 Magnum],,,,,
+Conversionkit327MagnumDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+38Special,items,Ammo,New,.38 Special (AMMO),,,,,
+38SpecialDesc,items,Ammo,New,.38 Special Ammo\nCan be crafted at a workbench.\n\nBace Damage: 48\nArmor-piercing: -2%\nPenetration Count: 0,,,,,
+
+ammoBundle38Special,items,Ammo,New,Box of .38 Special (100),,,,,
+
+357Magnum,items,Ammo,New,.357 Magnum (AMMO),,,,,
+357MagnumDesc,items,Ammo,New,.357 Magnum Ammo\nCan be crafted at a workbench.\n\nBace Damage: 53\nArmor-piercing: -8%\nPenetration Count: 0,,,,,
+
+ammoBundle357Magnum,items,Ammo,New,Box of .357 Magnum (100),,,,,
+
+Receiver357MAG38SP,items,Ammo,New,Receiver [.357 MAG/.38 SP],,,,,
+Receiver357MAG38SPDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel357MAG38SP,items,Ammo,New,Barrel [.357 MAG/.38 SP],,,,,
+Barrel357MAG38SPDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit357MAG38SP,items,Ammo,New,Conversion kit [.357 MAG/.38 SP],,,,,
+Conversionkit357MAG38SPDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+500S_WMagnum,items,Ammo,New,.500 Smith & Wesson Magnum (AMMO),,,,,
+500S_WMagnumDesc,items,Ammo,New,.500 Smith & Wesson Magnum Ammo\nCan be crafted at a workbench.\n\nBace Damage: 142\nArmor-piercing: -11%\nPenetration Count: 1,,,,,
+
+ammoBundle500S_WMagnum,items,Ammo,New,Box of .500 Smith & Wesson Magnum (100),,,,,
+
+Receiver500S_WMagnum,items,Ammo,New,Receiver [.500 Smith & Wesson Magnum],,,,,
+Receiver500S_WMagnumDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel500S_WMagnum,items,Ammo,New,Barrel [.500 Smith & Wesson Magnum],,,,,
+Barrel500S_WMagnumDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit500S_WMagnum,items,Ammo,New,Conversion kit [.500 Smith & Wesson Magnum],,,,,
+Conversionkit500S_WMagnumDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+500S_WMagnumReceiverSchematic,items,Ammo,New,.500 Smith & Wesson Magnum Receiver Schematic,,,,,
+500S_WMagnumBarrelSchematic,items,Ammo,New,.500 Smith & Wesson Magnum Barrel Schematic,,,,,
+500S_WMagnumConversionkitSchematic,items,Ammo,New,.500 Smith & Wesson Magnum Conversion kit Schematic,,,,,
+
+500SmithWessonMagnumSchematic,items,Ammo,New,.500 Smith & Wesson Magnum Schematic,,,,,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+22short,items,Ammo,New,.22 Short (AMMO),,,,,
+
+22LR,items,Ammo,New,.22 LR (AMMO),,,,,
+
+22shortDesc,items,Ammo,New,.22 Short Ammo\nCan be crafted at a workbench.\n\nBace Damage: 5\nArmor-piercing: 100%\nPenetration Count: 0,,,,,
+
+22LRDesc,items,Ammo,New,.22 Long Rifle Ammo\nCan be crafted at a workbench.\n\nBace Damage: 9\nArmor-piercing: 100%\nPenetration Count: 0,,,,,
+
+22shortBundle,items,Ammo,New,Box of .22 Short (100),,,,,
+
+ammoBundle22LR,items,Ammo,New,Box of .22 LR (100),,,,,
+
+Receiver22LR,items,Ammo,New,Receiver [.22 S/LR],,,,,
+Receiver22LRDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel22LR,items,Ammo,New,Barrel [.22 S/LR],,,,,
+Barrel22LRDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit22LR,items,Ammo,New,Conversion kit [.22 S/LR],,,,,
+Conversionkit22LRDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+22shortSchematic,items,Ammo,New,.22 Short Schematic,,,,,
+
+
+
+5mmRemington,items,Ammo,New,5mm Remington Magnum (AMMO),,,,,
+5mmRemingtonDesc,items,Ammo,New,5mm Remington Magnum Ammo\nCan be crafted at a workbench.\n\nBace Damage: 12\nArmor-piercing: 82%\nPenetration Count: 0,,,,,
+5mmRemingtonSchematic,items,Ammo,New,5mm Remington Magnum Schematic,,,,,
+
+5mmRemingtonBundle,items,Ammo,New,Box of 5mm Remington Magnum (100),,,,,
+
+Receiver5mmREM,items,Ammo,New,Receiver [5mm Remington Magnum],,,,,
+Receiver5mmREMDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel5mmREM,items,Ammo,New,Barrel [5mm Remington Magnum],,,,,
+Barrel5mmREMDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit5mmREM,items,Ammo,New,Conversion kit [5mm Remington Magnum],,,,,
+Conversionkit5mmREMDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+Receiver5mmREMSchematic,items,Ammo,New,5mm Remington Magnum Receiver Schematic,,,,,
+Barrel5mmREMSchematic,items,Ammo,New,5mm Remington Magnum Barrel Schematic,,,,,
+Conversionkit5mmREMSchematic,items,Ammo,New,5mm Remington Magnum Conversion kit Schematic,,,,,
+
+
+
+17HMR,items,Ammo,New,.17 HMR (AMMO),,,,,
+17HMRDesc,items,Ammo,New,.17 HMR Ammo\nCan be crafted at a workbench.\n\nBace Damage: 14\nArmor-piercing: 78%\nPenetration Count: 0,,,,,
+17HMRSchematic,items,Ammo,New,.17 HMR Schematic,,,,,
+
+17HMRBundle,items,Ammo,New,Box of .17 HMR (100),,,,,
+
+Receiver17HMR,items,Ammo,New,Receiver [.17 HMR],,,,,
+Receiver17HMRDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel17HMR,items,Ammo,New,Barrel [.17 HMR],,,,,
+Barrel17HMRDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit17HMR,items,Ammo,New,Conversion kit [.17 HMR],,,,,
+Conversionkit17HMRDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+Receiver17HMRSchematic,items,Ammo,New,.17 HMR Receiver Schematic,,,,,
+Barrel17HMRSchematic,items,Ammo,New,.17 HMR Barrel Schematic,,,,,
+Conversionkit17HMRSchematic,items,Ammo,New,.17 HMR Conversion kit Schematic,,,,,
+
+
+
+22WMR,items,Ammo,New,.22 WMR (AMMO),,,,,
+22WMRDesc,items,Ammo,New,.22 WMR Ammo\nCan be crafted at a workbench.\n\nBace Damage: 16\nArmor-piercing: 58%\nPenetration Count: 0,,,,,
+22WMRSchematic,items,Ammo,New,.22 WMR Schematic,,,,,
+
+22WMRBundle,items,Ammo,New,Box of .22 WMR (100),,,,,
+
+Receiver22WMR,items,Ammo,New,Receiver [.22 WMR],,,,,
+Receiver22WMRDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel22WMR,items,Ammo,New,Barrel [.22 WMR],,,,,
+Barrel22WMRDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit22WMR,items,Ammo,New,Conversion kit [.22 WMR],,,,,
+Conversionkit22WMRDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+22WMRReceiverSchematic,items,Ammo,New,.22 WMR Receiver Schematic,,,,,
+22WMRBarrelSchematic,items,Ammo,New,.22 WMR Barrel Schematic,,,,,
+22WMRConversionkitSchematic,items,Ammo,New,.22 WMR Conversion kit Schematic,,,,,
+
+
+
+30_30Winchester,items,Ammo,New,.30-30 Winchester (AMMO),,,,,
+30_30WinchesterDesc,items,Ammo,New,.30-30 Winchester Ammo\nCan be crafted at a workbench.\n\nBace Damage: 60\nArmor-piercing: 22%\nPenetration Count: 0,,,,,
+
+ammoBundle30_30Winchester,items,Ammo,New,Box of .30-30 Winchester (100),,,,,
+
+Receiver30_30Winchester,items,Ammo,New,Receiver [.30-30 Winchester],,,,,
+Receiver30_30WinchesterDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel30_30Winchester,items,Ammo,New,Barrel [.30-30 Winchester],,,,,
+Barrel30_30WinchesterDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit30_30Winchester,items,Ammo,New,Conversion kit [.30-30 Winchester],,,,,
+Conversionkit30_30WinchesterDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+308Winchester,items,Ammo,New,.308 Winchester (AMMO),,,,,
+308WinchesterDesc,items,Ammo,New,.308 Winchester Ammo\nCan be crafted at a workbench.\n\nBace Damage: 80\nArmor-piercing: -5%\nPenetration Count: 0,,,,,
+
+ammoBundle308Winchester,items,Ammo,New,Box of .308 Winchester (100),,,,,
+
+762x51mmNATO,items,Ammo,New,7.62x51mm NATO (AMMO),,,,,
+762x51mmNATODesc,items,Ammo,New,7.62x51mm NATO Ammo\nCan be crafted at a workbench.\n\nBace Damage: 73\nArmor-piercing: 0%\nPenetration Count: 0,,,,,
+
+ammoBundle762x51mmNATO,items,Ammo,New,Box of 7.62x51mm NATO (100),,,,,
+
+Receiver308Win_762mmNATO,items,Ammo,New,Receiver [.308 Win/7.62mm NATO],,,,,
+Receiver308Win_762mmNATODesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel308Win_762mmNATO,items,Ammo,New,Barrel [.308 Win/7.62mm NATO],,,,,
+Barrel308Win_762mmNATODesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit308Win_762mmNATO,items,Ammo,New,Conversion kit [.308 Win/7.62mm NATO],,,,,
+Conversionkit308Win_762mmNATODesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+65Creedmoor,items,Ammo,New,6.5 Creedmoor (AMMO),,,,,
+65CreedmoorDesc,items,Ammo,New,6.5 Creedmoor Ammo\nCan be crafted at a workbench.\n\nBace Damage: 75\nArmor-piercing: 37%\nPenetration Count: 0,,,,,
+
+ammoBundle65Creedmoor,items,Ammo,New,Box of 6.5 Creedmoor (100),,,,,
+
+Receiver65Creedmoor,items,Ammo,New,Receiver [6.5 Creedmoor],,,,,
+Receiver65CreedmoorDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel65Creedmoor,items,Ammo,New,Barrel [6.5 Creedmoor],,,,,
+Barrel65CreedmoorDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit65Creedmoor,items,Ammo,New,Conversion kit [6.5 Creedmoor],,,,,
+Conversionkit65CreedmoorDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+762x54R,items,Ammo,New,7.62x54R (AMMO),,,,,
+762x54RDesc,items,Ammo,New,7.62x54R Ammo\nCan be crafted at a workbench.\n\nBace Damage: 71\nArmor-piercing: 0%\nPenetration Count: 0,,,,,
+
+ammoBundle762x54R,items,Ammo,New,Box of 7.62x54R (100),,,,,
+
+Receiver762x54R,items,Ammo,New,Receiver [7.62x54R],,,,,
+Receiver762x54RDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel762x54R,items,Ammo,New,Barrel [7.62x54R],,,,,
+Barrel762x54RDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit762x54R,items,Ammo,New,Conversion kit [7.62x54R],,,,,
+Conversionkit762x54RDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+30_06SPRG,items,Ammo,New,.30-06 Springfield (AMMO),,,,,
+30_06SPRGDesc,items,Ammo,New,.30-06 Springfield Ammo\nCan be crafted at a workbench.\n\nBace Damage: 112\nArmor-piercing: -10%\nPenetration Count: 1,,,,,
+
+ammoBundle30_06SPRG,items,Ammo,New,Box of .30-06 Springfield (100),,,,,
+
+Receiver30_06SPRG,items,Ammo,New,Receiver [.30-06 SPRG],,,,,
+Receiver30_06SPRGDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel30_06SPRG,items,Ammo,New,Barrel [.30-06 SPRG],,,,,
+Barrel30_06SPRGDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit30_06SPRG,items,Ammo,New,Conversion kit [.30-06 SPRG],,,,,
+Conversionkit30_06SPRGDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+792x57mmMauser,items,Ammo,New,7.92x57mm Mauser (AMMO),,,,,
+792x57mmMauserDesc,items,Ammo,New,7.92x57mm Mauser Ammo\nCan be crafted at a workbench.\n\nBace Damage: 91\nArmor-piercing: -8%\nPenetration Count: 1,,,,,
+
+ammoBundle792x57mmMauser,items,Ammo,New,Box of 7.92x57mm Mauser (100),,,,,
+
+Receiver792x57mmMauser,items,Ammo,New,Receiver [7.92x57mm Mauser],,,,,
+Receiver792x57mmMauserDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel792x57mmMauser,items,Ammo,New,Barrel [7.92x57mm Mauser],,,,,
+Barrel792x57mmMauserDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit792x57mmMauser,items,Ammo,New,Conversion kit [7.92x57mm Mauser],,,,,
+Conversionkit792x57mmMauserDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+45_70Government,items,Ammo,New,.45-70 Government (AMMO),,,,,
+45_70GovernmentDesc,items,Ammo,New,.45-70 Government Ammo\nCan be crafted at a workbench.\n\nBace Damage: 167\nArmor-piercing: -20%\nPenetration Count: 0,,,,,
+
+ammoBundle45_70Government,items,Ammo,New,Box of .45-70 Government (100),,,,,
+
+Receiver45_70Government,items,Ammo,New,Receiver [.45-70 Government],,,,,
+Receiver45_70GovernmentDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel45_70Government,items,Ammo,New,Barrel [.45-70 Government],,,,,
+Barrel45_70GovernmentDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit45_70Government,items,Ammo,New,Conversion kit [.45-70 Government],,,,,
+Conversionkit45_70GovernmentDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+300WinchesterMagnum,items,Ammo,New,.300 Winchester Magnum (AMMO),,,,,
+300WinchesterMagnumDesc,items,Ammo,New,.300 Winchester Magnum Ammo\nCan be crafted at a workbench.\n\nBace Damage: 143\nArmor-piercing: -12%\nPenetration Count: 1,,,,,
+
+ammoBundle300WinchesterMagnum,items,Ammo,New,Box of .300 Winchester Magnum (100),,,,,
+
+Receiver300Win_Mag,items,Ammo,New,Receiver [.300 Win-Mag],,,,,
+Receiver300Win_MagDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel300Win_Mag,items,Ammo,New,Barrel [.300 Win-Mag],,,,,
+Barrel300Win_MagDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit300Win_Mag,items,Ammo,New,Conversion kit [.300 Win-Mag],,,,,
+Conversionkit300Win_MagDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+338LapuaMagnum,items,Ammo,New,.338 Lapua Magnum (AMMO),,,,,
+338LapuaMagnumDesc,items,Ammo,New,.338 Lapua Magnum Ammo\nCan be crafted at a workbench.\n\nBace Damage: 204\nArmor-piercing: -15%\nPenetration Count: 1,,,,,
+
+ammoBundle338LapuaMagnum,items,Ammo,New,Box of .338 Lapua Magnum (100),,,,,
+
+Receiver338LapuaMagnum,items,Ammo,New,Receiver [.338 Lapua Magnum],,,,,
+Receiver338LapuaMagnumDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel338LapuaMagnum,items,Ammo,New,Barrel [.338 Lapua Magnum],,,,,
+Barrel338LapuaMagnumDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit338LapuaMagnum,items,Ammo,New,Conversion kit [.338 Lapua Magnum],,,,,
+Conversionkit338LapuaMagnumDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+458WinchesterMagnum,items,Ammo,New,.458 Winchester Magnum (AMMO),,,,,
+458WinchesterMagnumDesc,items,Ammo,New,.458 Winchester Magnum Ammo\nCan be crafted at a workbench.\n\nBace Damage: 235\nArmor-piercing: -18%\nPenetration Count: 1,,,,,
+
+ammoBundle458WinchesterMagnum,items,Ammo,New,Box of .458 Winchester Magnum (100),,,,,
+
+Receiver458Win_Mag,items,Ammo,New,Receiver [.458 Win-Mag],,,,,
+Receiver458Win_MagDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel458Win_Mag,items,Ammo,New,Barrel [.458 Win-Mag],,,,,
+Barrel458Win_MagDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit458Win_Mag,items,Ammo,New,Conversion kit [.458 Win-Mag],,,,,
+Conversionkit458Win_MagDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+500NitroExpress,items,Ammo,New,.500 Nitro Express (AMMO),,,,,
+500NitroExpressDesc,items,Ammo,New,.500 Nitro Express Ammo\nCan be crafted at a workbench.\n\nBace Damage: 258\nArmor-piercing: -20%\nPenetration Count: 2,,,,,
+
+ammoBundle500NitroExpress,items,Ammo,New,Box of .500 Nitro Express (100),,,,,
+
+Receiver500NitroExpress,items,Ammo,New,Receiver [.500 Nitro Express],,,,,
+Receiver500NitroExpressDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel500NitroExpress,items,Ammo,New,Barrel [.500 Nitro Express],,,,,
+Barrel500NitroExpressDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit500NitroExpress,items,Ammo,New,Conversion kit [.500 Nitro Express],,,,,
+Conversionkit500NitroExpressDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+50BMG,items,Ammo,New,50 BMG (AMMO),,,,,
+50BMGDesc,items,Ammo,New,50 BMG Ammo\nCan be crafted at a workbench.\n\nBace Damage: 326\nArmor-piercing: -30%\nPenetration Count: 2,,,,,
+
+ammoBundle50BMG,items,Ammo,New,Box of 50 BMG (100),,,,,
+
+Receiver50BMG,items,Ammo,New,Receiver [50 BMG],,,,,
+Receiver50BMGDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel50BMG,items,Ammo,New,Barrel [50 BMG],,,,,
+Barrel50BMGDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit50BMG,items,Ammo,New,Conversion kit [50 BMG],,,,,
+Conversionkit50BMGDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+792x33mmKurz,items,Ammo,New,7.92x33mm Kurz (AMMO),,,,,
+792x33mmKurzDesc,items,Ammo,New,7.92x33mm Kurz Ammo\nCan be crafted at a workbench.\n\nBace Damage: 46\nArmor-piercing: -3%\nPenetration Count: 0,,,,,
+792x33mmKurzSchematic,items,Ammo,New,7.92x33mm Kurz Schematic,,,,,
+
+792x33mmKurzBundle,items,Ammo,New,Box of 7.92x33mm Kurz (100),,,,,
+
+Receiver792x33mmKurz,items,Ammo,New,Receiver [7.92x33mm Kurz],,,,,
+Receiver792x33mmKurzDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel792x33mmKurz,items,Ammo,New,Barrel [7.92x33mm Kurz],,,,,
+Barrel792x33mmKurzDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit792x33mmKurz,items,Ammo,New,Conversion kit [7.92x33mm Kurz],,,,,
+Conversionkit792x33mmKurzDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+Receiver792x33mmKurzSchematic,items,Ammo,New,7.92x33mm Kurz Receiver Schematic,,,,,
+Barrel792x33mmKurzSchematic,items,Ammo,New,7.92x33mm Kurz Barrel Schematic,,,,,
+Conversionkit792x33mmKurzSchematic,items,Ammo,New,7.92x33mm Kurz Conversion kit Schematic,,,,,
+
+
+
+
+
+223Remington,items,Ammo,New,.223 Remington (AMMO),,,,,
+223RemingtonDesc,items,Ammo,New,.223 Remington Ammo\nCan be crafted at a workbench.\n\nBace Damage: 44\nArmor-piercing: 10%\nPenetration Count: 0,,,,,
+
+ammoBundle223Remington,items,Ammo,New,Box of .223 Remington (100),,,,,
+
+556x45mmNATO,items,Ammo,New,5.56x45mm NATO (AMMO),,,,,
+556x45mmNATODesc,items,Ammo,New,5.56x45mm NATO Ammo\nCan be crafted at a workbench.\n\nBace Damage: 52\nArmor-piercing: 0%\nPenetration Count: 0,,,,,
+
+ammoBundle556x45mmNATO,items,Ammo,New,Box of 5.56x45mm NATO (100),,,,,
+
+Receiver223_556,items,Ammo,New,Receiver [.223 Rem/5.56 NATO],,,,,
+Receiver223_556Desc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel223_556,items,Ammo,New,Barrel [.223 Rem/5.56 NATO],,,,,
+Barrel223_556Desc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit223_556,items,Ammo,New,Conversion kit [.223 Rem/5.56 NATO],,,,,
+Conversionkit223_556Desc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+545x39mm,items,Ammo,New,5.45x39mm (AMMO),,,,,
+545x39mmDesc,items,Ammo,New,5.45x39mm Ammo\nCan be crafted at a workbench.\n\nBace Damage: 42\nArmor-piercing: 8%\nPenetration Count: 0,,,,,
+
+ammoBundle545x39mm,items,Ammo,New,Box of 5.45x39mm (100),,,,,
+
+Receiver545x39mm,items,Ammo,New,Receiver [5.45x39mm],,,,,
+Receiver545x39mmDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel545x39mm,items,Ammo,New,Barrel [5.45x39mm],,,,,
+Barrel545x39mmDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit545x39mm,items,Ammo,New,Conversion kit [5.45x39mm],,,,,
+Conversionkit545x39mmDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+30Carbine,items,Ammo,New,.30 Carbine (AMMO),,,,,
+30CarbineDesc,items,Ammo,New,.30 Carbine Ammo\nCan be crafted at a workbench.\n\nBace Damage: 40\nArmor-piercing: 31%\nPenetration Count: 0,,,,,
+
+ammoBundle30Carbine,items,Ammo,New,Box of .30 Carbine (100),,,,,
+
+Receiver30Carbine,items,Ammo,New,Receiver [.30 Carbine],,,,,
+Receiver30CarbineDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel30Carbine,items,Ammo,New,Barrel [.30 Carbine],,,,,
+Barrel30CarbineDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit30Carbine,items,Ammo,New,Conversion kit [.30 Carbine],,,,,
+Conversionkit30CarbineDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+300AACBlackout,items,Ammo,New,.300 AAC Blackout (AMMO),,,,,
+300AACBlackoutDesc,items,Ammo,New,.300 AAC Blackout Ammo\nCan be crafted at a workbench.\n\nBace Damage: 60\nArmor-piercing: -4%\nPenetration Count: 0,,,,,
+
+ammoBundle300AACBlackout,items,Ammo,New,Box of .300 AAC Blackout (100),,,,,
+
+Receiver300AACBlackout,items,Ammo,New,Receiver [.300 AAC Blackout],,,,,
+Receiver300AACBlackoutDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel300AACBlackout,items,Ammo,New,Barrel [.300 AAC Blackout],,,,,
+Barrel300AACBlackoutDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit300AACBlackout,items,Ammo,New,Conversion kit [.300 AAC Blackout],,,,,
+Conversionkit300AACBlackoutDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+9x39mm,items,Ammo,New,9x39mm (AMMO),,,,,
+9x39mmDesc,items,Ammo,New,9x39 Ammo\nCan be crafted at a workbench.\n\nBace Damage: 68\nArmor-piercing: -7%\nPenetration Count: 0,,,,,
+
+ammoBundle9x39mm,items,Ammo,New,Box of 9x39mm (100),,,,,
+
+Receiver9x39mm,items,Ammo,New,Receiver [9x39mm],,,,,
+Receiver9x39mmDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel9x39mm,items,Ammo,New,Barrel [9x39mm],,,,,
+Barrel9x39mmDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit9x39mm,items,Ammo,New,Conversion kit [9x39mm],,,,,
+Conversionkit9x39mmDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+458SOCOM,items,Ammo,New,.458 SOCOM (AMMO),,,,,
+458SOCOMDesc,items,Ammo,New,.458 SOCOM Ammo\nCan be crafted at a workbench.\n\nBace Damage: 74\nArmor-piercing: -9%\nPenetration Count: 0,,,,,
+
+ammoBundle458SOCOM,items,Ammo,New,Box of .458 SOCOM (100),,,,,
+
+Receiver458SOCOM,items,Ammo,New,Receiver [.458 SOCOM],,,,,
+Receiver458SOCOMDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel458SOCOM,items,Ammo,New,Barrel [.458 SOCOM],,,,,
+Barrel458SOCOMDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit458SOCOM,items,Ammo,New,Conversion kit [.458 SOCOM],,,,,
+Conversionkit458SOCOMDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+50Beowulf,items,Ammo,New,.50 Beowulf (AMMO),,,,,
+50BeowulfDesc,items,Ammo,New,.50 Beowulf Ammo\nCan be crafted at a workbench.\n\nBace Damage: 81\nArmor-piercing: -12%\nPenetration Count: 0,,,,,
+
+ammoBundle50Beowulf,items,Ammo,New,Box of .50 Beowulf (100),,,,,
+
+Receiver50Beowulf,items,Ammo,New,Receiver [.50 Beowulf],,,,,
+Receiver50BeowulfDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel50Beowulf,items,Ammo,New,Barrel [.50 Beowulf],,,,,
+Barrel50BeowulfDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit50Beowulf,items,Ammo,New,Conversion kit [.50 Beowulf],,,,,
+Conversionkit50BeowulfDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10GaugeShotgunShells,items,Ammo,New,10 Gauge Shotgun Shells (AMMO),,,,,
+10GaugeShotgunShellsDesc,items,Ammo,New,10 Gauge Shotgun Shells Ammo\nCan be crafted at a workbench.\n\nBace Damage: 18\nPellet Count: 12\nArmor-piercing: 15%\nPenetration Count: 2,,,,,,,,,,
+
+ammoBundle10GaugeShotgunShells,items,Ammo,New,Box of 10 Gauge Shotgun Shells (100),,,,,
+
+Receiver10Gauge,items,Ammo,New,Receiver [10 Gauge],,,,,
+Receiver10GaugeDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel10Gauge,items,Ammo,New,Barrel [10 Gauge],,,,,
+Barrel10GaugeDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit10Gauge,items,Ammo,New,Conversion kit [10 Gauge],,,,,
+Conversionkit10GaugeDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+Receiver12Gauge,items,Ammo,New,Receiver [12 Gauge],,,,,
+Receiver12GaugeDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel12Gauge,items,Ammo,New,Barrel [12 Gauge],,,,,
+Barrel12GaugeDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit12Gauge,items,Ammo,New,Conversion kit [12 Gauge],,,,,
+Conversionkit12GaugeDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+16GaugeShotgunShells,items,Ammo,New,16 Gauge Shotgun Shells (AMMO),,,,,
+16GaugeShotgunShellsDesc,items,Ammo,New,16 Gauge Shotgun Shells Ammo\nCan be crafted at a workbench.\n\nBace Damage: 10\nPellet Count: 6\nArmor-piercing: 21%\nPenetration Count: 1,,,,,,,,,,
+
+ammoBundle16GaugeShotgunShells,items,Ammo,New,Box of 16 Gauge Shotgun Shells (100),,,,,
+
+Receiver16Gauge,items,Ammo,New,Receiver [16 Gauge],,,,,
+Receiver16GaugeDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel16Gauge,items,Ammo,New,Barrel [16 Gauge],,,,,
+Barrel16GaugeDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit16Gauge,items,Ammo,New,Conversion kit [16 Gauge],,,,,
+Conversionkit16GaugeDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+20GaugeShotgunShells,items,Ammo,New,20 Gauge Shotgun Shells (AMMO),,,,,
+20GaugeShotgunShellsDesc,items,Ammo,New,20 Gauge Shotgun Shells Ammo\nCan be crafted at a workbench.\n\nBace Damage: 8\nPellet Count: 5\nArmor-piercing: 32%\nPenetration Count: 0,,,,,,,,,,
+
+ammoBundle20GaugeShotgunShells,items,Ammo,New,Box of 20 Gauge Shotgun Shells (100),,,,,
+
+Receiver20Gauge,items,Ammo,New,Receiver [20 Gauge],,,,,
+Receiver20GaugeDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel20Gauge,items,Ammo,New,Barrel [20 Gauge],,,,,
+Barrel20GaugeDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit20Gauge,items,Ammo,New,Conversion kit [20 Gauge],,,,,
+Conversionkit20GaugeDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+410GaugeShotgunShells,items,Ammo,New,.410 Gauge Shotgun Shells (AMMO),,,,,
+410GaugeShotgunShellsDesc,items,Ammo,New,.410 Gauge Shotgun Shells Ammo\nCan be crafted at a workbench.\n\nBace Damage: 4.5\nPellet Count: 5\nArmor-piercing: 58%\nPenetration Count: 0,,,,,,,,,,
+
+ammoBundle410GaugeShotgunShells,items,Ammo,New,Box of .410 Gauge Shotgun Shells (100),,,,,
+
+Receiver410Gauge,items,Ammo,New,Receiver [.410 Gauge],,,,,
+Receiver410GaugeDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel410Gauge,items,Ammo,New,Barrel [.410 Gauge],,,,,
+Barrel410GaugeDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit410Gauge,items,Ammo,New,Conversion kit [.410 Gauge],,,,,
+Conversionkit410GaugeDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+12GaugeDragonsBreath,items,Ammo,New,12 Gauge Dragon's Breath (AMMO),,,,,
+12GaugeDragonsBreathDesc,items,Ammo,New,12 Gauge Dragon's Breath Ammo\nCan be crafted at a workbench.\n\nBace Damage: 4\nPellet Count: 18\nArmor-piercing: 43%\nPenetration Count: 2,,,,,,,,,,
+
+ammoBundle12GaugeDragonsBreath,items,Ammo,New,Box of 12 Gauge Dragon's Breath (100),,,,,
+
+12GaugePower_Shok,items,Ammo,New,12 Gauge Power-Shok (AMMO),,,,,
+12GaugePower_ShokDesc,items,Ammo,New,12 Gauge Power-Shok Ammo\nCan be crafted at a workbench.\n\nBace Damage: 145\nPellet Count: 1\nArmor-piercing: -37%\nPenetration Count: 2,,,,,,,,,,
+
+ammoBundle12GaugePower_Shok,items,Ammo,New,Box of 12 Gauge Power-Shok (100),,,,,
+
+10GaugeSSTSabotSlug,items,Ammo,New,10 Gauge SST Sabot Slug (AMMO),,,,,
+10GaugeSSTSabotSlugDesc,items,Ammo,New,10 Gauge SST Sabot Slug Ammo\nCan be crafted at a workbench.\n\nBace Damage: 260\nPellet Count: 1\nArmor-piercing: -56%\nPenetration Count: 3,,,,,,,,,,
+
+ammoBundle10GaugeSSTSabotSlug,items,Ammo,New,Box of 10 Gauge SST Sabot Slugs (100),,,,,
+
+10GaugeMagnum00Buckshot,items,Ammo,New,10 Gauge Magnum 00 Buckshot (AMMO),,,,,
+10GaugeMagnum00BuckshotDesc,items,Ammo,New,10 Gauge Magnum 00 Buckshot Ammo\nCan be crafted at a workbench.\n\nBace Damage: 20\nPellet Count: 18\nArmor-piercing: -12%\nPenetration Count: 2,,,,,,,,,,
+
+ammoBundle10GaugeMagnum00Buckshot,items,Ammo,New,Box of 10 Gauge Magnum 00 Buckshot (100),,,,,
+
+16GaugeShotgunSlug,items,Ammo,New,16 Gauge Shotgun Slug (AMMO),,,,,
+16GaugeShotgunSlugDesc,items,Ammo,New,16 Gauge Shotgun Slug Ammo\nCan be crafted at a workbench.\n\nBace Damage: 62\nPellet Count: 1\nArmor-piercing: -17%\nPenetration Count: 1,,,,,,,,,,
+16GaugeShotgunSlugSchematic,items,Ammo,New,16 Gauge Shotgun Slug Schematic,,,,,
+
+16GaugeShotgunSlugBundle,items,Ammo,New,Box of 16 Gauge Shotgun Slugs (100),,,,,
+
+20GaugeSSTShotgunSlug,items,Ammo,New,20 Gauge SST Slug (AMMO),,,,,
+20GaugeSSTShotgunSlugDesc,items,Ammo,New,20 Gauge SST Slug Ammo\nCan be crafted at a workbench.\n\nBace Damage: 47\nPellet Count: 1\nArmor-piercing: -14%\nPenetration Count: 0,,,,,,,,,,
+20GaugeSSTShotgunSlugSchematic,items,Ammo,New,20 Gauge SST Slug Schematic,,,,,
+
+20GaugeSSTShotgunSlugBundle,items,Ammo,New,Box of 20 Gauge SST Slugs (100),,,,,
+
+410GaugeShotgunShellsSlugs,items,Ammo,New,.410 Gauge Shotgun Slug (AMMO),,,,,
+410GaugeShotgunShellsSlugsDesc,items,Ammo,New,.410 Gauge Shotgun Slug Ammo\nCan be crafted at a workbench.\n\nBace Damage: 25\nPellet Count: 1\nArmor-piercing: -1%\nPenetration Count: 0,,,,,,,,,,
+410GaugeShotgunShellsSlugsSchematic,items,Ammo,New,.410 Gauge Shotgun Slug Schematic,,,,,
+
+410GaugeShotgunShellsSlugsBundle,items,Ammo,New,Box of .410 Gauge Shotgun Slugs (100),,,,,
+
+410Gauge000BuckShotgunShells,items,Ammo,New,.410 Gauge 000 Buckshot (AMMO),,,,,
+410Gauge000BuckShotgunShellsDesc,items,Ammo,New,.410 Gauge 000 Buckshot Ammo\nCan be crafted at a workbench.\n\nBace Damage: 8\nPellet Count: 4\nArmor-piercing: 48%\nPenetration Count: 0,,,,,,,,,,
+410Gauge000BuckShotgunShellsSchematic,items,Ammo,New,.410 Gauge 000 Buckshot Schematic,,,,,
+
+410Gauge000BuckShotgunShellsBundle,items,Ammo,New,Box of .410 Gauge 000 Buckshot (100),,,,,
+
+4GaugeLeadBall,items,Ammo,New,30mm Lead Ball (AMMO),,,,,
+4GaugeLeadBallDesc,items,Ammo,New,30mm Lead Ball Ammo\nCan be crafted at a workbench.\n\nBace Damage: 376\nBace Block Damage: 312\nArmor-piercing: -82%\nPenetration Count: 0,,,,,
+4 Gauge Lead Ball Schematic,items,Ammo,New,30mm Lead Ball Schematic,,,,,
+
+
+
+
+
+
+
+
+
+MK-2 autoTurret,items,Ammo,New,MK-2 AutoTurret,,,,,
+MK2autoTurretSchematic,items,Ammo,New,MK-2 AutoTurret Schematic,,,,,
+
+MK-2 shotgunTurret,items,Ammo,New,MK-2 ShotgunTurret,,,,,
+MK2shotgunTurretSchematic,items,Ammo,New,MK-2 ShotgunTurret Schematic,,,,,
+
+
+
+.22 LR autoTurret,items,Ammo,New,.22 LR AutoTurret,,,,,
+MK-2 .22 LR autoTurret,items,Ammo,New,MK-2 .22 LR AutoTurret,,,,,
+
+22LRautoTurretSchematic,items,Ammo,New,.22 LR AutoTurret Schematic,,,,,
+MK222LRautoTurretSchematic,items,Ammo,New,MK-2 .22 LR AutoTurret Schematic,,,,,
+
+.45 ACP autoTurret,items,Ammo,New,.45 ACP AutoTurret,,,,,
+MK-2 .45 ACP autoTurret,items,Ammo,New,MK-2 .45 ACP AutoTurret,,,,,
+
+45ACPautoTurretSchematic,items,Ammo,New,.45 ACP AutoTurret Schematic,,,,,
+MK245ACPautoTurret,items,Ammo,New,MK-2 .45 ACP AutoTurret Schematic,,,,,
+
+.30 Carbine autoTurret,items,Ammo,New,.30 Carbine AutoTurret,,,,,
+MK-2 .30 Carbine autoTurret,items,Ammo,New,MK-2 .30 Carbine AutoTurret,,,,,
+
+30CarbineautoTurretSchematic,items,Ammo,New,.30 Carbine AutoTurret Schematic,,,,,
+MK230CarbineautoTurretSchematic,items,Ammo,New,MK-2 .30 Carbine AutoTurret Schematic,,,,,
+
+5.56x45mm NATO autoTurret,items,Ammo,New,5.56x45mm NATO AutoTurret,,,,,
+MK-2 5.56x45mm NATO autoTurret,items,Ammo,New,MK-2 5.56x45mm NATO AutoTurret,,,,,
+
+556x45mmNATOautoTurretSchematic,items,Ammo,New,5.56x45mm NATO AutoTurret Schematic,,,,,
+MK2556x45mmNATOautoTurretSchematic,items,Ammo,New,MK-2 5.56x45mm NATO AutoTurret Schematic,,,,,
+
+7.62x51mm NATO autoTurret,items,Ammo,New,7.62x51mm NATO AutoTurret,,,,,
+MK-2 7.62x51mm NATO autoTurret,items,Ammo,New,MK-2 7.62x51mm NATO AutoTurret,,,,,
+
+762x51mmNATOautoTurretSchematic,items,Ammo,New,7.62x51mm NATO AutoTurret Schematic,,,,,
+MK2762x51mmNATOautoTurretSchematic,items,Ammo,New,MK-2 7.62x51mm NATO AutoTurret Schematic,,,,,
+
+30-06 SPRG autoTurret,items,Ammo,New,30-06 Springfield AutoTurret,,,,,
+MK-2 30-06 SPRG autoTurret,items,Ammo,New,MK-2 30-06 Springfield AutoTurret,,,,,
+
+3006SPRGautoTurretSchematic,items,Ammo,New,30-06 Springfield AutoTurret Schematic,,,,,
+MK23006SPRGautoTurretSchematic,items,Ammo,New,MK-2 30-06 Springfield AutoTurret Schematic,,,,,
+
+50 BMG autoTurret,items,Ammo,New,50 BMG AutoTurret,,,,,
+MK-2 50 BMG autoTurret,items,Ammo,New,MK-2 50 BMG AutoTurret,,,,,
+
+50BMGautoTurretSchematic,items,Ammo,New,50 BMG AutoTurret Schematic,,,,,
+MK250BMGautoTurretSchematic,items,Ammo,New,MK-2 50 BMG AutoTurret Schematic,,,,,
+
+
+
+Slug shotgunTurret,items,Ammo,New,Slug ShotgunTurret,,,,,
+MK-2 Slug shotgunTurret,items,Ammo,New,MK-2 Slug ShotgunTurret,,,,,
+
+SlugshotgunTurretSchematic,items,Ammo,New,Slug ShotgunTurret Schematic,,,,,
+MK2SlugshotgunTurretSchematic,items,Ammo,New,MK-2 Slug ShotgunTurret Schematic,,,,,
+
+10 Gauge shotgunTurret,items,Ammo,New,10 Gauge ShotgunTurret,,,,,
+MK-2 10 Gauge shotgunTurret,items,Ammo,New,MK-2 10 Gauge ShotgunTurret,,,,,
+
+10GaugeshotgunTurretSchematic,items,Ammo,New,10 Gauge ShotgunTurret Schematic,,,,,
+MK210GaugeshotgunTurretSchematic,items,Ammo,New,MK-2 10 Gauge ShotgunTurret Schematic,,,,,
+
+16 Gauge shotgunTurret,items,Ammo,New,16 Gauge ShotgunTurret,,,,,
+MK-2 16 Gauge shotgunTurret,items,Ammo,New,MK-2 16 Gauge ShotgunTurret,,,,,
+
+16GaugeshotgunTurretSchematic,items,Ammo,New,16 Gauge ShotgunTurret Schematic,,,,,
+MK216GaugeshotgunTurretSchematic,items,Ammo,New,MK-2 16 Gauge ShotgunTurret Schematic,,,,,
+
+20 Gauge shotgunTurret,items,Ammo,New,20 Gauge ShotgunTurret,,,,,
+MK-2 20 Gauge shotgunTurret,items,Ammo,New,MK-2 20 Gauge ShotgunTurret,,,,,
+
+20GaugeshotgunTurretSchematic,items,Ammo,New,20 Gauge ShotgunTurret Schematic,,,,,
+MK220GaugeshotgunTurretSchematic,items,Ammo,New,MK-2 20 Gauge ShotgunTurret Schematic,,,,,
+
+.410 Gauge shotgunTurret,items,Ammo,New,.410 Gauge ShotgunTurret,,,,,
+MK-2 .410 Gauge shotgunTurret,items,Ammo,New,MK-2 .410 Gauge ShotgunTurret,,,,,
+
+410GaugeshotgunTurretSchematic,items,Ammo,New,.410 Gauge ShotgunTurret Schematic,,,,,
+MK2410GaugeshotgunTurretSchematic,items,Ammo,New,MK-2 .410 Gauge ShotgunTurret Schematic,,,,,
+
+
+
+
+
+BeltLinksDesc,items,Ammo,New,Machine Gun Links are used to make Ammunition Belts for belt-fed turrets.,,,,,
+AmmunitionBeltLinks,items,Ammo,New,Machine Gun Links,,,,,
+AmmunitionBeltLinksSchematic,items,Ammo,New,Machine Gun Link Schematic,,,,,
+
+
+
+
+
+LinkedAmmoDesc,items,Ammo,New,Ammunition Belts are used for belt-fed turrets and can hold more ammunition in one stack.,,,,,
+
+30CarbineAmmunitionBelt,items,Ammo,New,.30 Carbine Ammunition Belt (AMMO),,,,,
+
+762x39AmmunitionBelt,items,Ammo,New,7.62x39mm Ammunition Belt (AMMO),,,,,
+
+556x45mmNATOAmmunitionBelt,items,Ammo,New,5.56x45mm NATO Ammunition Belt (AMMO),,,,,
+
+762x51mmNATOAmmunitionBelt,items,Ammo,New,7.62x51mm NATO Ammunition Belt (AMMO),,,,,
+
+8MMMauserAmmunitionBelt,items,Ammo,New,7.92x57mm Mauser Ammunition Belt (AMMO),,,,,
+
+30_06SPRGAmmunitionBelt,items,Ammo,New,30-06 Springfield Ammunition Belt (AMMO),,,,,
+
+50BMGAmmunitionBelt,items,Ammo,New,50 BMG Ammunition Belt (AMMO),,,,,
