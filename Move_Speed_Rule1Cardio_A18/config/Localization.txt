@@ -1,6 +1,0 @@
-Key,Source,Context,Changes,English
-perkRuleOneCardioNameRank1LongDesc,progression,Perk,New,Just put one foot in front of the other. You are now a hiker . Increase stamina regen by 10% when sprinting and walk/run speed by 3%.,,,,,
-perkRuleOneCardioNameRank2LongDesc,progression,Perk,New,Putting in the miles is starting to pay off and you can jog a bit now. Increase stamina regen by 15% when sprinting and walk/run speed by 6%.,,,,,
-perkRuleOneCardioNameRank3LongDesc,progression,Perk,New,All the scrubs are in your rear view mirror now as you are a running man with excellent cardio. Increase stamina regen by 20% when sprinting and walk/run speed by 9%.,,,,,
-perkRuleOneCardioNameRank4LongDesc,progression,Perk,New,Increase stamina regen by 25% when sprinting and walk/run speed by 12%.,,,,,
-perkRuleOneCardioNameRank5LongDesc,progression,Perk,New,Increase stamina regen by 30% when sprinting and walk/run speed by 15%.,,,,,

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<xml>
-	<ModInfo>
-		<Name value="Deadly Headshots" />
-		<Description value="All head dmg for melee and projectiles are deadly." />
-		<Author value="Qrgan" />
-		<Version value="A18" />
-		</ModInfo>
-</xml>

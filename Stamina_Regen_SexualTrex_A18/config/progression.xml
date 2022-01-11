@@ -1,5 +1,0 @@
-<configs>
-		<append xpath="/progression/perks/perk[@name='perkSexualTrex']/effect_group" >
-			<passive_effect name="StaminaChangeOT" operation="base_add" level="1,5" value="1,5"/>
-		</append>
-</configs>

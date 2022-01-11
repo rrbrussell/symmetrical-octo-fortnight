@@ -1,6 +1,0 @@
-<configs>
-
-<!-- <removeattribute xpath="/recipes/recipe/@craft_time" /> -->
-<setattribute xpath="/recipes/recipe" name="craft_time">1</setattribute>
-
-</configs>

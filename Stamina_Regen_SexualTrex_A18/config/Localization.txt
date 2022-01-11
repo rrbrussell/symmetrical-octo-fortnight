@@ -1,6 +1,0 @@
-Key,Source,Context,Changes,English
-perkSexualTrexRank1LongDesc,progression,Perk,New,"Ok so you are not a total couch potato any more, but not deserving of the title athlete yet either. Reduces melee and tool stamina use by 5% and power attacks by 10%. Base stamina regen increased by 10%.",,,,,
-perkSexualTrexRank2LongDesc,progression,Perk,New,You have graduated to bench warmer. Reduce melee and tool stamina usage by 10% and power attacks by 20%. Base stamina regen increased by 20%.,,,,,
-perkSexualTrexRank3LongDesc,progression,Perk,New,You are now a bonafide athlete and getting winded doing nothing is a thing of the past. Reduce melee and tool stamina usage by 15% and power attacks by 30%. Base stamina regen increased by 30%.\nKilling blows grant 10 stamina.,,,,,
-perkSexualTrexRank4LongDesc,progression,Perk,New,Nobody will disrespect a warrior. Reduce melee and tool stamina usage by 20% and power attacks by 40%. Base stamina regen increased by 40%.\nKilling blows grant 20 stamina.,,,,,
-perkSexualTrexRank5LongDesc,progression,Perk,New,You are now a cage gladiator and have risen to the highest athletic prowess possible. Reduce melee and tool stamina usage by 25% and power attacks by 50%. Base stamina regen increased by 50%.\nKilling blows grant 30 stamina.,,,,,

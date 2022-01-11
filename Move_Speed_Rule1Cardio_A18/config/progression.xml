@@ -1,6 +1,0 @@
-<configs>
-		<append xpath="/progression/perks/perk[@name='perkRuleOneCardio']/effect_group" >
-			<passive_effect name="WalkSpeed" operation="perc_add" value="0.03,0.15" level="1,5" />
-			<passive_effect name="RunSpeed" operation="perc_add" value="0.03,0.15" level="1,5" />
-		</append>
-</configs>

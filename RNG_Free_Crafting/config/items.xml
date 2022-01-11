@@ -1,8 +1,0 @@
-<configs>
-<set xpath="/items/item/effect_group/passive_effect[@value='-.2,.2']/@value">.2</set>
-<set xpath="/items/item/effect_group/passive_effect[@value='-.15,.15']/@value">.15</set>
-<set xpath="/items/item/effect_group/passive_effect[@value='-.05,.05']/@value">.05</set>
-<set xpath="/items/item/effect_group/passive_effect[@value='-.122,.122']/@value">.122</set>
-<set xpath="/items/item/effect_group/passive_effect[@value='-.08,.08']/@value">.08</set>
-</configs> 
-

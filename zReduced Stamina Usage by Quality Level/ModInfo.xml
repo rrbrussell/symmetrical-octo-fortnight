@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<xml>
-    <ModInfo>
-        <Name value="Reduced Stamina Usage by Quality Level" />
-        <Description value="Reduces the stamina usage for items by 5% per quality level" />
-        <Author value="Elucidus" />
-        <Version value="1.0.0" />
-    </ModInfo>
-</xml>
