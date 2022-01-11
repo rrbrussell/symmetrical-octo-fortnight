@@ -1,3 +1,0 @@
-<config>
-    <remove xpath="/recipes/recipe/effect_group/passive_effect[@name='CraftingIngredientCount']" />
-</config>
