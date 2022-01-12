@@ -1,0 +1,47 @@
+<configs>
+	<!-- Increase the amount of ammo and ammo making supplies vendors carry -->
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='ammo']/item[@name='ammo9mmBulletBall']/@count">60,225</set>  <!-- default 40,150 -->
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='ammo']/item[@name='ammo9mmBulletAP']/@count">60,225</set>  <!-- default 40,150 -->
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='ammo']/item[@name='ammo762mmBulletBall']/@count">60,225</set>  <!-- default 20,100 -->
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='ammo']/item[@name='ammo762mmBulletAP']/@count">60,225</set>  <!-- default 20,100 -->
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='ammo']/item[@name='ammo44MagnumBulletBall']/@count">60,225</set>  <!-- default 20,100 -->
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='ammo']/item[@name='ammo44MagnumBulletAP']/@count">60,225</set>  <!-- default 15,60 -->
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='ammo']/item[@name='ammo44MagnumBulletBall']/@prob">1</set>  <!-- default 0.5 -->
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='ammo']/item[@name='ammo44MagnumBulletAP']/@prob">1</set>  <!-- default 0.5 -->
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='ammo']/item[@name='ammoShotgunShell']/@count">60,225</set>  <!-- default 15,60 -->
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='ammo']/item[@name='ammoShotgunSlug']/@count">60,225</set>  <!-- default 6,25 -->
+	
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='ammoSupplies']/item[@name='resourceBulletCasing']/@count">60,600</set>  <!-- default 20,200 -->
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='ammoSupplies']/item[@name='resourceBulletTip']/@count">60,600</set>  <!-- default 20,200 -->
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='ammoSupplies']/item[@name='resourceGunPowder']/@count">60,600</set>  <!-- default 20,200 -->
+	
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='generalResources']/item[@name='resourceOilShale']/@count">80,240</set>  <!-- default 20,60 -->
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='generalResources']/item[@name='resourceCoal']/@count">80,240</set>  <!-- default 20,60 -->
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='generalResources']/item[@name='resourcePotassiumNitratePowder']/@count">80,240</set>  <!-- default 20,60 -->
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='generalResources']/item[@name='resourceGunPowder']/@count">80,240</set>  <!-- default 3,30 -->
+	
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='traderAlways']/item[@group='ammo']/@count">14,50</set>  <!-- default 3 -->
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='traderAlways']/item[@group='ammoSupplies']/@count">14,50</set>  <!-- default 2 -->
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='traderAlways']/item[@name='resourcePotassiumNitratePowder']/@count">80,240</set>  <!-- default 2,5 -->
+	
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='traderGeneral']/item[@group='ammo']/@count">14,50</set>  <!-- default 2,4 -->
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='traderGeneral']/item[@group='ammo']/@prob">5</set>  <!-- default 2 -->
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='traderGeneral']/item[@group='ammoSupplies']/@count">14,50</set>  <!-- default 1,3 -->
+	
+	<insertAfter xpath="/traders/trader_info/trader_items[@count='all']/item[@group='modAllT1SecretStash']">
+			<item group="ammo" count="14,50" prob="4" />
+	</insertAfter>
+	
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='traderGeneral']/item[@group='ammo']/@count">14,50</set>  <!-- default 2,4 -->
+
+	<!-- Reset Vender inventory daily -->
+	<setattribute xpath="/traders/trader_info[@id='1']" name="reset_interval">1</setattribute> <!-- default 3 Trader Joel -->
+	<setattribute xpath="/traders/trader_info[@id='2']" name="reset_interval">1</setattribute> <!-- default 3 Trader Jen -->
+	<!-- id='3' = Player owned vending machines and does not reset -  not changed  -->
+	<!-- id='4' = Vending machines found through out the world already resets daily -  not changed  -->
+	<!-- id='5' = Rented vending machines and does not reset -  not changed  -->
+	<setattribute xpath="/traders/trader_info[@id='6']" name="reset_interval">1</setattribute> <!-- default 3 Trader Bob -->
+	<setattribute xpath="/traders/trader_info[@id='7']" name="reset_interval">1</setattribute> <!-- default 3 Trader Hugh -->
+	<setattribute xpath="/traders/trader_info[@id='8']" name="reset_interval">1</setattribute> <!-- default 3 Trader Rekt -->
+
+</configs>

@@ -1,0 +1,73 @@
+<configs>
+		<!-- Increases backpack linger times for horde nights and such -->
+	<set xpath="/entity_classes/entity_class[@name='Backpack']/property[@name='TimeStayAfterDeath']/@value">14400</set> <!-- Default 3600 -->
+	<set xpath="/entity_classes/entity_class[@name='EntityLootContainerRegular']/property[@name='TimeStayAfterDeath']/@value">14400</set> <!-- Default 1200 -->
+	<set xpath="/entity_classes/entity_class[@name='EntityLootContainerStrong']/property[@name='TimeStayAfterDeath']/@value">14400</set> <!-- Default 1200 -->
+	<set xpath="/entity_classes/entity_class[@name='EntityLootContainerBoss']/property[@name='TimeStayAfterDeath']/@value">14400</set> <!-- Default 1200 -->
+	<set xpath="/entity_classes/entity_class[@name='EntityLootContainerBandit']/property[@name='TimeStayAfterDeath']/@value">14400</set> <!-- Default 1200 -->
+	
+		<!-- Increases the loot drop probability of tougher enemies -->
+	<set xpath="/entity_classes/entity_class[@name='zombieWightFeral']/property[@name='LootDropProb']/@value">.1</set> <!-- Default .03 -->
+	<insertAfter xpath="/entity_classes/entity_class[@name='zombieWightRadiated']/property[@name='ExperienceGain']">
+		<property name="LootDropProb" value=".5"/>
+	</insertAfter>
+	
+	<set xpath="/entity_classes/entity_class[@name='zombieFemaleFatFeral']/property[@name='LootDropProb']/@value">.25</set> <!-- Default .03 -->
+	<insertAfter xpath="/entity_classes/entity_class[@name='zombieFemaleFatRadiated']/property[@name='ExperienceGain']">
+		<property name="LootDropProb" value=".5"/>
+	</insertAfter>
+	
+	<insertAfter xpath="/entity_classes/entity_class[@name='zombieLabRadiated']/property[@name='ExperienceGain']">
+		<property name="LootDropProb" value=".25"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+	</insertAfter>
+	
+	<insertAfter xpath="/entity_classes/entity_class[@name='zombieScreamerRadiated']/property[@name='ExperienceGain']">
+		<property name="LootDropProb" value=".5"/>
+	</insertAfter>
+	
+	<set xpath="/entity_classes/entity_class[@name='zombieBusinessManFeral']/property[@name='LootDropProb']/@value">.25</set> <!-- Default .03 -->
+	
+	<insertAfter xpath="/entity_classes/entity_class[@name='zombieSpiderRadiated']/property[@name='ExperienceGain']">
+		<property name="LootDropProb" value=".5"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+	</insertAfter>
+	
+	<set xpath="/entity_classes/entity_class[@name='zombieFatHawaiianFeral']/property[@name='LootDropProb']/@value">.5</set> <!-- Default .03 -->
+	
+	<insertAfter xpath="/entity_classes/entity_class[@name='zombieFatCop']/property[@name='ExperienceGain']">
+		<property name="LootDropProb" value=".5"/>
+	</insertAfter>
+	
+	<set xpath="/entity_classes/entity_class[@name='zombieFatCopFeral']/property[@name='LootDropProb']/@value">.75</set>
+
+	<insertAfter xpath="/entity_classes/entity_class[@name='zombieFatCopRadiated']/property[@name='ExperienceGain']">
+		<property name="LootDropProb" value=".5"/>
+	</insertAfter>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieFatCopRadiated']/property[@name='ExperienceGain']/@value">4000</set> <!-- Default 1500 -->
+	
+	<insertAfter xpath="/entity_classes/entity_class[@name='zombieSoldier']/property[@name='ExperienceGain']">
+		<property name="LootDropProb" value=".15"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	</insertAfter>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieSoldierFeral']/property[@name='LootDropProb']/@value">.5</set> <!-- Default .03 -->
+	
+	<insertAfter xpath="/entity_classes/entity_class[@name='zombieSoldierRadiated']/property[@name='ExperienceGain']">
+		<property name="LootDropProb" value=".5"/>
+	</insertAfter>
+
+	<insertAfter xpath="/entity_classes/entity_class[@name='zombieBiker']/property[@name='ExperienceGain']">
+		<property name="LootDropProb" value=".25"/>		
+	</insertAfter>
+	
+	<set xpath="/entity_classes/entity_class[@name='zombieBikerFeral']/property[@name='LootDropProb']/@value">.5</set> <!-- Default .03 -->
+	<insertAfter xpath="/entity_classes/entity_class[@name='zombieBikerRadiated']/property[@name='ExperienceGain']">
+		<property name="LootDropProb" value=".15"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+	</insertAfter>
+	
+	<set xpath="/entity_classes/entity_class[@name='animalZombieBear']/property[@name='ExperienceGain']/@value">4000</set> <!-- Default 750 -->
+	<set xpath="/entity_classes/entity_class[@name='animalBossGrace']/property[@name='ExperienceGain']/@value">4500</set> <!-- Default 1200 -->
+</configs>

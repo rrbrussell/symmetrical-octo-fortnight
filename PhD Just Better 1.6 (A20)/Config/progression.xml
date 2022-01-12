@@ -1,0 +1,6 @@
+<configs>
+	<!-- Make the wait time the same for all levels. (Instant) -->
+	<set xpath="/progression/perks/perk[@name='perkLuckyLooter']/effect_group/passive_effect[@name='ScavengingTime']/@value">1</set>
+	<set xpath="/progression/perks/perk[@name='perkLuckyLooter']/effect_group/passive_effect[@name='ScavengingTime']/@level">0,5</set>
+
+</configs>
