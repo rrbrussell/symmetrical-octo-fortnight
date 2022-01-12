@@ -1,0 +1,289 @@
+<configs>
+
+	<!-- Reduce the amount of materials need to make a Shotgun slug -->
+	<set xpath="/recipes/recipe[@name='ammoShotgunSlug']/ingredient[@name='resourceBulletTip']/@count">1</set> <!-- Default 2 -->
+	<set xpath="/recipes/recipe[@name='ammoShotgunSlug']/ingredient[@name='resourceGunPowder']/@count">2</set> <!-- Default 5 -->
+
+	<!-- Reduce the time need to craft ammo bundles -->
+	<set xpath="/recipes/recipe[@name='ammoBundle9mmBulletBall']/@craft_time">0</set>
+	<set xpath="/recipes/recipe[@name='ammoBundle9mmBulletHP']/@craft_time">0</set>
+	<set xpath="/recipes/recipe[@name='ammoBundle9mmBulletAP']/@craft_time">0</set>
+	<set xpath="/recipes/recipe[@name='ammoBundle44MagnumBulletBall']/@craft_time">0</set>
+	<set xpath="/recipes/recipe[@name='ammoBundle44MagnumBulletHP']/@craft_time">0</set>
+	<set xpath="/recipes/recipe[@name='ammoBundle44MagnumBulletAP']/@craft_time">0</set>
+	<set xpath="/recipes/recipe[@name='ammoBundle762mmBulletBall']/@craft_time">0</set>
+	<set xpath="/recipes/recipe[@name='ammoBundle762mmBulletHP']/@craft_time">0</set>
+	<set xpath="/recipes/recipe[@name='ammoBundle762mmBulletAP']/@craft_time">0</set>
+	<set xpath="/recipes/recipe[@name='ammoBundleShotgunShell']/@craft_time">0</set>
+	<set xpath="/recipes/recipe[@name='ammoBundleShotgunSlug']/@craft_time">0</set>
+	<set xpath="/recipes/recipe[@name='ammoBundleShotgunBreachingSlug']/@craft_time">0</set>
+	<set xpath="/recipes/recipe[@name='ammoBundleJunkTurretRegular']/@craft_time">0</set>
+	<set xpath="/recipes/recipe[@name='ammoBundleJunkTurretShell']/@craft_time">0</set>
+	<set xpath="/recipes/recipe[@name='ammoBundleJunkTurretAP']/@craft_time">0</set>
+	<set xpath="/recipes/recipe[@name='ammoBundleArrowFlaming']/@craft_time">0</set>
+	<set xpath="/recipes/recipe[@name='ammoBundleArrowExploding']/@craft_time">0</set>
+	<set xpath="/recipes/recipe[@name='ammoBundleArrowIron']/@craft_time">0</set>
+	<set xpath="/recipes/recipe[@name='ammoBundleArrowSteelAP']/@craft_time">0</set>
+	<set xpath="/recipes/recipe[@name='ammoBundleArrowStone']/@craft_time">0</set>
+	<set xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltFlaming']/@craft_time">0</set>
+	<set xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltExploding']/@craft_time">0</set>
+	<set xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltIron']/@craft_time">0</set>
+	<set xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltSteelAP']/@craft_time">0</set>
+	<set xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltStone']/@craft_time">0</set>
+
+	<!-- Reduce the time need to craft thrown ammo -->
+	<set xpath="/recipes/recipe[@name='thrownAmmoMolotovCocktail']/@craft_time">0</set>
+	<set xpath="/recipes/recipe[@name='thrownAmmoPipeBomb']/@craft_time">0</set>
+	<set xpath="/recipes/recipe[@name='thrownGrenade']/@craft_time">0</set>
+	<set xpath="/recipes/recipe[@name='thrownGrenadeContact']/@craft_time">0</set>
+	<set xpath="/recipes/recipe[@name='thrownTimedCharge']/@craft_time">0</set>
+	<set xpath="/recipes/recipe[@name='thrownDynamite']/@craft_time">0</set>
+
+	<!-- Reduce the time need to craft other bundles -->
+	<set xpath="/recipes/recipe[@name='ammoGasCanBundle']/@craft_time">0</set>
+	<set xpath="/recipes/recipe[@name='resourceLockPickBundle']/@craft_time">0</set>
+	<set xpath="/recipes/recipe[@name='resourceGunPowderBundle']/@craft_time">0</set>
+	<set xpath="/recipes/recipe[@name='resourceRockSmallBundle']/@craft_time">0</set>
+	<set xpath="/recipes/recipe[@name='resourceWoodBundle']/@craft_time">0</set>
+	<set xpath="/recipes/recipe[@name='resourceScrapIronBundle']/@craft_time">0</set>
+	<set xpath="/recipes/recipe[@name='resourceOilShaleBundle']/@craft_time">0</set>
+	<set xpath="/recipes/recipe[@name='resourcePotassiumNitratePowderBundle']/@craft_time">0</set>
+	<set xpath="/recipes/recipe[@name='resourceLeadBundle']/@craft_time">0</set>
+	<set xpath="/recipes/recipe[@name='resourceCoalBundle']/@craft_time">0</set>
+		
+	<!-- Reduce the raw meet need to craft recipes - trying to make it a little more balanced -->
+	<set xpath="/recipes/recipe[@name='foodBaconAndEggs']/ingredient[@name='foodRawMeat']/@count">2</set> <!-- Default 5 -->
+	<set xpath="/recipes/recipe[@name='foodBoiledMeat']/ingredient[@name='foodRawMeat']/@count">2</set> <!-- Default 5 -->
+	<set xpath="/recipes/recipe[@name='foodCharredMeat']/ingredient[@name='foodRawMeat']/@count">2</set> <!-- Default 5 -->
+	<set xpath="/recipes/recipe[@name='foodChiliDog']/ingredient[@name='foodRawMeat']/@count">2</set> <!-- Default 5 -->
+	<set xpath="/recipes/recipe[@name='foodGrilledMeat']/ingredient[@name='foodRawMeat']/@count">2</set> <!-- Default 5 -->
+	<set xpath="/recipes/recipe[@name='foodMeatStew']/ingredient[@name='foodRawMeat']/@count">4</set> <!-- Default 5 -->
+	<set xpath="/recipes/recipe[@name='foodSteakAndPotato']/ingredient[@name='foodRawMeat']/@count">3</set> <!-- Default 5 -->
+	
+	<append xpath="/recipes">
+		
+		<recipe name="terrForestGround" count="1" craft_area="cementMixer" craft_time="0.5">
+			<ingredient name="resourceClayLump" count="20"/>
+			<ingredient name="resourceCrushedSand" count="3"/>
+			<ingredient name="resourceYuccaFibers" count="2"/>
+		</recipe>
+		
+		<recipe name="terrSandStone" count="1" craft_area="cementMixer" craft_time="0.5">
+			<ingredient name="resourceRockSmall" count="5"/>
+			<ingredient name="resourceCrushedSand" count="20"/>
+		</recipe>
+		
+		<recipe name="foodCanBeef" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef">
+			<ingredient name="drinkCanEmpty" count="1"/>
+			<ingredient name="foodRawMeat" count="5"/>
+			<ingredient name="foodCropPotato" count="2"/>
+			<ingredient name="resourceAnimalFat" count="1"/>
+			<ingredient name="resourcePaint" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,5" operation="base_add" value="-1" tags="foodRawMeat"/>
+			</effect_group>
+		</recipe>
+
+		<recipe name="foodCanChicken" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef">
+			<ingredient name="drinkCanEmpty" count="1"/>
+			<ingredient name="foodRawMeat" count="5"/>
+			<ingredient name="foodCornMeal" count="2"/>
+			<ingredient name="resourceAnimalFat" count="1"/>
+			<ingredient name="resourcePaint" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,5" operation="base_add" value="-1" tags="foodRawMeat"/>
+			</effect_group>
+		</recipe>
+
+		<recipe name="foodCanLamb" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef">
+			<ingredient name="drinkCanEmpty" count="1"/>
+			<ingredient name="foodRawMeat" count="5"/>
+			<ingredient name="foodCropMushrooms" count="2"/>
+			<ingredient name="resourceAnimalFat" count="1"/>
+			<ingredient name="resourcePaint" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,5" operation="base_add" value="-1" tags="foodRawMeat"/>
+			</effect_group>
+		</recipe>
+		
+		<recipe name="drinkJarRiverWater" count="6"  >
+			<ingredient name="drinkJarEmpty" count="6"/>
+			<ingredient name="bucketRiverWater" count="1"/>
+		</recipe>
+		
+		<recipe name="resourceAcid" count="1" craft_area="chemistryStation" >
+			<ingredient name="drinkJarRiverWater" count="1"/>
+			<ingredient name="resourcePotassiumNitratePowder" count="1"/>
+			<ingredient name="resourceGunPowder" count="1"/>
+			<ingredient name="resourceAnimalFat" count="1"/>
+		</recipe>
+		
+		<recipe name="resourceScrapPolymers" count="10" craft_area="chemistryStation" >
+			<ingredient name="resourceAcid" count="1"/>
+			<ingredient name="resourceOilShale" count="5"/>
+		</recipe>
+		
+		<recipe name="resourceWood" count="10">
+			<ingredient name="woodLogPillar100" count="1"/>
+		</recipe>
+
+		<recipe name="resourceSpring" count="2" craft_area="forge" >
+			<ingredient name="unit_iron" count="10"/>
+		</recipe>
+		
+		<recipe name="resourceGunPowderBundle" count="1" craft_time="0" >
+			<ingredient name="resourceGunPowder" count="800"/>
+		</recipe>
+
+		<recipe name="ammoGasCanBundle" count="1" craft_time="0" >
+			<ingredient name="ammoGasCan" count="800"/>
+		</recipe>
+		
+		<!-- Needed for Ammo Bundles -->
+		<recipe name="resourceGunPowderBundle" count="6" craft_time="0"  >
+			<ingredient name="resourcePotassiumNitratePowderBundle" count="1"/>
+			<ingredient name="resourceCoalBundle" count="1"/>
+		</recipe>
+
+		<recipe name="resourceBulletCasingBundle" count="1" craft_time = "0" >
+			<ingredient name="resourceBulletCasing" count="6000"/>
+		</recipe>
+
+		<recipe name="resourceBulletTipBundle" count="1" craft_time = "0" >
+			<ingredient name="resourceBulletTip" count="6000"/>
+		</recipe>
+
+		<recipe name="resourceBuckshotBundle" count="1" craft_time = "0" >
+			<ingredient name="resourceBuckshot" count="6000"/>
+		</recipe>
+
+		<recipe name="resourcePaperBundle" count="1" craft_time = "0" >
+			<ingredient name="resourcePaper" count="6000"/>
+		</recipe>
+
+		<recipe name="resourceScrapPolymersBundle" count="1" craft_time = "0" >
+			<ingredient name="resourceScrapPolymers" count="6000"/>
+		</recipe>
+
+		<recipe name="resourceForgedIronBundle" count="1" craft_time = "0" >
+			<ingredient name="resourceForgedIron" count="6000"/>
+		</recipe>
+
+		<recipe name="resourceForgedSteelBundle" count="1" craft_time = "0" >
+			<ingredient name="resourceForgedSteel" count="6000"/>
+		</recipe>
+
+		<recipe name="casinoCoinBundle" count="1" craft_time="0" >
+			<ingredient name="casinoCoin" count="1000"/>
+		</recipe>
+
+		<recipe name="resourceBrokenGlassBundle" count="1" craft_time = "0" >
+			<ingredient name="resourceBrokenGlass" count="6000"/>
+		</recipe>
+
+		<recipe name="resourceCementBundle" count="1" craft_time = "0" >
+			<ingredient name="resourceCement" count="6000"/>
+		</recipe>
+
+		<recipe name="resourceCobblestonesBundle" count="1" craft_time = "0" >
+			<ingredient name="resourceCobblestones" count="6000"/>
+		</recipe>
+
+		<recipe name="resourceConcreteMixBundle" count="1" craft_time = "0" >
+			<ingredient name="resourceConcreteMix" count="6000"/>
+		</recipe>
+
+		<recipe name="resourceElectricPartsBundle" count="1" craft_time = "0" >
+			<ingredient name="resourceElectricParts" count="6000"/>
+		</recipe>
+
+		<recipe name="resourceMechanicalPartsBundle" count="1" craft_time = "0" >
+			<ingredient name="resourceMechanicalParts" count="6000"/>
+		</recipe>
+
+		<recipe name="resourceLeatherBundle" count="1" craft_time = "0" >
+			<ingredient name="resourceLeather" count="6000"/>
+		</recipe>
+
+		<recipe name="resourceYuccaFibersBundle" count="1" craft_time = "0" >
+			<ingredient name="resourceYuccaFibers" count="6000"/>
+		</recipe>
+
+		<recipe name="resourceClothBundle" count="1" craft_time = "0" >
+			<ingredient name="resourceCloth" count="6000"/>
+		</recipe>
+
+		<recipe name="resourceFeatherBundle" count="1" craft_time = "0" >
+			<ingredient name="resourceFeather" count="6000"/>
+		</recipe>
+
+		<!-- Bundle ammo Recipes -->
+		<recipe name="ammoBundle9mmBulletBall" count="75" craft_time="0" craft_area="workbench" >
+			<ingredient name="resourceBulletTipBundle" count="1"/>
+			<ingredient name="resourceGunPowderBundle" count="6"/>
+			<ingredient name="resourceBulletCasingBundle" count="1"/>
+		</recipe>
+
+		<recipe name="ammoBundle9mmBulletHP" count="75" craft_time="0" craft_area="workbench" >
+			<ingredient name="resourceBulletTipBundle" count="2"/>
+			<ingredient name="resourceGunPowderBundle" count="6"/>
+			<ingredient name="resourceBulletCasingBundle" count="1"/>
+		</recipe>
+
+		<recipe name="ammoBundle9mmBulletAP" count="75" craft_time="0" craft_area="workbench" >
+			<ingredient name="resourceBulletTipBundle" count="1"/>
+			<ingredient name="resourceGunPowderBundle" count="12"/>
+			<ingredient name="resourceBulletCasingBundle" count="1"/>
+		</recipe>
+
+		<recipe name="ammoBundle44MagnumBulletBall" count="75" craft_time="0" craft_area="workbench" >
+			<ingredient name="resourceBulletTipBundle" count="1"/>
+			<ingredient name="resourceGunPowderBundle" count="12"/>
+			<ingredient name="resourceBulletCasingBundle" count="1"/>
+		</recipe>
+
+		<recipe name="ammoBundle44MagnumBulletHP" count="75" craft_time="0" craft_area="workbench" >
+			<ingredient name="resourceBulletTipBundle" count="2"/>
+			<ingredient name="resourceGunPowderBundle" count="12"/>
+			<ingredient name="resourceBulletCasingBundle" count="1"/>
+		</recipe>
+
+		<recipe name="ammoBundle44MagnumBulletAP" count="75" craft_time="0" craft_area="workbench" >
+			<ingredient name="resourceBulletTipBundle" count="1"/>
+			<ingredient name="resourceGunPowderBundle" count="18"/>
+			<ingredient name="resourceBulletCasingBundle" count="1"/>
+		</recipe>
+
+		<recipe name="ammoBundle762mmBulletBall" count="75" craft_time="0" craft_area="workbench" >
+			<ingredient name="resourceBulletTipBundle" count="1"/>
+			<ingredient name="resourceGunPowderBundle" count="18"/>
+			<ingredient name="resourceBulletCasingBundle" count="1"/>
+		</recipe>
+
+		<recipe name="ammoBundle762mmBulletHP" count="75" craft_time="0" craft_area="workbench" >
+			<ingredient name="resourceBulletTipBundle" count="2"/>
+			<ingredient name="resourceGunPowderBundle" count="18"/>
+			<ingredient name="resourceBulletCasingBundle" count="1"/>
+		</recipe>
+
+		<recipe name="ammoBundle762mmBulletAP" count="75" craft_time="0" craft_area="workbench" >
+			<ingredient name="resourceBulletTipBundle" count="1"/>
+			<ingredient name="resourceGunPowderBundle" count="30"/>
+			<ingredient name="resourceBulletCasingBundle" count="1"/>
+		</recipe>
+
+		<recipe name="ammoBundleShotgunShell" count="75" craft_time="0" craft_area="workbench" >
+			<ingredient name="resourceBuckshotBundle" count="1"/>
+			<ingredient name="resourceGunPowderBundle" count="24"/>
+			<ingredient name="resourcePaperBundle" count="1"/>
+		</recipe>
+
+		<recipe name="ammoBundleShotgunSlug" count="75" craft_time="0" craft_area="workbench" >
+			<ingredient name="resourceBulletTipBundle" count="2"/>
+			<ingredient name="resourceGunPowderBundle" count="18"/>
+			<ingredient name="resourceScrapPolymersBundle" count="1"/>
+		</recipe>
+
+	</append>
+
+</configs>

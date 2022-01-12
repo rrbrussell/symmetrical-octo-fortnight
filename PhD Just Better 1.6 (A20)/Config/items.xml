@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+	<!-- Change 1,1,2,2,3,4 ModSlot values to 1,2,3,4,5,6 Items must be remade for this to take effect -->
+	<set xpath="/items/item/effect_group/passive_effect[contains(@name, 'ModSlots')][@value='1,1,2,2,3,4']/@value">1,2,3,4,5,6</set>
+
+  <!-- Increases the effectiveness of the meleeToolSalvageT1Wrench -->
+  <set xpath="/items/item[@name='meleeToolSalvageT1Wrench']/effect_group[@name='meleeToolSalvageT1Wrench']/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">54</set> <!-- Default 16.5 -->
+  <set xpath="/items/item[@name='meleeToolSalvageT1Wrench']/effect_group[@name='meleeToolSalvageT1Wrench']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">115.5</set>  <!-- Default 38.5 -->
+  <set xpath="/items/item[@name='meleeToolSalvageT1Wrench']/effect_group[@name='meleeToolSalvageT1Wrench']/passive_effect[@name='StaminaLoss' and @operation='base_set']/@value">5.6</set>  <!-- Default 18.3 -->
+
+  <!-- Increases the effectiveness of the meleeToolAxeT3Chainsaw -->
+  <set xpath="/items/item[@name='meleeToolAxeT3Chainsaw']/effect_group[@name='meleeToolAxeT3Chainsaw']/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">18</set>  <!-- Default 6 -->
+  <set xpath="/items/item[@name='meleeToolAxeT3Chainsaw']/effect_group[@name='meleeToolAxeT3Chainsaw']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">72.9</set>  <!-- Default 24.3 -->
+	<set xpath="/items/item[@name='meleeToolAxeT3Chainsaw']/effect_group[@name='meleeToolAxeT3Chainsaw']/passive_effect[@name='DegradationPerUse']/@value">0</set> <!-- Default 1 -->
+	<set xpath="/items/item[@name='meleeToolAxeT3Chainsaw']/effect_group[@name='meleeToolAxeT3Chainsaw']/passive_effect[@name='KickDegreesVerticalMin']/@value">0,0</set> <!-- Default -.25 -->
+	<set xpath="/items/item[@name='meleeToolAxeT3Chainsaw']/effect_group[@name='meleeToolAxeT3Chainsaw']/passive_effect[@name='KickDegreesVerticalMax']/@value">0,0</set> <!-- Default .25 -->
+	<set xpath="/items/item[@name='meleeToolAxeT3Chainsaw']/effect_group[@name='meleeToolAxeT3Chainsaw']/passive_effect[@name='KickDegreesHorizontalMin']/@value">0,0</set>	 <!-- Default -.45 -->
+	<set xpath="/items/item[@name='meleeToolAxeT3Chainsaw']/effect_group[@name='meleeToolAxeT3Chainsaw']/passive_effect[@name='KickDegreesHorizontalMax']/@value">0,0</set>	 <!-- Default .45 -->
+
+  <!-- Increases the effectiveness of the meleeToolPickT3Auger -->
+  <set xpath="/items/item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">12.6</set>  <!-- Default 4.2 -->
+  <set xpath="/items/item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">62.1</set>  <!-- Default 20.7 -->
+	<set xpath="/items/item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='DegradationPerUse']/@value">0</set> <!-- Default 1 -->
+	<set xpath="/items/item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='KickDegreesVerticalMin']/@value">0,0</set> <!-- Default -.35 -->
+	<set xpath="/items/item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='KickDegreesVerticalMax']/@value">0,0</set> <!-- Default .35 -->
+	<set xpath="/items/item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='KickDegreesHorizontalMin']/@value">0,0</set>		<!-- Default -.35 -->
+	<set xpath="/items/item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='KickDegreesHorizontalMax']/@value">0,0</set>		<!-- Default .35 -->
+	<append xpath="/items/item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']">
+		<passive_effect name="DamageModifier" operation="perc_add" value=".9" tags="earth,stone,metal"/>
+	</append>	
+	<set xpath="/items/item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='MaxRange']">8</set>		
+	<set xpath="/items/item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='BlockRange']">8</set>		
+		
+	<!-- Increase ammo9mmBulletBall damage -->
+	<set xpath="/items/item[@name='ammo9mmBulletBall']/effect_group[@name='ammo9mmBulletBall']/passive_effect[@name='EntityDamage']/@value">96</set> <!-- Default 32 -->
+	<!-- Remove ammo9mmBulletBall Block damage -->
+	<set xpath="/items/item[@name='ammo9mmBulletBall']//passive_effect[@name='BlockDamage' and @operation='base_set']/@value">0</set> <!-- Default 7 -->
+	<set xpath="/items/item[@name='ammo9mmBulletBall']//passive_effect[@name='DamageModifier' and @tags='wood']/@value">-.99</set> <!-- Default 7 -->
+	
+	<!-- Increase ammo9mmBulletHP damage -->
+	<set xpath="/items/item[@name='ammo9mmBulletHP']/effect_group[@name='ammo9mmBulletHP']/passive_effect[@name='EntityDamage']/@value">105</set> <!-- Default 35 -->
+	<!-- Remove ammo9mmBulletHP Block damage -->
+	<set xpath="/items/item[@name='ammo9mmBulletHP']//passive_effect[@name='BlockDamage' and @operation='base_set']/@value">0</set> <!-- Default 3 -->
+	<set xpath="/items/item[@name='ammo9mmBulletHP']//passive_effect[@name='DamageModifier' and @tags='wood']/@value">-.99</set> <!-- Default 7 -->
+	
+	<!-- Increase ammo9mmBulletAP damage -->
+	<set xpath="/items/item[@name='ammo9mmBulletAP']/effect_group[@name='ammo9mmBulletAP']/passive_effect[@name='EntityDamage']/@value">114</set> <!-- Default 38 -->
+		<!-- Remove ammo9mmBulletAP Block damage -->
+	<set xpath="/items/item[@name='ammo9mmBulletAP']//passive_effect[@name='BlockDamage' and @operation='base_set']/@value">0</set> <!-- Default 8 -->
+	<set xpath="/items/item[@name='ammo9mmBulletAP']//passive_effect[@name='DamageModifier' and @tags='wood']/@value">-.99</set> <!-- Default 7 -->
+
+	<!-- Increase ammo44MagnumBulletBall damage -->
+	<set xpath="/items/item[@name='ammo44MagnumBulletBall']/effect_group[@name='ammo44MagnumBulletBall']/passive_effect[@name='EntityDamage']/@value">210</set> <!-- Default 70 -->
+	<!-- Remove ammo44MagnumBulletBall Block damage -->
+	<set xpath="/items/item[@name='ammo44MagnumBulletBall']//passive_effect[@name='BlockDamage' and @operation='base_set']/@value">0</set> <!-- Default 12 -->
+	<set xpath="/items/item[@name='ammo44MagnumBulletBall']//passive_effect[@name='DamageModifier' and @tags='wood']/@value">-.99</set> <!-- Default 7 -->
+
+	<!-- Increase ammo44MagnumBulletHP damage -->
+	<set xpath="/items/item[@name='ammo44MagnumBulletHP']/effect_group[@name='ammo44MagnumBulletHP']/passive_effect[@name='EntityDamage']/@value">231</set> <!-- Default 77 -->
+	<!-- Remove ammo44MagnumBulletHP Block damage -->
+	<set xpath="/items/item[@name='ammo44MagnumBulletHP']//passive_effect[@name='BlockDamage' and @operation='base_set']/@value">0</set> <!-- Default 6 -->
+	<set xpath="/items/item[@name='ammo44MagnumBulletHP']//passive_effect[@name='DamageModifier' and @tags='wood']/@value">-.99</set> <!-- Default 7 -->
+
+	<!-- Increase ammo44MagnumBulletAP damage -->
+	<set xpath="/items/item[@name='ammo44MagnumBulletAP']/effect_group[@name='ammo44MagnumBulletAP']/passive_effect[@name='EntityDamage']/@value">252</set> <!-- Default 84 -->
+	<!-- Remove ammo44MagnumBulletAP Block damage -->
+	<set xpath="/items/item[@name='ammo44MagnumBulletAP']//passive_effect[@name='BlockDamage' and @operation='base_set']/@value">0</set> <!-- Default 14 -->
+	<set xpath="/items/item[@name='ammo44MagnumBulletAP']//passive_effect[@name='DamageModifier' and @tags='wood']/@value">-.99</set> <!-- Default 7 -->
+
+	<!-- Increase ammo762mmBulletBall damage -->
+	<set xpath="/items/item[@name='ammo762mmBulletBall']/effect_group[@name='ammo762mmBulletBall']/passive_effect[@name='EntityDamage']/@value">141</set> <!-- Default 47 -->
+	<!-- Remove ammo762mmBulletBall Block damage -->
+	<set xpath="/items/item[@name='ammo762mmBulletBall']//passive_effect[@name='BlockDamage' and @operation='base_set']/@value">0</set> <!-- Default 8 -->
+	<set xpath="/items/item[@name='ammo762mmBulletBall']//passive_effect[@name='DamageModifier' and @tags='wood']/@value">-.99</set> <!-- Default 7 -->
+
+	<!-- Increase ammo762mmBulletHP damage -->
+	<set xpath="/items/item[@name='ammo762mmBulletHP']/effect_group[@name='ammo762mmBulletHP']/passive_effect[@name='EntityDamage']/@value">156</set> <!-- Default 52 -->
+	<!-- Remove ammo762mmBulletHP Block damage -->
+	<set xpath="/items/item[@name='ammo762mmBulletHP']//passive_effect[@name='BlockDamage' and @operation='base_set']/@value">0</set> <!-- Default 4 -->
+	<set xpath="/items/item[@name='ammo762mmBulletHP']//passive_effect[@name='DamageModifier' and @tags='wood']/@value">-.99</set> <!-- Default 7 -->
+
+	<!-- Increase ammo762mmBulletAP damage -->
+	<set xpath="/items/item[@name='ammo762mmBulletAP']/effect_group[@name='ammo762mmBulletAP']/passive_effect[@name='EntityDamage']/@value">171</set> <!-- Default 57 -->
+	<!-- Remove ammo762mmBulletAP Block damage -->
+	<set xpath="/items/item[@name='ammo762mmBulletAP']//passive_effect[@name='BlockDamage' and @operation='base_set']/@value">0</set> <!-- Default 9 -->
+	<set xpath="/items/item[@name='ammo762mmBulletAP']//passive_effect[@name='DamageModifier' and @tags='wood']/@value">-.99</set> <!-- Default 7 -->
+
+	<!-- Increase ammoShotgunShell damage -->
+	<set xpath="/items/item[@name='ammoShotgunShell']/effect_group[@name='ammoShotgunShell']/passive_effect[@name='EntityDamage']/@value">30.3</set> <!-- Default 10.1 -->
+	<!-- Remove ammoShotgunShell Block damage -->
+	<set xpath="/items/item[@name='ammoShotgunShell']//passive_effect[@name='BlockDamage' and @operation='base_set']/@value">0</set> <!-- Default 5.4 -->
+	<set xpath="/items/item[@name='ammoShotgunShell']//passive_effect[@name='BlockDamage' and @tags='wood']/@value">-.99</set> <!-- Default 7 -->
+
+	<!-- Increase ammoShotgunSlug damage -->
+	<set xpath="/items/item[@name='ammoShotgunSlug']/effect_group[@name='ammoShotgunSlug']/passive_effect[@name='EntityDamage']/@value">306</set> <!-- Default 102 -->
+	<!-- Remove ammoShotgunSlug Block damage -->
+	<set xpath="/items/item[@name='ammoShotgunSlug']//passive_effect[@name='BlockDamage' and @operation='base_set']/@value">0</set> <!-- Default 80 -->
+	<set xpath="/items/item[@name='ammoShotgunSlug']//passive_effect[@name='BlockDamage' and @tags='wood']/@value">-.99</set> <!-- Default 7 -->
+
+	<!-- Increase ammoShotgunBreachingSlug damage -->
+	<set xpath="/items/item[@name='ammoShotgunBreachingSlug']/effect_group[@name='ammoShotgunBreachingSlug']/passive_effect[@name='EntityDamage']/@value">240</set> <!-- Default 96 -->
+	<!-- Remove ammoShotgunBreachingSlug Block damage -->
+	<set xpath="/items/item[@name='ammoShotgunBreachingSlug']//passive_effect[@name='BlockDamage' and @operation='base_set']/@value">0</set> <!-- Default 80 -->
+
+	<!-- Increase gunToolDiggerAdmin damage -->
+	<set xpath="/items/item[@name='gunToolDiggerAdmin']/effect_group/passive_effect[@name='EntityDamage']/@value">5000</set> <!-- Default 0 -->
+
+	<!-- Decrease Melt times -->
+	<append xpath="/items/item[@name='resourceRockSmall']">
+		<property name="MeltTimePerUnit" value="0.10"/>
+	</append>
+	<append xpath="/items/item[@name='resourceScrapBrass']">
+		<property name="MeltTimePerUnit" value="0.10"/>
+	</append>
+	<append xpath="/items/item[@name='resourceScrapLead']">
+		<property name="MeltTimePerUnit" value="0.10"/>
+	</append>
+	<append xpath="/items/item[@name='resourceScrapIron']">
+		<property name="MeltTimePerUnit" value="0.10"/>
+	</append>
+	<append xpath="/items/item[@name='resourceIronFragment']">
+		<property name="MeltTimePerUnit" value="0.10"/>
+	</append>
+	<append xpath="/items/item[@name='resourceClayLump']">
+		<property name="MeltTimePerUnit" value="0.10"/>
+	</append>
+	<append xpath="/items/item[@name='resourceCrushedSand']">
+		<property name="MeltTimePerUnit" value="0.10"/>
+	</append>	
+	<insertAfter xpath="/items/item[@name='resourceDoorKnob']/property[@name='Stacknumber']">
+		<property name="MeltTimePerUnit" value="0.10"/>
+	</insertAfter>
+	<insertAfter xpath="/items/item[@name='resourceCandleStick']/property[@name='Stacknumber']">
+		<property name="MeltTimePerUnit" value="0.10"/>
+	</insertAfter>
+	<insertAfter xpath="/items/item[@name='resourceRadiator']/property[@name='Stacknumber']">
+		<property name="MeltTimePerUnit" value="0.10"/>
+	</insertAfter>
+	<insertAfter xpath="/items/item[@name='resourceTrophy1']/property[@name='Stacknumber']">
+		<property name="MeltTimePerUnit" value="0.10"/>
+	</insertAfter>
+	<insertAfter xpath="/items/item[@name='resourceTrophy2']/property[@name='Stacknumber']">
+		<property name="MeltTimePerUnit" value="0.10"/>
+	</insertAfter>
+	<insertAfter xpath="/items/item[@name='resourceTrophy3']/property[@name='Stacknumber']">
+		<property name="MeltTimePerUnit" value="0.10"/>
+	</insertAfter>
+	<set xpath="/items/item[@name='unit_iron']/property[@name='MeltTimePerUnit']/@value">0.10</set> <!-- Default .25 -->
+	
+	<!-- Increase bonus provided by a Bellows -->
+	<set xpath="/items/item[@name='toolBellows']/effect_group[@tiered='false']/passive_effect[@name='CraftingSmeltTime']/@value"> -.99 </set> <!-- Default -.333 -->
+	<set xpath="/items/item[@name='toolBellows']/effect_group[@tiered='false']/display_value[@name='dCraftingSmeltTime']/@value"> .99 </set> <!-- Default .5 -->
+
+	<!-- Set crafting times -->
+	<set xpath="/items/item/property[@name='CraftingIngredientTime']/@value">0</set>
+	
+	<append xpath="/items/item[@name='resourceCement']">
+		<property name="CraftingIngredientTime" value="0"/>
+	</append>
+	<append xpath="/items/item[@name='resourceConcreteMix']">
+		<property name="CraftingIngredientTime" value="0"/>
+	</append>
+	<append xpath="/items/item[@name='resourceOilShale']">
+		<property name="CraftingIngredientTime" value="0"/>
+	</append>
+	<append xpath="/items/item[@name='resourceCrushedSand']">
+		<property name="CraftingIngredientTime" value="0"/>
+	</append>
+	<append xpath="/items/item[@name='resourceGunPowder']">
+		<property name="CraftingIngredientTime" value="0"/>
+	</append>
+	<append xpath="/items/item[@name='resourceBuckshot']">
+		<property name="CraftingIngredientTime" value="0"/>
+	</append>
+	<append xpath="/items/item[@name='resourceBulletCasing']">
+		<property name="CraftingIngredientTime" value="0"/>
+	</append>
+	<append xpath="/items/item[@name='resourceBulletTip']">
+		<property name="CraftingIngredientTime" value="0"/>
+	</append>
+	<append xpath="/items/item[@name='resourceRocketTip']">
+		<property name="CraftingIngredientTime" value="0"/>
+	</append>
+	<append xpath="/items/item[@name='resourceRocketCasing']">
+		<property name="CraftingIngredientTime" value="0"/>
+	</append>
+	<append xpath="/items/item[@name='resourceRepairKit']">
+		<property name="CraftingIngredientTime" value="0"/>
+	</append>
+	<insertAfter xpath="/items/item[@name='resourceRockSmallBundle']/property[@name='Group']">
+		<property name="CraftingIngredientTime" value="0"/>
+	</insertAfter>
+	<insertAfter xpath="/items/item[@name='ammo9mmBulletBall']/property[@name='Group']">
+		<property name="CraftingIngredientTime" value="0"/>
+	</insertAfter>
+	<insertAfter xpath="/items/item[@name='ammoShotgunShell']/property[@name='EconomicValue']">
+		<property name="CraftingIngredientTime" value="0"/>
+	</insertAfter>
+	<insertAfter xpath="/items/item[@name='ammoShotgunSlug']/property[@name='Group']">
+		<property name="CraftingIngredientTime" value="0"/>
+	</insertAfter>
+	<insertAfter xpath="/items/item[@name='ammoShotgunBreachingSlug']/property[@name='Group']">
+		<property name="CraftingIngredientTime" value="0"/>
+	</insertAfter>
+	<insertAfter xpath="/items/item[@name='ammoBundle9mmBulletBall']/property[@name='EconomicValue']">
+		<property name="CraftingIngredientTime" value="0"/>
+	</insertAfter>
+	<insertAfter xpath="/items/item[@name='ammoBundle762mmBulletBall']/property[@name='EconomicValue']">
+		<property name="CraftingIngredientTime" value="0"/>
+	</insertAfter>
+	<insertAfter xpath="/items/item[@name='drinkJarYuccaJuice']/property[@name='EconomicValue']">
+		<property name="CraftingIngredientTime" value="0"/>
+	</insertAfter>
+	<insertAfter xpath="/items/item[@name='drinkYuccaJuiceSmoothie']/property[@name='EconomicValue']">
+		<property name="CraftingIngredientTime" value="0"/>
+	</insertAfter>
+	
+	<!-- Increase Fuel Values -->
+	<set xpath="/items/item[@name='resourceCoal']/property[@name='FuelValue']/@value">300</set>	<!-- default 100 -->
+	<set xpath="/items/item[@name='resourceWood']/property[@name='FuelValue']/@value">150</set>	<!-- default 50 -->
+			
+	<!-- Set gunHandgunT1Pistol to not recoil -->		
+	<set xpath="/items/item[@name='gunHandgunT1Pistol']/effect_group[@name='gunHandgunT1Pistol']/passive_effect[@name='KickDegreesVerticalMin']/@value">0,0</set> <!-- Default .7 -->
+	<set xpath="/items/item[@name='gunHandgunT1Pistol']/effect_group[@name='gunHandgunT1Pistol']/passive_effect[@name='KickDegreesVerticalMax']/@value">0,0</set> <!-- Default .8 -->
+	<set xpath="/items/item[@name='gunHandgunT1Pistol']/effect_group[@name='gunHandgunT1Pistol']/passive_effect[@name='KickDegreesHorizontalMin']/@value">0,0</set>	<!-- Default -.25 -->
+	<set xpath="/items/item[@name='gunHandgunT1Pistol']/effect_group[@name='gunHandgunT1Pistol']/passive_effect[@name='KickDegreesHorizontalMax']/@value">0,0</set>	<!-- Default .25 -->
+	
+	<!-- Set gunHandgunT3SMG5 to not recoil -->		
+	<set xpath="/items/item[@name='gunHandgunT3SMG5']/effect_group[@name='gunHandgunT3SMG5']/passive_effect[@name='KickDegreesVerticalMin']/@value">0,0</set> <!-- Default .5 -->
+	<set xpath="/items/item[@name='gunHandgunT3SMG5']/effect_group[@name='gunHandgunT3SMG5']/passive_effect[@name='KickDegreesVerticalMax']/@value">0,0</set> <!-- Default 1 -->
+	<set xpath="/items/item[@name='gunHandgunT3SMG5']/effect_group[@name='gunHandgunT3SMG5']/passive_effect[@name='KickDegreesHorizontalMin']/@value">0,0</set>	<!-- Default -.3 -->
+	<set xpath="/items/item[@name='gunHandgunT3SMG5']/effect_group[@name='gunHandgunT3SMG5']/passive_effect[@name='KickDegreesHorizontalMax']/@value">0,0</set>	<!-- Default .3 -->
+	
+	<!-- Set gunHandgunT2Magnum44 to not recoil -->		
+	<set xpath="/items/item[@name='gunHandgunT2Magnum44']/effect_group[@name='gunHandgunT2Magnum44']/passive_effect[@name='KickDegreesVerticalMin']/@value">0,0</set> <!-- Default 4.5 -->
+	<set xpath="/items/item[@name='gunHandgunT2Magnum44']/effect_group[@name='gunHandgunT2Magnum44']/passive_effect[@name='KickDegreesVerticalMax']/@value">0,0</set> <!-- Default 5 -->
+	<set xpath="/items/item[@name='gunHandgunT2Magnum44']/effect_group[@name='gunHandgunT2Magnum44']/passive_effect[@name='KickDegreesHorizontalMin']/@value">0,0</set>	<!-- Default -.3 -->
+	<set xpath="/items/item[@name='gunHandgunT2Magnum44']/effect_group[@name='gunHandgunT2Magnum44']/passive_effect[@name='KickDegreesHorizontalMax']/@value">0,0</set>	<!-- Default .15 -->
+	
+	<!-- Set gunHandgunT3DesertVulture to not recoil -->		
+	<set xpath="/items/item[@name='gunHandgunT3DesertVulture']/effect_group[@name='gunHandgunT3DesertVulture']/passive_effect[@name='KickDegreesVerticalMin']/@value">0,0</set> <!-- Default 3.5 -->
+	<set xpath="/items/item[@name='gunHandgunT3DesertVulture']/effect_group[@name='gunHandgunT3DesertVulture']/passive_effect[@name='KickDegreesVerticalMax']/@value">0,0</set> <!-- Default 4 -->
+	<set xpath="/items/item[@name='gunHandgunT3DesertVulture']/effect_group[@name='gunHandgunT3DesertVulture']/passive_effect[@name='KickDegreesHorizontalMin']/@value">0,0</set>	<!-- Default -.3 -->
+	<set xpath="/items/item[@name='gunHandgunT3DesertVulture']/effect_group[@name='gunHandgunT3DesertVulture']/passive_effect[@name='KickDegreesHorizontalMax']/@value">0,0</set>	<!-- Default .15 -->
+	
+	<!-- Set gunShotgunT1DoubleBarrel to not recoil -->		
+	<set xpath="/items/item[@name='gunShotgunT1DoubleBarrel']/effect_group[@name='gunShotgunT1DoubleBarrel']/passive_effect[@name='KickDegreesVerticalMin']/@value">0,0</set> <!-- Default 4.2 -->
+	<set xpath="/items/item[@name='gunShotgunT1DoubleBarrel']/effect_group[@name='gunShotgunT1DoubleBarrel']/passive_effect[@name='KickDegreesVerticalMax']/@value">0,0</set> <!-- Default 4.2 -->
+	<set xpath="/items/item[@name='gunShotgunT1DoubleBarrel']/effect_group[@name='gunShotgunT1DoubleBarrel']/passive_effect[@name='KickDegreesHorizontalMin']/@value">0,0</set>	<!-- Default -2.5 -->
+	<set xpath="/items/item[@name='gunShotgunT1DoubleBarrel']/effect_group[@name='gunShotgunT1DoubleBarrel']/passive_effect[@name='KickDegreesHorizontalMax']/@value">0,0</set>	<!-- Default 2.5 -->
+	
+	<!-- Set gunShotgunT2PumpShotgun to not recoil -->		
+	<set xpath="/items/item[@name='gunShotgunT2PumpShotgun']/effect_group[@name='gunShotgunT2PumpShotgun']/passive_effect[@name='KickDegreesVerticalMin']/@value">0,0</set> <!-- Default 4.2 -->
+	<set xpath="/items/item[@name='gunShotgunT2PumpShotgun']/effect_group[@name='gunShotgunT2PumpShotgun']/passive_effect[@name='KickDegreesVerticalMax']/@value">0,0</set> <!-- Default 4.2 -->
+	<set xpath="/items/item[@name='gunShotgunT2PumpShotgun']/effect_group[@name='gunShotgunT2PumpShotgun']/passive_effect[@name='KickDegreesHorizontalMin']/@value">0,0</set>	<!-- Default -2.5 -->
+	<set xpath="/items/item[@name='gunShotgunT2PumpShotgun']/effect_group[@name='gunShotgunT2PumpShotgun']/passive_effect[@name='KickDegreesHorizontalMax']/@value">0,0</set>	<!-- Default 2.5 -->
+	
+	<!-- Set gunShotgunT3AutoShotgun to not recoil -->		
+	<set xpath="/items/item[@name='gunShotgunT3AutoShotgun']/effect_group[@name='gunShotgunT3AutoShotgun']/passive_effect[@name='KickDegreesVerticalMin']/@value">0,0</set> <!-- Default 4.2 -->
+	<set xpath="/items/item[@name='gunShotgunT3AutoShotgun']/effect_group[@name='gunShotgunT3AutoShotgun']/passive_effect[@name='KickDegreesVerticalMax']/@value">0,0</set> <!-- Default 4.2 -->
+	<set xpath="/items/item[@name='gunShotgunT3AutoShotgun']/effect_group[@name='gunShotgunT3AutoShotgun']/passive_effect[@name='KickDegreesHorizontalMin']/@value">0,0</set>	<!-- Default -2.5 -->
+	<set xpath="/items/item[@name='gunShotgunT3AutoShotgun']/effect_group[@name='gunShotgunT3AutoShotgun']/passive_effect[@name='KickDegreesHorizontalMax']/@value">0,0</set>	<!-- Default 2.5 -->
+	
+  <!-- Set gunRifleT1HuntingRifle to not recoil -->		
+	<set xpath="/items/item[@name='gunRifleT1HuntingRifle']/effect_group[@name='gunRifleT1HuntingRifle']/passive_effect[@name='KickDegreesVerticalMin']/@value">0,0</set> <!-- Default .5 -->
+	<set xpath="/items/item[@name='gunRifleT1HuntingRifle']/effect_group[@name='gunRifleT1HuntingRifle']/passive_effect[@name='KickDegreesVerticalMax']/@value">0,0</set> <!-- Default 2 -->
+	<set xpath="/items/item[@name='gunRifleT1HuntingRifle']/effect_group[@name='gunRifleT1HuntingRifle']/passive_effect[@name='KickDegreesHorizontalMin']/@value">0,0</set>	<!-- Default -.35 -->
+	<set xpath="/items/item[@name='gunRifleT1HuntingRifle']/effect_group[@name='gunRifleT1HuntingRifle']/passive_effect[@name='KickDegreesHorizontalMax']/@value">0,0</set>	<!-- Default .35 -->
+	
+	<!-- Set gunRifleT2LeverActionRifle to not recoil -->		
+	<set xpath="/items/item[@name='gunRifleT2LeverActionRifle']/effect_group[@name='gunRifleT2LeverActionRifle']/passive_effect[@name='KickDegreesVerticalMin']/@value">0,0</set> <!-- Default 1.5 -->
+	<set xpath="/items/item[@name='gunRifleT2LeverActionRifle']/effect_group[@name='gunRifleT2LeverActionRifle']/passive_effect[@name='KickDegreesVerticalMax']/@value">0,0</set> <!-- Default 3.0 -->
+	<set xpath="/items/item[@name='gunRifleT2LeverActionRifle']/effect_group[@name='gunRifleT2LeverActionRifle']/passive_effect[@name='KickDegreesHorizontalMin']/@value">0,0</set>	<!-- Default -.2 -->
+	<set xpath="/items/item[@name='gunRifleT2LeverActionRifle']/effect_group[@name='gunRifleT2LeverActionRifle']/passive_effect[@name='KickDegreesHorizontalMax']/@value">0,0</set>	<!-- Default .2 -->
+	
+	<!-- Set gunRifleT3SniperRifle to not recoil -->		
+	<set xpath="/items/item[@name='gunRifleT3SniperRifle']/effect_group[@name='gunRifleT3SniperRifle']/passive_effect[@name='KickDegreesVerticalMin']/@value">0,0</set> <!-- Default 1.5 -->
+	<set xpath="/items/item[@name='gunRifleT3SniperRifle']/effect_group[@name='gunRifleT3SniperRifle']/passive_effect[@name='KickDegreesVerticalMax']/@value">0,0</set> <!-- Default 3.0 -->
+	<set xpath="/items/item[@name='gunRifleT3SniperRifle']/effect_group[@name='gunRifleT3SniperRifle']/passive_effect[@name='KickDegreesHorizontalMin']/@value">0,0</set>	<!-- Default -.2 -->
+	<set xpath="/items/item[@name='gunRifleT3SniperRifle']/effect_group[@name='gunRifleT3SniperRifle']/passive_effect[@name='KickDegreesHorizontalMax']/@value">0,0</set>	<!-- Default .2 -->
+	
+	<!-- Set gunMGT1AK47 to not recoil -->		
+	<set xpath="/items/item[@name='gunMGT1AK47']/effect_group[@name='gunMGT1AK47']/passive_effect[@name='KickDegreesVerticalMin']/@value">0,0</set> <!-- Default -.5 -->
+	<set xpath="/items/item[@name='gunMGT1AK47']/effect_group[@name='gunMGT1AK47']/passive_effect[@name='KickDegreesVerticalMax']/@value">0,0</set> <!-- Default 1 -->
+	<set xpath="/items/item[@name='gunMGT1AK47']/effect_group[@name='gunMGT1AK47']/passive_effect[@name='KickDegreesHorizontalMin']/@value">0,0</set>	<!-- Default -1 -->
+	<set xpath="/items/item[@name='gunMGT1AK47']/effect_group[@name='gunMGT1AK47']/passive_effect[@name='KickDegreesHorizontalMax']/@value">0,0</set>	<!-- Default 1 -->
+	
+	<!-- Set gunMGT2TacticalAR to not recoil -->		
+	<set xpath="/items/item[@name='gunMGT2TacticalAR']/effect_group[@name='gunMGT2TacticalAR']/passive_effect[@name='KickDegreesVerticalMin']/@value">0,0</set> <!-- Default -.5 -->
+	<set xpath="/items/item[@name='gunMGT2TacticalAR']/effect_group[@name='gunMGT2TacticalAR']/passive_effect[@name='KickDegreesVerticalMax']/@value">0,0</set> <!-- Default 1 -->
+	<set xpath="/items/item[@name='gunMGT2TacticalAR']/effect_group[@name='gunMGT2TacticalAR']/passive_effect[@name='KickDegreesHorizontalMin']/@value">0,0</set>	<!-- Default -1 -->
+	<set xpath="/items/item[@name='gunMGT2TacticalAR']/effect_group[@name='gunMGT2TacticalAR']/passive_effect[@name='KickDegreesHorizontalMax']/@value">0,0</set><!-- Default 1 -->
+	
+	<!-- Set gunMGT3M60 to not recoil -->		
+	<set xpath="/items/item[@name='gunMGT3M60']/effect_group[@name='gunMGT3M60']/passive_effect[@name='KickDegreesVerticalMin']/@value">0,0</set> <!-- Default -.4 -->
+	<set xpath="/items/item[@name='gunMGT3M60']/effect_group[@name='gunMGT3M60']/passive_effect[@name='KickDegreesVerticalMax']/@value">0,0</set> <!-- Default 1.1 -->
+	<set xpath="/items/item[@name='gunMGT3M60']/effect_group[@name='gunMGT3M60']/passive_effect[@name='KickDegreesHorizontalMin']/@value">0,0</set>	<!-- Default -1 -->
+	<set xpath="/items/item[@name='gunMGT3M60']/effect_group[@name='gunMGT3M60']/passive_effect[@name='KickDegreesHorizontalMax']/@value">0,0</set><!-- Default 1 -->
+	
+	<!-- Set gunExplosivesT3RocketLauncher to not recoil -->		
+	<set xpath="/items/item[@name='gunExplosivesT3RocketLauncher']/effect_group[@name='gunExplosivesT3RocketLauncher']/passive_effect[@name='KickDegreesVerticalMin']/@value">0,0</set> <!-- Default 10 -->
+	<set xpath="/items/item[@name='gunExplosivesT3RocketLauncher']/effect_group[@name='gunExplosivesT3RocketLauncher']/passive_effect[@name='KickDegreesVerticalMax']/@value">0,0</set> <!-- Default 10 -->
+	<set xpath="/items/item[@name='gunExplosivesT3RocketLauncher']/effect_group[@name='gunExplosivesT3RocketLauncher']/passive_effect[@name='KickDegreesHorizontalMin']/@value">0,0</set>	<!-- Default -.5 -->
+	<set xpath="/items/item[@name='gunExplosivesT3RocketLauncher']/effect_group[@name='gunExplosivesT3RocketLauncher']/passive_effect[@name='KickDegreesHorizontalMax']/@value">0,0</set>	<!-- Default .5 -->
+		
+	<!-- Improve durability  -->
+  <set xpath="/items/item[@name='gunHandgunT1Pistol']/effect_group[@name='gunHandgunT1Pistol']/passive_effect[@name='DegradationMax' and @operation='base_set']/@value">2500,4500</set> <!-- Default 250,450 -->
+  <set xpath="/items/item[@name='gunHandgunT3SMG5']/effect_group[@name='gunHandgunT3SMG5']/passive_effect[@name='DegradationMax' and @operation='base_set']/@value">3500,7000</set> <!-- Default 350,700 -->
+  <set xpath="/items/item[@name='gunHandgunT2Magnum44']/effect_group[@name='gunHandgunT2Magnum44']/passive_effect[@name='DegradationMax' and @operation='base_set']/@value">1500,3000</set> <!-- Default 150,300 -->
+  <set xpath="/items/item[@name='gunHandgunT3DesertVulture']/effect_group[@name='gunHandgunT3DesertVulture']/passive_effect[@name='DegradationMax' and @operation='base_set']/@value">2500,4000</set> <!-- Default 250,400 -->
+  <set xpath="/items/item[@name='gunShotgunT2PumpShotgun']/effect_group[@name='gunShotgunT2PumpShotgun']/passive_effect[@name='DegradationMax' and @operation='base_set']/@value">1600,3500</set> <!-- Default 160,350 -->
+  <set xpath="/items/item[@name='gunShotgunT3AutoShotgun']/effect_group[@name='gunShotgunT3AutoShotgun']/passive_effect[@name='DegradationMax' and @operation='base_set']/@value">1600,5000</set> <!-- Default 160,500 -->
+  <set xpath="/items/item[@name='gunRifleT1HuntingRifle']/effect_group[@name='gunRifleT1HuntingRifle']/passive_effect[@name='DegradationMax' and @operation='base_set']/@value">1700,3200</set> <!-- Default 170,320 -->
+  <set xpath="/items/item[@name='gunRifleT2LeverActionRifle']/effect_group[@name='gunRifleT2LeverActionRifle']/passive_effect[@name='DegradationMax' and @operation='base_set']/@value">2000,4000</set> <!-- Default 200,400 -->
+  <set xpath="/items/item[@name='gunRifleT3SniperRifle']/effect_group[@name='gunRifleT3SniperRifle']/passive_effect[@name='DegradationMax' and @operation='base_set']/@value">2500,5000</set> <!-- Default 250,500 -->
+  <set xpath="/items/item[@name='gunMGT1AK47']/effect_group[@name='gunMGT1AK47']/passive_effect[@name='DegradationMax' and @operation='base_set']/@value">2500,5500</set> <!-- Default 250,550 -->
+  <set xpath="/items/item[@name='gunMGT2TacticalAR']/effect_group[@name='gunMGT2TacticalAR']/passive_effect[@name='DegradationMax' and @operation='base_set']/@value">2250,5000</set> <!-- Default 225,500 -->
+  <set xpath="/items/item[@name='gunMGT3M60']/effect_group[@name='gunMGT3M60']/passive_effect[@name='DegradationMax' and @operation='base_set']/@value">3000,6500</set> <!-- Default 300,650 -->
+
+	<!-- Increase Magazine sizes -->
+  <set xpath="/items/item[@name='gunHandgunT1Pistol']/effect_group[@name='gunHandgunT1Pistol']/passive_effect[@name='MagazineSize' and @operation='base_set']/@value">45</set> <!-- Default 15 -->
+  <set xpath="/items/item[@name='gunHandgunT3SMG5']/effect_group[@name='gunHandgunT3SMG5']/passive_effect[@name='MagazineSize' and @operation='base_set']/@value">180</set> <!-- Default 30 -->
+  <set xpath="/items/item[@name='gunHandgunT2Magnum44']/effect_group[@name='gunHandgunT2Magnum44']/passive_effect[@name='MagazineSize' and @operation='base_set']/@value">18</set> <!-- Default 6 -->
+  <set xpath="/items/item[@name='gunHandgunT3DesertVulture']/effect_group[@name='gunHandgunT3DesertVulture']/passive_effect[@name='MagazineSize' and @operation='base_set']/@value">32</set> <!-- Default  random -->
+  <set xpath="/items/item[@name='gunShotgunT2PumpShotgun']/effect_group[@name='gunShotgunT2PumpShotgun']/passive_effect[@name='MagazineSize' and @operation='base_set']/@value">24</set> <!-- Default 8 -->
+  <set xpath="/items/item[@name='gunShotgunT3AutoShotgun']/effect_group[@name='gunShotgunT3AutoShotgun']/passive_effect[@name='MagazineSize' and @operation='base_set']/@value">48</set>  <!-- Default 16 -->
+  <set xpath="/items/item[@name='gunRifleT1HuntingRifle']/effect_group[@name='gunRifleT1HuntingRifle']/passive_effect[@name='MagazineSize' and @operation='base_set']/@value">3</set> <!-- Default 1 -->
+  <set xpath="/items/item[@name='gunRifleT2LeverActionRifle']/effect_group[@name='gunRifleT2LeverActionRifle']/passive_effect[@name='MagazineSize' and @operation='base_set']/@value">15</set> <!-- Default 5 -->
+  <set xpath="/items/item[@name='gunRifleT3SniperRifle']/effect_group[@name='gunRifleT3SniperRifle']/passive_effect[@name='MagazineSize' and @operation='base_set']/@value">36</set> <!-- Default 12 -->
+  <set xpath="/items/item[@name='gunMGT1AK47']/effect_group[@name='gunMGT1AK47']/passive_effect[@name='MagazineSize' and @operation='base_set']/@value">90</set> <!-- Default 30 -->
+  <set xpath="/items/item[@name='gunMGT2TacticalAR']/effect_group[@name='gunMGT2TacticalAR']/passive_effect[@name='MagazineSize' and @operation='base_set']/@value">90</set> <!-- Default 30 -->
+  <set xpath="/items/item[@name='gunMGT3M60']/effect_group[@name='gunMGT3M60']/passive_effect[@name='MagazineSize' and @operation='base_set']/@value">180</set> <!-- Default 60 -->
+
+	<!-- Increase the walk and run speeds of both types of Military Boots -->
+	<append xpath="/items/item[@name='armorMilitaryBoots']/effect_group"> 
+		<passive_effect name="WalkSpeed" operation="base_add" value="1.65"/>
+		<passive_effect name="RunSpeed" operation="base_add" value="3"/>	
+	</append>	
+	<append xpath="/items/item[@name='armorMilitaryStealthBoots']/effect_group"> 
+		<passive_effect name="WalkSpeed" operation="base_add" value="1.65"/>
+		<passive_effect name="RunSpeed" operation="base_add" value="3"/>	
+	</append>	
+	
+	<!-- Increase the heat and cold protection of the Leather Duster -->
+	<set xpath="/items/item[@name='apparelCoatLeatherDuster']/effect_group/passive_effect[@name='HypothermalResist']/@value">100,100</set>	<!-- Default 13.5,17.5 -->
+	<set xpath="/items/item[@name='apparelCoatLeatherDuster']/effect_group/passive_effect[@name='HyperthermalResist']/@value">100,100</set>	<!-- Default 17.5,22.5 -->
+	
+	<!-- Increase the amount of metal you get from smelting -->
+	<set xpath="/items/item[@name='resourceRadiator']/property[@name='Weight']/@value">1000</set>	<!-- Default 250 -->
+	<set xpath="/items/item[@name='resourceDoorKnob']/property[@name='Weight']/@value">100</set> <!-- Default 50 -->
+	<set xpath="/items/item[@name='resourceCandleStick']/property[@name='Weight']/@value">250</set> <!-- Default 150 -->
+	<set xpath="/items/item[@name='resourceTrophy1']/property[@name='Weight']/@value">200</set> <!-- Default 50 -->
+	<set xpath="/items/item[@name='resourceTrophy2']/property[@name='Weight']/@value">200</set> <!-- Default 10 -->
+	<set xpath="/items/item[@name='resourceTrophy3']/property[@name='Weight']/@value">200</set> <!-- Default 5 -->
+	
+	<!-- Triple the amount of food and health received from canned food -->
+	<set xpath="/items/item[@name='foodCanBeef']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">45</set>	<!-- Default 15 -->
+	<set xpath="/items/item[@name='foodCanBeef']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">21</set>	<!-- Default 7 -->
+	<set xpath="/items/item[@name='foodCanChicken']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">45</set> <!-- Default 15 -->	
+	<set xpath="/items/item[@name='foodCanChicken']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">21</set>	<!-- Default 7 -->
+	<set xpath="/items/item[@name='foodCanLamb']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">45</set>	<!-- Default 15 -->
+	<set xpath="/items/item[@name='foodCanLamb']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">21</set>	<!-- Default 7 -->
+	<set xpath="/items/item[@name='foodCanCatfood']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">15</set>	<!-- Default 5 -->
+	<set xpath="/items/item[@name='foodCanCatfood']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">6</set>	<!-- Default 2 -->
+	<set xpath="/items/item[@name='foodCanDogfood']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">30</set>	<!-- Default 10 -->
+	<set xpath="/items/item[@name='foodCanDogfood']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">15</set>	<!-- Default 5 --> 
+	<set xpath="/items/item[@name='foodCanChili']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">45</set>	<!-- Default 15 -->
+	<set xpath="/items/item[@name='foodCanChili']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">21</set> <!-- Default 7 -->	
+	<set xpath="/items/item[@name='foodCanTuna']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">15</set>	<!-- Default 5 -->
+	<set xpath="/items/item[@name='foodCanTuna']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">6</set>	<!-- Default 2 -->
+	<set xpath="/items/item[@name='foodCanSham']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">45</set>	<!-- Default 15 -->
+	<set xpath="/items/item[@name='foodCanSham']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">21</set>	 <!-- Default 7 -->
+	<set xpath="/items/item[@name='foodCanPasta']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">45</set>	<!-- Default 15 -->
+	<set xpath="/items/item[@name='foodCanPasta']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">21</set> <!-- Default 7 -->	
+	<set xpath="/items/item[@name='foodCanSalmon']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">45</set>	<!-- Default 15 -->
+	<set xpath="/items/item[@name='foodCanSalmon']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">21</set>	 <!-- Default 7 -->
+	<set xpath="/items/item[@name='foodCanMiso']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">15</set>	<!-- Default 5 -->
+	<set xpath="/items/item[@name='foodCanMiso']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">3</set>	 <!-- Default 1 -->
+	<set xpath="/items/item[@name='foodCanPeas']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">30</set>	<!-- Default 10 -->
+	<set xpath="/items/item[@name='foodCanPeas']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">15</set>	 <!-- Default 5 -->
+	<set xpath="/items/item[@name='foodCanPears']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">45</set>	<!-- Default 10 -->
+	<set xpath="/items/item[@name='foodCanPears']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">21</set> <!-- Default 5 -->	
+	<set xpath="/items/item[@name='foodCanSoup']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">15</set>	<!-- Default 5 -->
+	<set xpath="/items/item[@name='foodCanSoup']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">3</set>	 <!-- Default 1 -->
+	<set xpath="/items/item[@name='foodCanStock']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">15</set>	<!-- Default 5 -->
+	<set xpath="/items/item[@name='foodCanStock']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">3</set> <!-- Default 1 -->	
+
+	<!-- Make Empty Glass Jars and Empty Buckets fillable at Toilets, Sinks and Faucets -->
+	<insertAfter xpath="/items/item[@name='drinkJarEmpty']/property[@class='Action1']/property[@name='Focused_blockname_5']">
+		<property name="Focused_blockname_6" value="cntGraniteSink"/>
+		<property name="Focused_blockname_7" value="faucet02"/>
+		<property name="Focused_blockname_8" value="faucet04"/>
+		<property name="Focused_blockname_9" value="faucetBrass02"/>
+		<property name="Focused_blockname_10" value="faucetBrass04"/>
+		<property name="Focused_blockname_11" value="cntToilet01"/>
+		<property name="Focused_blockname_12" value="drinkingfountainSingle"/>
+		<property name="Focused_blockname_12" value="drinkingfountainDouble"/>
+		<property name="Focused_blockname_13" value="cntCabinetOldSink"/>
+		<property name="Focused_blockname_14" value="utilitySink" />
+		<property name="Focused_blockname_15" value="pedestalSink" />
+		<property name="Focused_blockname_16" value="wallMountSinkCommercial" />
+		<property name="Focused_blockname_17" value="counterSinkCommercialTile" />
+		<property name="Focused_blockname_18" value="counterMountedSinkCommercial" />
+		<property name="Focused_blockname_19" value="cntCabinetGraniteSinkHoleRound" />
+		<property name="Focused_blockname_20" value="cntToilet02" />
+		<property name="Focused_blockname_21" value="cntToilet03" />
+		<property name="Focused_blockname_22" value="urinalCommercialMounted" />
+	</insertAfter>
+	
+	<insertAfter xpath="/items/item[@name='bucketEmpty']/property[@class='Action1']/property[@name='Focused_blockname_5']">
+		<property name="Focused_blockname_6" value="cntGraniteSink"/>
+		<property name="Focused_blockname_7" value="faucet02"/>
+		<property name="Focused_blockname_8" value="faucet04"/>
+		<property name="Focused_blockname_9" value="faucetBrass02"/>
+		<property name="Focused_blockname_10" value="faucetBrass04"/>
+		<property name="Focused_blockname_11" value="cntToilet01"/>
+		<property name="Focused_blockname_12" value="drinkingfountainSingle"/>
+		<property name="Focused_blockname_12" value="drinkingfountainDouble"/>
+		<property name="Focused_blockname_13" value="cntCabinetOldSink"/>
+		<property name="Focused_blockname_14" value="utilitySink" />
+		<property name="Focused_blockname_15" value="pedestalSink" />
+		<property name="Focused_blockname_16" value="wallMountSinkCommercial" />
+		<property name="Focused_blockname_17" value="counterSinkCommercialTile" />
+		<property name="Focused_blockname_18" value="counterMountedSinkCommercial" />
+		<property name="Focused_blockname_19" value="cntCabinetGraniteSinkHoleRound" />
+		<property name="Focused_blockname_20" value="cntToilet02" />
+		<property name="Focused_blockname_21" value="cntToilet03" />
+		<property name="Focused_blockname_22" value="urinalCommercialMounted" />
+	</insertAfter>
+	
+		<!-- Create Additional Bundles  -->
+	<append xpath="/items">
+		<item name="resourceBulletCasingBundle">
+			<property name="Extends" value="resourceRockSmallBundle"/>
+			<property name="CustomIcon" value="resourceBulletCasing"/>
+			<property name="UnlockedBy" value="perkPistolPeteComplete"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletCasing"/>
+				<property name="Create_item_count" value="6000"/>
+			</property>
+		</item>
+
+		<item name="resourceBulletTipBundle">
+			<property name="Extends" value="resourceRockSmallBundle"/>
+			<property name="CustomIcon" value="resourceBulletTip"/>
+			<property name="UnlockedBy" value="perkPistolPeteComplete"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletTip"/>
+				<property name="Create_item_count" value="6000"/>
+			</property>
+		</item>
+
+		<item name="resourceBuckshotBundle">
+			<property name="Extends" value="resourceRockSmallBundle"/>
+			<property name="CustomIcon" value="resourceBuckshot"/>
+			<property name="UnlockedBy" value="perkPistolPeteComplete"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBuckshot"/>
+				<property name="Create_item_count" value="6000"/>
+			</property>
+		</item>
+
+		<item name="resourcePaperBundle">
+			<property name="Extends" value="resourceRockSmallBundle"/>
+			<property name="CustomIcon" value="resourcePaper"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourcePaper"/>
+				<property name="Create_item_count" value="6000"/>
+			</property>
+		</item>
+
+		<item name="resourceScrapPolymersBundle">
+			<property name="Extends" value="resourceRockSmallBundle"/>
+			<property name="CustomIcon" value="resourceScrapPolymers"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceScrapPolymers"/>
+				<property name="Create_item_count" value="6000"/>
+			</property>
+		</item>
+
+		<item name="resourceForgedIronBundle">
+			<property name="Extends" value="resourceRockSmallBundle"/>
+			<property name="CustomIcon" value="resourceForgedIron"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceForgedIron"/>
+				<property name="Create_item_count" value="6000"/>
+			</property>
+		</item>
+
+		<item name="resourceForgedSteelBundle">
+			<property name="Extends" value="resourceRockSmallBundle"/>
+			<property name="CustomIcon" value="resourceForgedSteel"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceForgedSteel"/>
+				<property name="Create_item_count" value="6000"/>
+			</property>
+		</item>
+		
+		<item name="casinoCoinBundle">
+			<property name="Extends" value="resourceRockSmallBundle"/>
+			<property name="CustomIcon" value="casinoCoin"/>
+			<property class="Action0">
+				<property name="Create_item" value="casinoCoin"/>
+				<property name="Create_item_count" value="1000"/>
+			</property>
+		</item>
+
+		<item name="resourceBrokenGlassBundle">
+			<property name="Extends" value="resourceRockSmallBundle"/>
+			<property name="CustomIcon" value="resourceBrokenGlass"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBrokenGlass"/>
+				<property name="Create_item_count" value="6000"/>
+			</property>
+		</item>
+		
+		<item name="resourceCementBundle">
+			<property name="Extends" value="resourceRockSmallBundle"/>
+			<property name="CustomIcon" value="resourceCement"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceCement"/>
+				<property name="Create_item_count" value="6000"/>
+			</property>
+		</item>
+		
+		<item name="resourceCobblestonesBundle">
+			<property name="Extends" value="resourceRockSmallBundle"/>
+			<property name="CustomIcon" value="resourceCobblestones"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceCobblestones"/>
+				<property name="Create_item_count" value="6000"/>
+			</property>
+		</item>
+		
+		<item name="resourceConcreteMixBundle">
+			<property name="Extends" value="resourceRockSmallBundle"/>
+			<property name="CustomIcon" value="resourceConcreteMix"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceConcreteMix"/>
+				<property name="Create_item_count" value="6000"/>
+			</property>
+		</item>
+		
+		<item name="resourceElectricPartsBundle">
+			<property name="Extends" value="resourceRockSmallBundle"/>
+			<property name="CustomIcon" value="resourceElectricParts"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceElectricParts"/>
+				<property name="Create_item_count" value="6000"/>
+			</property>
+		</item>
+		
+		<item name="resourceMechanicalPartsBundle">
+			<property name="Extends" value="resourceRockSmallBundle"/>
+			<property name="CustomIcon" value="resourceMechanicalParts"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceMechanicalParts"/>
+				<property name="Create_item_count" value="6000"/>
+			</property>
+		</item>
+		
+		<item name="resourceLeatherBundle">
+			<property name="Extends" value="resourceRockSmallBundle"/>
+			<property name="CustomIcon" value="resourceLeather"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceLeather"/>
+				<property name="Create_item_count" value="6000"/>
+			</property>
+		</item>
+		
+		<item name="resourceYuccaFibersBundle">
+			<property name="Extends" value="resourceRockSmallBundle"/>
+			<property name="CustomIcon" value="resourceYuccaFibers"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceYuccaFibers"/>
+				<property name="Create_item_count" value="6000"/>
+			</property>
+		</item>
+		
+		<item name="resourceClothBundle">
+			<property name="Extends" value="resourceRockSmallBundle"/>
+			<property name="CustomIcon" value="resourceCloth"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceCloth "/>
+				<property name="Create_item_count" value="6000"/>
+			</property>
+		</item>
+		
+		<item name="resourceFeatherBundle">
+			<property name="Extends" value="resourceRockSmallBundle"/>
+			<property name="CustomIcon" value="resourceFeather"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceFeather "/>
+				<property name="Create_item_count" value="6000"/>
+			</property>
+		</item>
+		
+	</append>
+
+</configs>

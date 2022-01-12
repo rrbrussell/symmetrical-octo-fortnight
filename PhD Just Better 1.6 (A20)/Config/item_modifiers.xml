@@ -1,0 +1,39 @@
+<configs>
+	<!-- Make Dyes stackable by request -->
+	<insertAfter xpath="/item_modifiers/item_modifier[@name='modDyeWhite']/property[@name='Extends']">
+		<property name="Stacknumber" value="500"/>
+	</insertAfter>
+
+	<insertAfter xpath="/item_modifiers/item_modifier[@name='modDyeRed']/property[@name='Extends']">
+		<property name="Stacknumber" value="500"/>
+	</insertAfter>
+
+	<insertAfter xpath="/item_modifiers/item_modifier[@name='modDyeGreen']/property[@name='Extends']">
+		<property name="Stacknumber" value="500"/>
+	</insertAfter>
+
+	<insertAfter xpath="/item_modifiers/item_modifier[@name='modDyeBlack']/property[@name='Extends']">
+		<property name="Stacknumber" value="500"/>
+	</insertAfter>
+
+	<insertAfter xpath="/item_modifiers/item_modifier[@name='modDyeBlue']/property[@name='Extends']">
+		<property name="Stacknumber" value="500"/>
+	</insertAfter>
+
+	<insertAfter xpath="/item_modifiers/item_modifier[@name='modDyeBrown']/property[@name='Extends']">
+		<property name="Stacknumber" value="500"/>
+	</insertAfter>
+
+	<insertAfter xpath="/item_modifiers/item_modifier[@name='modDyePink']/property[@name='Extends']">
+		<property name="Stacknumber" value="500"/>
+	</insertAfter>
+
+	<insertAfter xpath="/item_modifiers/item_modifier[@name='modDyePurple']/property[@name='Extends']">
+		<property name="Stacknumber" value="500"/>
+	</insertAfter>
+
+	<insertAfter xpath="/item_modifiers/item_modifier[@name='modDyeYellow']/property[@name='Extends']">
+		<property name="Stacknumber" value="500"/>
+	</insertAfter>
+
+</configs>

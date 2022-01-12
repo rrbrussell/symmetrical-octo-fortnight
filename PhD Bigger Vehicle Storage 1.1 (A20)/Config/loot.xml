@@ -1,0 +1,18 @@
+<configs>
+
+	<!-- vehicleBicycle storage -->
+	<set xpath="/lootcontainers/lootcontainer[@id='76']/@size">10,9</set> <!-- Default 9,1 -->
+	
+	<!-- vehicleMinibike storage -->
+	<set xpath="/lootcontainers/lootcontainer[@id='77']/@size">10,9</set> <!-- Default 9,3 -->
+
+	<!-- vehicleMotorcycle storage -->
+	<set xpath="/lootcontainers/lootcontainer[@id='78']/@size">10,9</set> <!-- Default 9,4 -->
+
+	<!-- vehicle4x4Truck storage -->
+	<set xpath="/lootcontainers/lootcontainer[@id='79']/@size">10,9</set> <!-- Default 9,9 -->
+
+	<!-- vehicleGyrocopter storage -->
+	<set xpath="/lootcontainers/lootcontainer[@id='80']/@size">10,9</set> <!-- Default 9,5 -->
+
+</configs>

@@ -1,0 +1,17 @@
+<configs>
+
+	<!-- Increase boss loot drops -->
+ 	<append xpath="/lootcontainers/lootcontainer[@id='73']">
+		<item group="groupQuestTools" prob=".2"/>
+		<item group="groupQuestWeaponsRanged" prob=".4"/>
+		<item group="groupQuestAmmo" prob=".5"/>
+		<item group="groupQuestArmor" prob=".2"/>
+		<item group="groupQuestMedical" prob=".3"/>
+		<item group="groupQuestSchematics" prob=".15"/>
+		<item group="groupQuestMods" prob=".2"/>		
+		<item group="groupQuestWeaponsMelee" prob=".2"/>
+	</append> 
+	
+<!-- 	<set xpath="/lootcontainers/lootcontainer[@id='73']/@count">3,6</set>  -->
+	
+</configs>

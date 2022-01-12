@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configs>
+
+<!-- Adds Beaker recipe to the forge -->
+<append xpath="/recipes">
+	<recipe name="toolBeaker" count="1" craft_area="forge" material_based="true">
+		<ingredient name="unit_glass" count="20"/>
+		<ingredient name="unit_clay" count="5"/>
+	</recipe>
+</append>
+
+</configs>
