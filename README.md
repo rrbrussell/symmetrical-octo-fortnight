@@ -7,4 +7,5 @@ Here is my 7DTD modpack. I will have the list of imported mods updated shortly.
 - [PhD Bigger Backpack and Secure Storage Chests v1.5](https://www.nexusmods.com/7daystodie/mods/912)
 - [PhD Bigger Crafting Queue (20 Slots) v1.3](https://www.nexusmods.com/7daystodie/mods/384)
 - [PhD Bigger Forge Input v1.0](https://www.nexusmods.com/7daystodie/mods/918)
+- [PhD Bigger Output Queue v1.0](https://www.nexusmods.com/7daystodie/mods/1042)
 - []()
