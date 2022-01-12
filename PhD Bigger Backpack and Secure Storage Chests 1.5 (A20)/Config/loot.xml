@@ -1,0 +1,15 @@
+<configs>
+
+	<!-- empty, storage containers the player crafts-->
+	<set xpath="/lootcontainers/lootcontainer[@id='1']/@size">13,11</set> <!-- Default 8,6 -->
+
+  <!-- Player dropped backpack-->
+	<set xpath="/lootcontainers/lootcontainer[@id='2']/@size">11,13</set> <!-- Default 7,10 -->
+
+  <!-- paintable cube storage containers the player crafts-->
+	<set xpath="/lootcontainers/lootcontainer[@id='5']/@size">13,11</set> <!-- Default 8,9 -->
+
+  <!-- reinforced chest the player crafts (cntLootChestHero) -->
+	<set xpath="/lootcontainers/lootcontainer[@id='41']/@size">13,11</set> <!-- Default 8,9 -->
+
+</configs>
