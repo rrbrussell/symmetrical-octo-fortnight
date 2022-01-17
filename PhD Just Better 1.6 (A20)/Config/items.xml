@@ -152,6 +152,7 @@
 	<set xpath="/items/item[@name='toolBellows']/effect_group[@tiered='false']/display_value[@name='dCraftingSmeltTime']/@value"> .99 </set> <!-- Default .5 -->
 
 	<!-- Set crafting times -->
+  <!--
 	<set xpath="/items/item/property[@name='CraftingIngredientTime']/@value">0</set>
 	
 	<append xpath="/items/item[@name='resourceCement']">
@@ -214,6 +215,7 @@
 	<insertAfter xpath="/items/item[@name='drinkYuccaJuiceSmoothie']/property[@name='EconomicValue']">
 		<property name="CraftingIngredientTime" value="0"/>
 	</insertAfter>
+  -->
 	
 	<!-- Increase Fuel Values -->
 	<set xpath="/items/item[@name='resourceCoal']/property[@name='FuelValue']/@value">300</set>	<!-- default 100 -->

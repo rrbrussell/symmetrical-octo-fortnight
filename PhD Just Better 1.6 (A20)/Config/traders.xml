@@ -35,13 +35,13 @@
 	<set xpath="/traders/trader_item_groups/trader_item_group[@name='traderGeneral']/item[@group='ammo']/@count">14,50</set>  <!-- default 2,4 -->
 
 	<!-- Reset Vender inventory daily -->
-	<setattribute xpath="/traders/trader_info[@id='1']" name="reset_interval">1</setattribute> <!-- default 3 Trader Joel -->
-	<setattribute xpath="/traders/trader_info[@id='2']" name="reset_interval">1</setattribute> <!-- default 3 Trader Jen -->
+	<setattribute xpath="/traders/trader_info[@id='1']" name="reset_interval">3</setattribute> <!-- default 3 Trader Joel -->
+	<setattribute xpath="/traders/trader_info[@id='2']" name="reset_interval">3</setattribute> <!-- default 3 Trader Jen -->
 	<!-- id='3' = Player owned vending machines and does not reset -  not changed  -->
 	<!-- id='4' = Vending machines found through out the world already resets daily -  not changed  -->
 	<!-- id='5' = Rented vending machines and does not reset -  not changed  -->
-	<setattribute xpath="/traders/trader_info[@id='6']" name="reset_interval">1</setattribute> <!-- default 3 Trader Bob -->
-	<setattribute xpath="/traders/trader_info[@id='7']" name="reset_interval">1</setattribute> <!-- default 3 Trader Hugh -->
-	<setattribute xpath="/traders/trader_info[@id='8']" name="reset_interval">1</setattribute> <!-- default 3 Trader Rekt -->
+	<setattribute xpath="/traders/trader_info[@id='6']" name="reset_interval">3</setattribute> <!-- default 3 Trader Bob -->
+	<setattribute xpath="/traders/trader_info[@id='7']" name="reset_interval">3</setattribute> <!-- default 3 Trader Hugh -->
+	<setattribute xpath="/traders/trader_info[@id='8']" name="reset_interval">3</setattribute> <!-- default 3 Trader Rekt -->
 
 </configs>
