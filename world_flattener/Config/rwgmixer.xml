@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rwgmixer>
-  <remove xpath="/rwgmixer/world/property[@class='mountains']/..">
-  <remove xpath="/rwgmixer/world/property[@class='desert_mountains']/..">
-  <remove xpath="/rwgmixer/world/property[@class='craters']/..">
-  <remove xpath="/rwgmixer/world/property[@class='canyons']/..">
+  <remove xpath="/rwgmixer/world/property[@class='mountains']/.."/>
+  <remove xpath="/rwgmixer/world/property[@class='desert_mountains']/.."/>
+  <remove xpath="/rwgmixer/world/property[@class='craters']/.."/>
+  <remove xpath="/rwgmixer/world/property[@class='canyons']/.."/>
 </rwgmixer>
