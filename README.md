@@ -15,6 +15,7 @@ For Alpha 20
 - [Extened Loot Drop Timer v1](https://www.nexusmods.com/7daystodie/mods/584)
 - [EzPerks (A17 - b240)](https://www.nexusmods.com/7daystodie/mods/181)
 - [Firearms Expansion 4](https://www.nexusmods.com/7daystodie/mods/1335)
+- [OCB Stop Fuel Waste (A20)](https://www.nexusmods.com/7daystodie/mods/1884)
 - [Less XP per Level](https://www.nexusmods.com/7daystodie/mods/1029) Lesser XP version
 - [Perk Mastery](https://www.nexusmods.com/7daystodie/mods/1330)
 - [PhD Better 30K Stacks v1.4](https://www.nexusmods.com/7daystodie/mods/575)
