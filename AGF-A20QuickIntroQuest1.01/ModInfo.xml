@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<xml>
+		<ModInfo>
+			<Name value="AGF-A20QuickIntroQuest"/>
+			<Description value="Finish intro quests by simply placing the bedroll down."/>
+			<Author value="AuroraGiggleFairy (AGF)"/> <!--Name changed from RilesPlus-->
+			<Version value="1.01"/>
+			<Website value=""/>
+		</ModInfo>
+	</xml>

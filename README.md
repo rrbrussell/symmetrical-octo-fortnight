@@ -5,6 +5,7 @@ Here is my 7DTD modpack.
 
 For Alpha 20
 
+- [A20 - AGF - Quick Intro Quest](https://www.nexusmods.com/7daystodie/mods/1769)
 - [Always Open Trader v2](https://www.nexusmods.com/7daystodie/mods/415)
 - [Beaker Recipe v1](https://www.nexusmods.com/7daystodie/mods/308)
 - [Extened Loot Drop Timer v1](https://www.nexusmods.com/7daystodie/mods/584)

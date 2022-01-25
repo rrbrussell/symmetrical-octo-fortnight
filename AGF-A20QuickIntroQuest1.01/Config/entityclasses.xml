@@ -1,0 +1,5 @@
+<AGF>
+
+<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvival']/@value">bedrollBlockVariantHelper,drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,noteDuke01</set>
+
+</AGF>
