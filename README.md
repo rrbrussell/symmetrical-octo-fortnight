@@ -5,6 +5,7 @@ Here is my 7DTD modpack.
 
 For Alpha 20
 
+- [2-10 Skill Points per Level](https://www.nexusmods.com/7daystodie/mods/1027) 10SP version
 - [A20 - AGF - Quick Intro Quest](https://www.nexusmods.com/7daystodie/mods/1769)
 - [Always Open Trader v2](https://www.nexusmods.com/7daystodie/mods/415)
 - [Bdub's Vehicles (A20)](https://www.nexusmods.com/7daystodie/mods/342)
