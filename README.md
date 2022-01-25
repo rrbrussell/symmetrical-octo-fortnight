@@ -7,6 +7,7 @@ For Alpha 20
 
 - [A20 - AGF - Quick Intro Quest](https://www.nexusmods.com/7daystodie/mods/1769)
 - [Always Open Trader v2](https://www.nexusmods.com/7daystodie/mods/415)
+- [Bdub's Vehicles (A20)](https://www.nexusmods.com/7daystodie/mods/342)
 - [Beaker Recipe v1](https://www.nexusmods.com/7daystodie/mods/308)
 - [Better Homes and Worlds - Complete Collection](https://www.nexusmods.com/7daystodiemods/703)
 - [Custom Perks - Prestige Skills (CPPS)](https://www.nexusmods.com/7daystodie/mods/783)
