@@ -1,0 +1,13 @@
+Key,UsedInMainMenu,Source,Context,Changes,English,French,German,Klingon,Spanish,Polish
+signRoadHelper,,blocks,Sign,newKey,Road Signs,,,,,
+signRoadHelperBlockDesc,,blocks,Block,newKey,This helper block contains all of the different road signs,,,,,
+signShopLitHelper,,blocks,Sign,newKey,"Shop Signs (Lit)",,,,,
+signShopLitHelperBlockDesc,,blocks,Block,newKey,"This helper block contains all of the different shop signs that have light and shine at night. \n \nPass 'n Gas, Crack A Book, Pop-N-Pills, Shamway Food, Shotgun Messiah, Working Stiff Tools, Savage Country, and Mo Power.",,,,,
+signShopDarkHelper,,blocks,Sign,newKey,"Shop Signs (No Light)",,,,,
+signShopDarkHelperBlockDesc,,blocks,Block,newKey,"This helper block contains all of the different shop signs that are dark and do not light up at night. \n \nPass 'n Gas, Crack A Book, Pop-N-Pills, Shamway Food, Shotgun Messiah, Working Stiff Tools, Savage Country, and Mo Power.",,,,,
+signTraderJoelHelper,,blocks,Sign,newKey,Trader Joel Signs,,,,,
+signShopTraderJoelHelperBlockDesc,,blocks,Block,newKey,This helper block contains the 2 different Trader Joel signs,,,,,
+signPosterHelper,,blocks,Sign,newKey,Posters and Ads,,,,,
+signPosterHelperBlockDesc,,blocks,Block,newKey,This helper block contains all of the different Posters and Ads,,,,,
+signMetalHelper,,blocks,Sign,newKey,Metal Signs,,,,,
+signMetalHelperBlockDesc,,blocks,Block,newKey,"This helper block contains various different metal signs including the pills logo sign, bathroom signs, and more.",,,,,

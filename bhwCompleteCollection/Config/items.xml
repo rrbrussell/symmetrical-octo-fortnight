@@ -1,0 +1,611 @@
+<bhwCompleteCollection>
+
+<!-- bhwFashionista Edits Start -->
+
+		<!-- Add UnlockBy Info to Clothing for Needle and Thread - Vol. 1 -->
+		<insertAfter xpath="/items/item[@name='apparelHoodySweatshirt']/property[@name='Material']">
+			<property name="UnlockedBy" value="perkNeedleAndThreadWinterWear"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='apparelLongShirt']/property[@name='Material']">
+			<property name="UnlockedBy" value="perkNeedleAndThreadWinterWear"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='apparelSuitJacket']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkNeedleAndThreadWinterWear"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='apparelSkiGoggles']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkNeedleAndThreadWinterWear"/>
+		</insertAfter>
+
+		<!-- Add UnlockBy Info to Clothing for Needle and Thread - Vol. 2 -->
+		<insertAfter xpath="/items/item[@name='apparelGothPants']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkNeedleAndThreadLegwear"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='apparelSuitPants']/property[@name='Material']">
+			<property name="UnlockedBy" value="perkNeedleAndThreadLegwear"/>
+		</insertAfter>
+
+		<!-- Add UnlockBy Info to Clothing for Needle and Thread - Vol. 3 -->
+		<insertAfter xpath="/items/item[@name='apparelGothBoots']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkNeedleAndThreadFootwear"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='apparelRunningShoesHP']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkNeedleAndThreadFootwear"/>
+		</insertAfter>
+
+		<!-- Add UnlockBy Info to Clothing for Needle and Thread - Vol. 4 -->
+		<insertAfter xpath="/items/item[@name='apparelPressboyCap']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkNeedleAndThreadDesertWear"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='apparelTShirtZU']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkNeedleAndThreadDesertWear"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='apparelShades']/property[@name='Material']">
+			<property name="UnlockedBy" value="perkNeedleAndThreadDesertWear"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='apparelToughGuySunglasses']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkNeedleAndThreadDesertWear"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='apparelNerdGlasses']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkNeedleAndThreadDesertWear"/>
+		</insertAfter>
+
+		<!-- Add UnlockBy Info to Clothing for Needle and Thread - Vol. 6 -->
+		<insertAfter xpath="/items/item[@name='apparelCoatJacketGeneric']/property[@name='Material']">
+			<property name="UnlockedBy" value="perkNeedleAndThreadPufferCoats"/>
+		</insertAfter>
+
+		<!-- Add UnlockBy Info to Clothing for Needle and Thread - Completed Collection -->
+		<insertAfter xpath="/items/item[@name='apparelHazmatBoots']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkNeedleAndThreadComplete"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='apparelHazmatPants']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkNeedleAndThreadComplete"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='apparelHazmatJacket']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkNeedleAndThreadComplete"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='apparelHazmatGloves']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkNeedleAndThreadComplete"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='apparelHazmatMask']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkNeedleAndThreadComplete"/>
+		</insertAfter>
+
+		<!-- Add UnlockBy Info to Night Vision Goggles for Art of Mining - Vol. 7 -->
+		<insertAfter xpath="/items/item[@name='apparelNightvisionGoggles']/property[@name='Material']">
+			<property name="UnlockedBy" value="perkArtOfMiningLantern"/>
+		</insertAfter>
+
+		<!-- Add UnlockBy Info to Lucky Goggles for Lucky Looter Perk - Level 1 -->
+		<insertAfter xpath="/items/item[@name='apparelAviatorGoggles']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkLuckyLooter"/>
+		</insertAfter>
+
+<!-- bhwFashionista Edits End -->
+
+<!-- bhwIndoorPlumbing Edits Start -->
+	<!-- Allows you to collect water from faucets including the broken medicine cabinet that has a faucet. DOES NOT WORK WITH LOOTABLE CLOSED MEDICINE CABINET. -->
+	<insertAfter xpath="/items/item[@name='drinkJarEmpty']/property[@class='Action1']/property[@name='Focused_blockname_5']">
+		<property name="Focused_blockname_6" value="faucet02"/>
+		<property name="Focused_blockname_7" value="faucet04"/>
+		<property name="Focused_blockname_8" value="faucetBrass02"/>
+		<property name="Focused_blockname_9" value="faucetBrass04"/>
+		<property name="Focused_blockname_10" value="cntMedicineCabinetFaucetOpen"/>
+	</insertAfter>
+
+<!-- bhwIndoorPlumbing Edits End -->
+
+<!-- bhwPowerPlant Edits Start -->
+
+	<append xpath="/items">
+
+		<!-- Add New Schematics -->
+		<item name="solarbankSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="solarbank"/>
+			<property name="Unlocks" value="solarbank"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="solarbank" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="solarCellSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="solarCell"/>
+			<property name="Unlocks" value="solarCell"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="solarCell" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="smallEngineSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="smallEngine"/>
+			<property name="Unlocks" value="smallEngine"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="smallEngine" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+
+	</append>
+
+		<!-- Add UnlockBy Info to Solor Cells -->
+		<insertAfter xpath="/items/item[@name='solarCell']/property[@name='Material']">
+			<property name="UnlockedBy" value="perkAdvancedEngineering,solarCellSchematic"/>
+		</insertAfter>
+
+		<!-- Add UnlockBy Info to Engines -->
+		<insertAfter xpath="/items/item[@name='smallEngine']/property[@name='Material']">
+			<property name="UnlockedBy" value="perkGreaseMonkey,smallEngineSchematic"/>
+		</insertAfter>
+
+<!-- bhwPowerPlant Edits End -->
+
+<!-- bhwDownOnTheFarm Edits Start -->
+
+	<append xpath="/items">
+		
+		<!-- Add Crop Harvester Tool -->
+		<item name="meleeToolBladeT1CropHarvester">
+			<property name="Tags" value="melee,medium,tool,attStrength,perkMiner69r,canHaveCosmetic,learnable"/>
+			<property name="DisplayType" value="meleeKnife"/>
+			<property name="HoldType" value="36"/>
+			<property name="CustomIcon" value="meleeWpnBladeT1HuntingKnife"/>
+			<property name="TintColor" value="51b500"/>
+			<property name="CustomIconTint" value="00bf30"/>
+			<property name="Meshfile" value="#Other/Items?Weapons/Melee/Knives/hunting_knifePrefab.prefab"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="SoundJammed" value="ItemNeedsRepair"/>
+			<property name="SoundDestroy" value="wooddestroy1"/>
+			<property name="DescriptionKey" value="meleeToolBladeT1CropHarvesterDesc"/>
+			<property name="FuelValue" value="250"/>
+			<property name="EconomicValue" value="350"/>
+			<property name="UnlockedBy" value="perkMiner69r"/>
+			<property name="ShowQuality" value="true"/>
+		
+			<property class="Action0">
+				<property name="Class" value="DynamicMelee"/>
+				<property name="Sphere" value=".1"/>
+				<property name="Sound_start" value="swoosh"/>
+				<property name="ToolCategory.cropHarvest" value="1" param1="1"/>
+
+				<property name="UseGrazingHits" value="true"/>
+				<property name="GrazeStart" value=".25"/>
+				<property name="GrazeEnd" value=".35"/>
+				<property name="SwingDegrees" value="90"/>
+				<property name="SwingAngle" value="90"/>
+			</property>
+			<property class="Action1"> <!-- UseAction -->
+				<property name="Class" value="Repair"/>
+				<property name="Repair_amount" value="50"/>
+				<property name="Upgrade_hit_offset" value="-4"/>
+				<property name="Sound_start" value="repair_block"/>
+				<property name="Delay" value="1.3"/> <!-- Repair actions still need the delay amount -->
+				<property name="Upgrade_action_sound" value="ImpactSurface/metalhitearth"/>
+				<property name="Allowed_upgrade_items" value="resourceClayLump"/>
+			</property>
+
+			<effect_group name="meleeToolBladeT1CropHarvester">
+				<passive_effect name="EntityDamage" operation="base_set" value="4.3" tags="perkMiner69r"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="2" tags="perkMiner69r"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="180"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="2" tags="primary"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="924,2308" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+				<passive_effect name="MaxRange" operation="base_set" value="2.0"/>
+				<passive_effect name="BlockRange" operation="base_set" value="2.5"/>
+
+				<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkMiner69r"/> <!-- tier bonus -->
+				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkMiner69r"/> <!-- tier bonus -->
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="wood"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value="-.9" tags="stone"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value="-.9" tags="metal"/>
+			</effect_group>
+			<property name="Group" value="Tools/Traps"/>
+			<property name="PickupJournalEntry" value="farmingTip"/>
+			<property name="RepairExpMultiplier" value="5.5"/>
+		</item>
+
+
+		<!-- Adds Custom Crops -->
+		<item name="foodCropTomato">
+			<property name="Tags" value="food"/>
+			<property name="HoldType" value="31"/>
+			<property name="DisplayType" value="foodRaw"/>
+			<property name="CustomIcon" value="foodEggBoiled"/>
+			<property name="CustomIconTint" value="bf1600"/>
+			<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceCrop"/>
+			<property name="DescriptionKey" value="foodCropTomatoDesc"/>
+			<property name="Stacknumber" value="125"/> <!-- STK resource -->
+			<property name="EconomicValue" value="10"/>
+			<property name="EconomicBundleSize" value="5"/>
+			<property name="CraftingIngredientTime" value="8"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="2"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+		</item>
+
+		<item name="foodCropPea">
+			<property name="Tags" value="food"/>
+			<property name="HoldType" value="31"/>
+			<property name="DisplayType" value="foodRaw"/>
+			<property name="CustomIcon" value="foodCropYuccaFruit"/>
+			<property name="CustomIconTint" value="66e300"/>
+			<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceCrop"/>
+			<property name="DescriptionKey" value="foodCropPeaDesc"/>
+			<property name="Stacknumber" value="125"/> <!-- STK resource -->
+			<property name="EconomicValue" value="10"/>
+			<property name="EconomicBundleSize" value="5"/>
+			<property name="CraftingIngredientTime" value="8"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+		</item>
+
+		<item name="foodTomatoSauce">
+			<property name="Tags" value="food"/>
+			<property name="HoldType" value="31"/>
+			<property name="DisplayType" value="food"/>
+			<property name="CustomIcon" value="drinkJarRiverWater"/>
+			<property name="CustomIconTint" value="bf0000"/>
+			<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="DescriptionKey" value="foodTomatoSauceDesc"/>
+			<property name="Weight" value="5"/>
+			<property name="EconomicValue" value="60"/>
+			<property name="UnlockedBy" value="perkMasterChef,foodTomatoSauceSchematic"/>
+			<property name="Stacknumber" value="10"/> <!-- STK food -->
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_eating"/>
+				<property name="Create_item" value="drinkJarEmpty"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="10"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+		</item>
+
+		<!-- Add Compost -->
+		<item name="resourceCompost">
+			<property name="HoldType" value="45"/>
+			<property name="CustomIcon" value="resourceFertilizer"/>
+			<property name="Tags" value="junk"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceFertilizer"/>
+			<property name="DescriptionKey" value="resourceCompostDesc"/>
+			<property name="Stacknumber" value="250"/> <!-- STK resource -->
+			<property name="FuelValue" value="0"/>
+			<property name="Weight" value="0"/>
+			<property name="Group" value="Resources"/>
+			<property name="EconomicValue" value="30"/>
+			<property name="UnlockedBy" value="perkLivingOffTheLand"/>
+		</item>
+
+		<!-- Add New Schematics -->
+		<item name="plantedTomato1Schematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="plantedBlueberry1"/>
+			<property name="CustomIconTint" value="bf1600"/>
+			<property name="Unlocks" value="plantedTomato1"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedTomato1" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="plantedPea1Schematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="plantedCorn1"/>
+			<property name="CustomIconTint" value="66e300"/>
+			<property name="Unlocks" value="plantedPea1"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedPea1" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="foodTomatoSauceSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="drinkJarRiverWater"/>
+			<property name="CustomIconTint" value="bf0000"/>
+			<property name="Unlocks" value="foodTomatoSauce"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodTomatoSauce" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+	</append>
+
+		<!-- Add UnlockBy Info to Canned Food -->
+		<insertAfter xpath="/items/item[@name='foodCanBeef']/property[@name='Material']">
+			<property name="UnlockedBy" value="perkMasterChef"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='foodCanLamb']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkMasterChef"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='foodCanPeas']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkMasterChef"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='foodCanPasta']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkMasterChef"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='foodCanChili']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkMasterChef"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='foodCanStock']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkMasterChef"/>
+		</insertAfter>
+
+<!-- bhwDownOnTheFarm Edits End -->
+
+<!-- bhwArmySurplus Edits Start -->
+
+	<append xpath="/items">
+		
+		<!-- Add New Schematics -->
+		<item name="gunRifleT1HuntingRiflePartsSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="gunRifleT1HuntingRifleParts"/>
+			<property name="Unlocks" value="gunRifleT1HuntingRifleParts"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunRifleT1HuntingRifleParts" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="meleeWpnSpearT3SteelSpearPartsSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="meleeWpnSpearT3SteelSpearParts"/>
+			<property name="Unlocks" value="meleeWpnSpearT3SteelSpearParts"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeWpnSpearT3SteelSpearParts" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="gunShotgunT1DoubleBarrelPartsSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="gunShotgunT1DoubleBarrelParts"/>
+			<property name="Unlocks" value="gunShotgunT1DoubleBarrelParts"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunShotgunT1DoubleBarrelParts" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="meleeWpnClubT3SteelClubPartsSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="meleeWpnClubT3SteelClubParts"/>
+			<property name="Unlocks" value="meleeWpnClubT3SteelClubParts"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeWpnClubT3SteelClubParts" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="meleeWpnSledgeT3SteelSledgehammerPartsSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="meleeWpnSledgeT3SteelSledgehammerParts"/>
+			<property name="Unlocks" value="meleeWpnSledgeT3SteelSledgehammerParts"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeWpnSledgeT3SteelSledgehammerParts" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="meleeWpnKnucklesT3SteelKnucklesPartsSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="meleeWpnKnucklesT3SteelKnucklesParts"/>
+			<property name="Unlocks" value="meleeWpnKnucklesT3SteelKnucklesParts"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeWpnKnucklesT3SteelKnucklesParts" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="gunMGT1AK47PartsSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="gunMGT1AK47Parts"/>
+			<property name="Unlocks" value="gunMGT1AK47Parts"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunMGT1AK47Parts" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="gunBowT1WoodenBowPartsSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="gunBowT1WoodenBowParts"/>
+			<property name="Unlocks" value="gunBowT1WoodenBowParts"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunBowT1WoodenBowParts" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="gunHandgunT1PistolPartsSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="gunHandgunT1PistolParts"/>
+			<property name="Unlocks" value="gunHandgunT1PistolParts"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunHandgunT1PistolParts" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="meleeWpnBladeT3MachetePartsSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="meleeWpnBladeT3MacheteParts"/>
+			<property name="Unlocks" value="meleeWpnBladeT3MacheteParts"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeWpnBladeT3MacheteParts" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="meleeWpnBatonT2StunBatonPartsSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="meleeWpnBatonT2StunBatonParts"/>
+			<property name="Unlocks" value="meleeWpnBatonT2StunBatonParts"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeWpnBatonT2StunBatonParts" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="gunBotRoboticsPartsSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="gunBotRoboticsParts"/>
+			<property name="Unlocks" value="gunBotRoboticsParts"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunBotRoboticsParts" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="gunExplosivesT3RocketLauncherPartsSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="gunExplosivesT3RocketLauncherParts"/>
+			<property name="Unlocks" value="gunExplosivesT3RocketLauncherParts"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunExplosivesT3RocketLauncherParts" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="armorSteelSetPartsSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="armorSteelSetParts"/>
+			<property name="Unlocks" value="armorSteelSetParts"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="armorSteelSetParts" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="armorMilitarySetPartsSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="armorMilitarySetParts"/>
+			<property name="Unlocks" value="armorMilitarySetParts"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="armorMilitarySetParts" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+	</append>
+
+	<!-- Add UnlockBy Info to Weapon Parts -->
+		<insertAfter xpath="/items/item[@name='gunRifleT1HuntingRifleParts']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkDeadEye,gunRifleT1HuntingRiflePartsSchematic"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='meleeWpnSpearT3SteelSpearParts']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkJavelinMaster,meleeWpnSpearT3SteelSpearPartsSchematic"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='gunShotgunT1DoubleBarrelParts']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkBoomstick,gunShotgunT1DoubleBarrelPartsSchematic"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='meleeWpnClubT3SteelClubParts']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkPummelPete,meleeWpnClubT3SteelClubPartsSchematic"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammerParts']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkSkullCrusher,meleeWpnSledgeT3SteelSledgehammerPartsSchematic"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnucklesParts']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkBrawler,meleeWpnKnucklesT3SteelKnucklesPartsSchematic"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='gunMGT1AK47Parts']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkMachineGunner,gunMGT1AK47PartsSchematic"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='gunBowT1WoodenBowParts']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkArchery,gunBowT1WoodenBowPartsSchematic"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='gunHandgunT1PistolParts']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkGunslinger,gunHandgunT1PistolPartsSchematic"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='meleeWpnBladeT3MacheteParts']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkDeepCuts,meleeWpnBladeT3MachetePartsSchematic"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='meleeWpnBatonT2StunBatonParts']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkElectrocutioner,meleeWpnBatonT2StunBatonPartsSchematic"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='gunBotRoboticsParts']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkTurrets,gunBotRoboticsPartsSchematic"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='gunExplosivesT3RocketLauncherParts']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkTurrets,gunExplosivesT3RocketLauncherPartsSchematic"/>
+		</insertAfter>
+		
+	<!-- Add UnlockBy Info to Armor Parts -->
+		<insertAfter xpath="/items/item[@name='armorSteelSetParts']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkHeavyArmor,armorSteelSetPartsSchematic"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='armorMilitarySetParts']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkLightArmor,armorMilitarySetPartsSchematic"/>
+		</insertAfter>
+
+<!-- bhwArmySurplus Edits End -->
+
+</bhwCompleteCollection>

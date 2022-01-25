@@ -1,0 +1,74 @@
+<bhwSignage>
+
+<!-- bhwSignage Edits Start -->	
+	<append xpath="/blocks">
+		<!-- Helper Block that contains all possible road signs -->
+		<block name="signRoadHelper">
+			<property name="Extends" value="signRoadStop"/>
+			<property name="CustomIcon" value="signRoadStop"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="DescriptionKey" value="signRoadHelperBlockDesc"/>
+			<property name="PlaceAltBlockValue" value="signRoadStop,signRoadStop4way,signRoadSpeed25,signRoadSpeed35,signRoadSpeed45,signRoadSpeed55,signRoadSpeed65,signSchoolZone,signRoadSpeed25noTrucks,signNoHazardousWaste,signRoadWork,signRoadRoughSurface,signRoadSlow,signYardSign01,signRoadCourtlandBell,signRoadCourtlandHuenink,signRoadCourtlandMaple,signRoadCourtlandTran,signRoadDavis,signRoadEssig,signRoadLangTran,signRoadTran,signRoadMaple,signRoadPrivate,signRoadBellLake,signRoadCoronado,signRoadCoronadoCourtland,signRoadCourtlandApache,signRoadAZ260eastSpeed65,signRoadAZ260west,signRoadAZ260westSpeed65,signRoadAZ73north,signRoadAZ73northSpeed65,signRoadAZ73south,signRoadAZ73southSpeed65,signRoadCourtlandAZ260Left,signRoadCourtlandAZ260Right,signRoadApacheAZ260,signRoadArrowheadApache,signRoadDestinationsEast,signRoadDestinationsWest,signCamping,signSpillwayLake,signAnselAdamsRiver,signCampFish,signInfoCenter"/>
+		</block>
+		<!-- Helper Block that contains all possible shop signs that are lit up and shine at night -->
+		<block name="signShopLitHelper">
+			<property name="Extends" value="signShopGasLit"/>
+			<property name="CustomIcon" value="signShopGas"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="DescriptionKey" value="signShopLitHelperBlockDesc"/>
+			<property name="PlaceAltBlockValue" value="signShopGasLit,signShopGasWallLit,signShopGasLargeLit,signShopGasLargeWallLit,signShopGunStoreLit,signShopGunStoreWallLit,signShopGunStoreLargeLit,signShopGunStoreLargeWallLit,signShopBookStoreLit,signShopBookStoreWallLit,signShopBookStoreLargeLit,signShopBookStoreLargeWallLit,signShopPharmacyLit,signShopPharmacyWallLit,signShopPharmacyLargeLit,signShopPharmacyLargeWallLit,signShopToolStoreLit,signShopToolStoreWallLit,signShopToolStoreLargeLit,signShopToolStoreLargeWallLit,signShopGroceryLit,signShopGroceryWallLit,signShopGroceryLargeLit,signShopGroceryLargeWallLit,signShopSavageCountryLit,signShopSavageCountryWallLit,signShopSavageCountryLargeLit,signShopSavageCountryLargeWallLit,signShopMoPowerElectronicsLit,signShopMoPowerElectronicsWallLit,signShopMoPowerElectronicsLargeLit,signShopMoPowerElectronicsLargeWallLit"/>
+		</block>
+		<!-- Helper Block that contains all possible shop signs that are NOT lit up and are dark at night -->
+		<block name="signShopDarkHelper">
+			<property name="Extends" value="signShopGas"/>
+			<property name="CustomIcon" value="signShopBookStore"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="DescriptionKey" value="signShopDarkHelperBlockDesc"/>
+			<property name="PlaceAltBlockValue" value="signShopBookStore,signShopBookStoreWall,signShopBookStoreLarge,signShopBookStoreLargeWall,signShopGas,signShopGasWall,signShopGasLarge,signShopGasLargeWall,signShopGunStore,signShopGunStoreWall,signShopGunStoreLarge,signShopGunStoreLargeWall,signShopPharmacy,signShopPharmacyWall,signShopPharmacyLarge,signShopPharmacyLargeWall,signShopToolStore,signShopToolStoreWall,signShopToolStoreLarge,signShopToolStoreLargeWall,signShopGrocery,signShopGroceryWall,signShopGroceryLarge,signShopGroceryLargeWall,signShopSavageCountry,signShopSavageCountryWall,signShopSavageCountryLarge,signShopSavageCountryLargeWall,signShopMoPowerElectronics,signShopMoPowerElectronicsWall,signShopMoPowerElectronicsLarge,signShopMoPowerElectronicsLargeWall,"/>
+		</block>
+		<!-- Helper Block that contains all possible Trader Joel signs -->
+		<block name="signTraderJoelHelper">
+			<property name="Extends" value="signShopTraderJoel1x3Wall"/>
+			<property name="CustomIcon" value="signShopTraderJoel2x5Wall"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="DescriptionKey" value="signShopTraderJoelHelperBlockDesc"/>
+			<property name="PlaceAltBlockValue" value="signShopTraderJoel2x5Wall,signShopTraderJoel1x3Wall"/>
+		</block>
+		<!-- Helper Block that contains all possible paper and poster signs -->
+		<block name="signPosterHelper">
+			<property name="Extends" value="decoEntityClothMaster"/>
+			<property name="CustomIcon" value="signPosterWantedMissing01"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="DescriptionKey" value="signPosterHelperBlockDesc"/>
+			<property name="PlaceAltBlockValue" value="signPosterWantedMissing01,signPosterWantedMissing02,signPosterWantedMissing03,signBulletinBoard01,signBulletinBoard02,signBookSaleAd,signBread01,signBread02,signCigaretteAd,signDinersMenu,signLaborDaySaleAd,signMegaCrushAd,signNotice01,signNotice02,signNotice03,signNotice04,signSafetyWorkProtection,signSale01,signSale02,signShamwaySale,signPosterMovie2159,signPosterMovieLoneWolf,signPosterMovieMammasJustice,signPosterMovieSexualTension,signPosterMovieTheater2159,signPosterMovieTheaterLoneWolf,signPosterMovieTheaterMammasJustice,signPosterMovieTheaterSexualTension"/>
+		</block>
+		<!-- Helper Block that contains various metal signs -->
+		<block name="signMetalHelper">
+			<property name="Extends" value="decoEntityMetalMaster"/>
+			<property name="CustomIcon" value="signPillsLogoSmall"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="DescriptionKey" value="signMetalHelperBlockDesc"/>
+			<property name="PlaceAltBlockValue" value="signPillsLogoSmall,signPillsLogo,signBathroomSignUnisexWallMount,signBathroomSignUnisexCeilingMount,signBathroomSignWomenWallMount,signBathroomSignWomenCeilingMount,signBathroomSignMenWallMount,signBathroomSignMenCeilingMount,metalSignLetter_cross"/>
+		</block>
+
+
+	<!-- Closing Append tag for all Added Blocks -->
+	</append>
+
+	<!-- All set xpath edits below here -->
+
+<!-- bhwSignage Edits End -->	
+
+</bhwSignage>
