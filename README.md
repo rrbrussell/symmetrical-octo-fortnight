@@ -10,6 +10,7 @@ For Alpha 20
 - [Beaker Recipe v1](https://www.nexusmods.com/7daystodie/mods/308)
 - [Extened Loot Drop Timer v1](https://www.nexusmods.com/7daystodie/mods/584)
 - [EzPerks (A17 - b240)](https://www.nexusmods.com/7daystodie/mods/181)
+- [Perk Mastery](https://www.nexusmods.com/7daystodie/mods/1330)
 - [PhD Better 30K Stacks v1.4](https://www.nexusmods.com/7daystodie/mods/575)
 - [PhD Bigger Backpack and Secure Storage Chests v1.5](https://www.nexusmods.com/7daystodie/mods/912)
 - [PhD Bigger Crafting Queue (20 Slots) v1.3](https://www.nexusmods.com/7daystodie/mods/384)

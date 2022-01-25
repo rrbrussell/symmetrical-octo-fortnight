@@ -1,0 +1,1191 @@
+<configs>
+
+		<append xpath="/progression/perks/perk[@name='perkRuleOneCardio']/effect_group">
+			<passive_effect name="WalkSpeed" operation="perc_add" value="0.04,0.12" level="1,3"/>
+			<passive_effect name="RunSpeed" operation="perc_add" value="0.04,0.12" level="1,3"/>
+		</append>
+		<!-- alternative way (maybe?) of changing the description values - current (simplest) solution is the use of the whole Localisation file and changing the description for the keys there.
+		<set xpath="/progression/perks/perk[@name='perkRuleOneCardio']/effect_group/effect_description[@level='1']/@desc_key">+10% stamina regen while sprinting, +4% movement speed</set>
+		<set xpath="/progression/perks/perk[@name='perkRuleOneCardio']/effect_group/effect_description[@level='2']/@desc_key">+20% stamina regen while sprinting, +8% movement speed</set>
+		<set xpath="/progression/perks/perk[@name='perkRuleOneCardio']/effect_group/effect_description[@level='3']/@desc_key">+30% stamina regen while sprinting, +12% movement speed</set>
+		<set xpath="/progression/perks/perk[@name='perkRuleOneCardio']/effect_group/effect_description[@level='1']/@long_desc_key">+10% stamina regen while sprinting, +4% movement speed</set>
+		<set xpath="/progression/perks/perk[@name='perkRuleOneCardio']/effect_group/effect_description[@level='2']/@long_desc_key">+20% stamina regen while sprinting, +8% movement speed</set>
+		<set xpath="/progression/perks/perk[@name='perkRuleOneCardio']/effect_group/effect_description[@level='3']/@long_desc_key">+30% stamina regen while sprinting, +12% movement speed</set>
+		-->
+
+<insertAfter xpath="/progression/attributes/attribute[@name='attBooks']">
+	<attribute name="attMastery" name_key="Masteries" desc_key="Master your area of expertise!" min_level="0" max_level="0" icon="mp_rank">
+			<effect_group>
+				<effect_description level="1" desc_base="Unlock Masteries" long_desc_key="Master yourself, master the enemy."/>
+			</effect_group>
+	</attribute>
+</insertAfter>
+
+<insertAfter xpath="/progression/skills/skill[@name='skillWasteTreasures']">
+	<skill name="skillJackOfAll" parent="attMastery" name_key="Jack of All Trades" desc_key="Perks for everything!" icon="mp_rank"><effect_group/></skill>
+	<skill name="skillMeleeMastery" parent="attMastery" name_key="Melee Masteries" desc_key="Perks for Melee masteries!" icon="mp_rank"><effect_group/></skill>
+	<skill name="skillRangedMastery" parent="attMastery" name_key="Ranged Masteries" desc_key="Perks for ranged masteries!" icon="mp_rank"><effect_group/></skill>
+</insertAfter>
+
+<insertBefore xpath="/progression/perks/perk[@name='perkDemolitionsExpert']">
+
+	<!-- Jack of all Trades -->
+	
+	<perk name="perkSprinter" max_level="10" parent="skillJackOfAll" name_key="Sprinter" desc_key="You are mastering the art of sprinting from/to any sound you hear. Your sprinting speed increases." icon="mp_sprint">
+			
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="5" desc_key="reqFortitudeLevel05"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="5" desc_key="reqFortitudeLevel05"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="5" desc_key="reqFortitudeLevel05"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="5" desc_key="reqFortitudeLevel05"/></level_requirements>
+			<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="5" desc_key="reqFortitudeLevel05"/></level_requirements>
+			<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="5" desc_key="reqFortitudeLevel05"/></level_requirements>
+			<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="5" desc_key="reqFortitudeLevel05"/></level_requirements>
+			<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="5" desc_key="reqFortitudeLevel05"/></level_requirements>
+			<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="5" desc_key="reqFortitudeLevel05"/></level_requirements>
+			<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="5" desc_key="reqFortitudeLevel05"/></level_requirements>
+			
+			<effect_group>
+				<passive_effect name="RunSpeed" operation="perc_add" value="0.04,0.36" level="1,9"/>
+				<passive_effect name="RunSpeed" operation="perc_add" value="0.5" level="10"/>
+
+				<effect_description level="1" desc_base="Sprinter I" long_desc_key="Increase your sprinting speed by 4%."/>
+				<effect_description level="2" desc_base="Sprinter II" long_desc_key="Increase your sprinting speed by 8%."/>
+				<effect_description level="3" desc_base="Sprinter III" long_desc_key="Increase your sprinting speed by 12%."/>
+				<effect_description level="4" desc_base="Sprinter IV" long_desc_key="Increase your sprinting speed by 16%."/>
+				<effect_description level="5" desc_base="Sprinter V" long_desc_key="Increase your sprinting speed by 20%."/>
+				<effect_description level="6" desc_base="Sprinter VI" long_desc_key="Increase your sprinting speed by 24%."/>
+				<effect_description level="7" desc_base="Sprinter VII" long_desc_key="Increase your sprinting speed by 28%."/>
+				<effect_description level="8" desc_base="Sprinter VIII" long_desc_key="Increase your sprinting speed by 32%."/>
+				<effect_description level="9" desc_base="Sprinter IX" long_desc_key="Increase your sprinting speed by 36%."/>
+				<effect_description level="10" desc_base="Master sprinter" long_desc_key="Your speed equals that of Usain Bolt. Increase your sprinting speed by 50%."/>
+			</effect_group>
+		</perk>
+		
+		<perk name="perkSurvivalist" max_level="10" parent="skillJackOfAll" name_key="Survivalist" desc_key="You are conditioning your body to the maximum limits. Your tolerance towards the elements increases." icon="mp_tolerance">
+			
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="5" desc_key="reqFortitudeLevel05"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="5" desc_key="reqFortitudeLevel05"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="5" desc_key="reqFortitudeLevel05"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="5" desc_key="reqFortitudeLevel05"/></level_requirements>
+			<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="5" desc_key="reqFortitudeLevel05"/></level_requirements>
+			<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="5" desc_key="reqFortitudeLevel05"/></level_requirements>
+			<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="5" desc_key="reqFortitudeLevel05"/></level_requirements>
+			<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="5" desc_key="reqFortitudeLevel05"/></level_requirements>
+			<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="5" desc_key="reqFortitudeLevel05"/></level_requirements>
+			<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="5" desc_key="reqFortitudeLevel05"/></level_requirements>
+			
+			<effect_group>
+				<passive_effect name="HyperthermalResist" operation="base_add" level="1,9" value="2,18"/>
+				<passive_effect name="HyperthermalResist" operation="base_add" level="10" value="25"/>
+				
+				<passive_effect name="HypothermalResist" operation="base_add" level="1,9" value="2,18"/>
+				<passive_effect name="HypothermalResist" operation="base_add" level="10" value="25"/>
+
+				<effect_description level="1" desc_base="Survivalist I" long_desc_key="Increase your resistance agains heat and cold by 2."/>
+				<effect_description level="2" desc_base="Survivalist II" long_desc_key="Increase your resistance agains heat and cold by 4."/>
+				<effect_description level="3" desc_base="Survivalist III" long_desc_key="Increase your resistance agains heat and cold by 6."/>
+				<effect_description level="4" desc_base="Survivalist IV" long_desc_key="Increase your resistance agains heat and cold by 8."/>
+				<effect_description level="5" desc_base="Survivalist V" long_desc_key="Increase your resistance agains heat and cold by 10."/>
+				<effect_description level="6" desc_base="Survivalist VI" long_desc_key="Increase your resistance agains heat and cold by 12."/>
+				<effect_description level="7" desc_base="Survivalist VII" long_desc_key="Increase your resistance agains heat and cold by 14."/>
+				<effect_description level="8" desc_base="Survivalist VIII" long_desc_key="Increase your resistance agains heat and cold by 16."/>
+				<effect_description level="9" desc_base="Survivalist IX" long_desc_key="Increase your resistance agains heat and cold by 18."/>
+				<effect_description level="10" desc_base="Master Survivalist" long_desc_key="You've mastered the art of surviving in the wilderness, you even grill bears! Increase your resistance agains heat and cold by 25."/>
+			</effect_group>
+		</perk>
+		
+		<perk name="perkCalisthenics" max_level="10" parent="skillJackOfAll" name_key="Calisthenics" desc_key="You are mastering the excercising method of only using your body, enforcing a daily training regime and a balanced diet. Your maximum health and stamina increase." icon="mp_maxhp">
+			
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="5" desc_key="reqStrengthLevel05"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="5" desc_key="reqStrengthLevel05"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="5" desc_key="reqStrengthLevel05"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="5" desc_key="reqStrengthLevel05"/></level_requirements>
+			<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="5" desc_key="reqStrengthLevel05"/></level_requirements>
+			<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="5" desc_key="reqStrengthLevel05"/></level_requirements>
+			<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="5" desc_key="reqStrengthLevel05"/></level_requirements>
+			<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="5" desc_key="reqStrengthLevel05"/></level_requirements>
+			<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="5" desc_key="reqStrengthLevel05"/></level_requirements>
+			<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="5" desc_key="reqStrengthLevel05"/></level_requirements>
+			
+			<effect_group>
+				<passive_effect name="HealthMax" operation="base_add" value="3,27" level="1,9"/>
+				<passive_effect name="HealthMax" operation="base_add" value="40" level="10"/>
+				<passive_effect name="StaminaMax" operation="base_add" value="3,27" level="1,9"/>
+				<passive_effect name="StaminaMax" operation="base_add" value="40" level="10"/>
+
+				<effect_description level="1" desc_base="Calisthenics I" long_desc_key="Increase your maximum health and stamina by 3."/>
+				<effect_description level="2" desc_base="Calisthenics II" long_desc_key="Increase your maximum health and stamina by 6."/>
+				<effect_description level="3" desc_base="Calisthenics III" long_desc_key="Increase your maximum health and stamina by 9."/>
+				<effect_description level="4" desc_base="Calisthenics IV" long_desc_key="Increase your maximum health and stamina by 12."/>
+				<effect_description level="5" desc_base="Calisthenics V" long_desc_key="Increase your maximum health and stamina by 15."/>
+				<effect_description level="6" desc_base="Calisthenics VI" long_desc_key="Increase your maximum health and stamina by 18."/>
+				<effect_description level="7" desc_base="Calisthenics VII" long_desc_key="Increase your maximum health and stamina by 21."/>
+				<effect_description level="8" desc_base="Calisthenics VIII" long_desc_key="Increase your maximum health and stamina by 24."/>
+				<effect_description level="9" desc_base="Calisthenics IX" long_desc_key="Increase your maximum health and stamina by 27."/>
+				<effect_description level="10" desc_base="Calisthenics Master" long_desc_key="You have the features of Heracles. Increase your maximum health and stamina by 40."/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkScavenger" max_level="10" parent="skillJackOfAll" name_key="Scavenger" desc_key="You are mastering the art of collecting every piece of scrap and armor you find lying around and then wearing it. Your damage reduction increases." icon="mp_damageresist">
+			
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="5" desc_key="reqStrengthLevel05"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="5" desc_key="reqStrengthLevel05"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="5" desc_key="reqStrengthLevel05"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="5" desc_key="reqStrengthLevel05"/></level_requirements>
+			<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="5" desc_key="reqStrengthLevel05"/></level_requirements>
+			<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="5" desc_key="reqStrengthLevel05"/></level_requirements>
+			<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="5" desc_key="reqStrengthLevel05"/></level_requirements>
+			<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="5" desc_key="reqStrengthLevel05"/></level_requirements>
+			<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="5" desc_key="reqStrengthLevel05"/></level_requirements>
+			<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="5" desc_key="reqStrengthLevel05"/></level_requirements>
+			
+			<effect_group>
+				<passive_effect name="HealthLoss" operation="perc_subtract" level="1,9" value=".01,.09"/>
+				<passive_effect name="HealthLoss" operation="perc_subtract" level="10" value=".12"/>
+
+				<effect_description level="1" desc_base="Scavenger I" long_desc_key="Increase your Damage Resistance by 1%."/>
+				<effect_description level="2" desc_base="Scavenger II" long_desc_key="Increase your Damage Resistance by 2%."/>
+				<effect_description level="3" desc_base="Scavenger III" long_desc_key="Increase your Damage Resistance by 3%."/>
+				<effect_description level="4" desc_base="Scavenger IV" long_desc_key="Increase your Damage Resistance by 4%."/>
+				<effect_description level="5" desc_base="Scavenger V" long_desc_key="Increase your Damage Resistance by 5%."/>
+				<effect_description level="6" desc_base="Scavenger VI" long_desc_key="Increase your Damage Resistance by 6%."/>
+				<effect_description level="7" desc_base="Scavenger VII" long_desc_key="Increase your Damage Resistance by 7%."/>
+				<effect_description level="8" desc_base="Scavenger VIII" long_desc_key="Increase your Damage Resistance by 8%."/>
+				<effect_description level="9" desc_base="Scavenger IX" long_desc_key="Increase your Damage Resistance by 9%."/>
+				<effect_description level="10" desc_base="Master Scavenger" long_desc_key="Von on Suka! *head, eyes*. Increase your Damage Resistance by 12%."/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkEfficiency" max_level="10" parent="skillJackOfAll" name_key="Efficiency" desc_key="You are mastering minimal exertion while using weapons and tools. Lose less Stamina per melee swing." icon="mp_efficiency">
+			
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="5" desc_key="reqStrengthLevel05"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="5" desc_key="reqStrengthLevel05"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="5" desc_key="reqStrengthLevel05"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="5" desc_key="reqStrengthLevel05"/></level_requirements>
+			<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="5" desc_key="reqStrengthLevel05"/></level_requirements>
+			<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="5" desc_key="reqStrengthLevel05"/></level_requirements>
+			<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="5" desc_key="reqStrengthLevel05"/></level_requirements>
+			<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="5" desc_key="reqStrengthLevel05"/></level_requirements>
+			<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="5" desc_key="reqStrengthLevel05"/></level_requirements>
+			<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="5" desc_key="reqStrengthLevel05"/></level_requirements>
+			
+			<effect_group>
+				<requirement name="ItemHasTags" tags="melee"/>
+				<passive_effect name="StaminaLoss" operation="perc_add" level="1,9" value="-.02,-.18"/>
+				<passive_effect name="StaminaLoss" operation="perc_add" level="10" value="-.25"/>
+
+				<effect_description level="1" desc_base="Efficiency I" long_desc_key="Lose 2% less stamina while swinging melee tools and weapons."/>
+				<effect_description level="2" desc_base="Efficiency II" long_desc_key="Lose 4% less stamina while swinging melee tools and weapons."/>
+				<effect_description level="3" desc_base="Efficiency III" long_desc_key="Lose 6% less stamina while swinging melee tools and weapons."/>
+				<effect_description level="4" desc_base="Efficiency IV" long_desc_key="Lose 8% less stamina while swinging melee tools and weapons."/>
+				<effect_description level="5" desc_base="Efficiency V" long_desc_key="Lose 10% less stamina while swinging melee tools and weapons."/>
+				<effect_description level="6" desc_base="Efficiency VI" long_desc_key="Lose 12% less stamina while swinging melee tools and weapons."/>
+				<effect_description level="7" desc_base="Efficiency VII" long_desc_key="Lose 14% less stamina while swinging melee tools and weapons."/>
+				<effect_description level="8" desc_base="Efficiency VIII" long_desc_key="Lose 16% less stamina while swinging melee tools and weapons."/>
+				<effect_description level="9" desc_base="Efficiency IX" long_desc_key="Lose 18% less stamina while swinging melee tools and weapons."/>
+				<effect_description level="10" desc_base="Efficiency Master" long_desc_key="You use precicely the amount of strength that you need. Lose 25% less stamina while swinging melee tools and weapons."/>
+			</effect_group>
+		</perk>	
+
+		<perk name="perkShrimpPunch" max_level="10" parent="skillJackOfAll" name_key="Shrimp Punch" desc_key="You are mastering the art of the Mantis Shrimp Punch. Deal more melee entity and block damage." icon="mp_shrimppunch">
+			
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="5" desc_key="reqAgilityLevel05"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="5" desc_key="reqAgilityLevel05"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="5" desc_key="reqAgilityLevel05"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="5" desc_key="reqAgilityLevel05"/></level_requirements>
+			<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="5" desc_key="reqAgilityLevel05"/></level_requirements>
+			<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="5" desc_key="reqAgilityLevel05"/></level_requirements>
+			<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="5" desc_key="reqAgilityLevel05"/></level_requirements>
+			<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="5" desc_key="reqAgilityLevel05"/></level_requirements>
+			<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="5" desc_key="reqAgilityLevel05"/></level_requirements>
+			<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="5" desc_key="reqAgilityLevel05"/></level_requirements>
+			
+			<effect_group>
+				<requirement name="ItemHasTags" tags="melee"/>
+				
+					<passive_effect name="DismemberChance" operation="base_add" level="10" value=".05"/>
+				
+					<passive_effect name="EntityDamage" operation="perc_add" level="1,9" value=".02,.018"/>
+					<passive_effect name="EntityDamage" operation="perc_add" level="10" value=".24"/>
+					
+					<passive_effect name="BlockDamage" operation="perc_add" level="1,9" value=".02,.018"/>
+					<passive_effect name="BlockDamage" operation="perc_add" level="10" value=".24"/>
+
+				<effect_description level="1" desc_base="Shrimp Punch I" long_desc_key="Increase your Melee Damage by 2%."/>
+				<effect_description level="2" desc_base="Shrimp Punch II" long_desc_key="Increase your Melee Damage by 4%."/>
+				<effect_description level="3" desc_base="Shrimp Punch III" long_desc_key="Increase your Melee Damage by 6%."/>
+				<effect_description level="4" desc_base="Shrimp Punch IV" long_desc_key="Increase your Melee Damage by 8%."/>
+				<effect_description level="5" desc_base="Shrimp Punch V" long_desc_key="Increase your Melee Damage by 10%."/>
+				<effect_description level="6" desc_base="Shrimp Punch VI" long_desc_key="Increase your Melee Damage by 12%."/>
+				<effect_description level="7" desc_base="Shrimp Punch VII" long_desc_key="Increase your Melee Damage by 14%."/>
+				<effect_description level="8" desc_base="Shrimp Punch VIII" long_desc_key="Increase your Melee Damage by 16%."/>
+				<effect_description level="9" desc_base="Shrimp Punch IX" long_desc_key="Increase your Melee Damage by 18%."/>
+				<effect_description level="10" desc_base="Shrimp Punch Master" long_desc_key="Your attacks reach supersonic speeds! Increase your Melee Damage by 24% and your chance to dismember with melee weapons by 5%."/>
+			</effect_group>
+		</perk>
+		
+		<perk name="perkRapidBlows" max_level="10" parent="skillJackOfAll" name_key="Rapid Blows" desc_key="You are mastering the art of rapid attacks. You are able too attack even faster." icon="mp_rapidblows">
+			
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="5" desc_key="reqAgilityLevel05"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="5" desc_key="reqAgilityLevel05"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="5" desc_key="reqAgilityLevel05"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="5" desc_key="reqAgilityLevel05"/></level_requirements>
+			<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="5" desc_key="reqAgilityLevel05"/></level_requirements>
+			<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="5" desc_key="reqAgilityLevel05"/></level_requirements>
+			<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="5" desc_key="reqAgilityLevel05"/></level_requirements>
+			<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="5" desc_key="reqAgilityLevel05"/></level_requirements>
+			<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="5" desc_key="reqAgilityLevel05"/></level_requirements>
+			<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="5" desc_key="reqAgilityLevel05"/></level_requirements>
+			
+			<effect_group>
+				<requirement name="ItemHasTags" tags="melee"/>
+				
+					<passive_effect name="AttacksPerMinute" operation="perc_add" level="1,9" value=".02,0.18"/>
+					<passive_effect name="AttacksPerMinute" operation="perc_add" level="10" value=".24"/>
+
+				<effect_description level="1" desc_base="Rapid Blows I" long_desc_key="Increase your Attack Speed with melee tools and weapons by 2%."/>
+				<effect_description level="2" desc_base="Rapid Blows II" long_desc_key="Increase your Attack Speed with melee tools and weapons by 4%."/>
+				<effect_description level="3" desc_base="Rapid Blows III" long_desc_key="Increase your Attack Speed with melee tools and weapons by 6%."/>
+				<effect_description level="4" desc_base="Rapid Blows IV" long_desc_key="Increase your Attack Speed with melee tools and weapons by 8%."/>
+				<effect_description level="5" desc_base="Rapid Blows V" long_desc_key="Increase your Attack Speed with melee tools and weapons by 10%."/>
+				<effect_description level="6" desc_base="Rapid Blows VI" long_desc_key="Increase your Attack Speed with melee tools and weapons by 12%."/>
+				<effect_description level="7" desc_base="Rapid Blows VII" long_desc_key="Increase your Attack Speed with melee tools and weapons by 14%."/>
+				<effect_description level="8" desc_base="Rapid Blows VIII" long_desc_key="Increase your Attack Speed with melee tools and weapons by 16%."/>
+				<effect_description level="9" desc_base="Rapid Blows IX" long_desc_key="Increase your Attack Speed with melee tools and weapons by 18%."/>
+				<effect_description level="10" desc_base="Rapid Blows Master" long_desc_key="You are Jackie Chan. Increase your Attack Speed with melee tools and weapons by 24%."/>
+			</effect_group>
+		</perk>
+		
+		<perk name="perkCriminal" max_level="10" parent="skillJackOfAll" name_key="Criminal" desc_key="You are mastering Criminal activities. You make less noise while sneaking around and you're getting better at picking locks." icon="mp_criminal">
+			
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="5" desc_key="reqPerceptionLevel05"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="5" desc_key="reqPerceptionLevel05"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="5" desc_key="reqPerceptionLevel05"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="5" desc_key="reqPerceptionLevel05"/></level_requirements>
+			<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="5" desc_key="reqPerceptionLevel05"/></level_requirements>
+			<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="5" desc_key="reqPerceptionLevel05"/></level_requirements>
+			<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="5" desc_key="reqPerceptionLevel05"/></level_requirements>
+			<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="5" desc_key="reqPerceptionLevel05"/></level_requirements>
+			<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="5" desc_key="reqPerceptionLevel05"/></level_requirements>
+			<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="5" desc_key="reqPerceptionLevel05"/></level_requirements>
+			
+			<effect_group>
+				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+			
+				<passive_effect name="NoiseMultiplier" operation="perc_add" level="1,9" value="-.02,-.18"/>
+				<passive_effect name="NoiseMultiplier" operation="perc_add" level="10" value="-.24"/>
+
+				<passive_effect name="LockPickTime" operation="perc_subtract" level="1,9" value=".04,.36"/>
+				<passive_effect name="LockPickTime" operation="perc_subtract" level="10" value=".5"/>
+				<passive_effect name="LockPickBreakChance" operation="perc_subtract" level="1,9" value=".04,.36"/>
+				<passive_effect name="LockPickBreakChance" operation="perc_subtract" level="10" value=".5"/>
+
+				<effect_description level="1" desc_base="Criminal I" long_desc_key="Decrease the noise you make while crouching by 2%. Pick locks 4% faster and break 4% less lockpicks."/>
+				<effect_description level="2" desc_base="Criminal II" long_desc_key="Decrease the noise you make while crouching by 4%. Pick locks 8% faster and break 8% less lockpicks."/>
+				<effect_description level="3" desc_base="Criminal III" long_desc_key="Decrease the noise you make while crouching by 6%. Pick locks 12% faster and break 12% less lockpicks."/>
+				<effect_description level="4" desc_base="Criminal IV" long_desc_key="Decrease the noise you make while crouching by 8%. Pick locks 16% faster and break 16% less lockpicks."/>
+				<effect_description level="5" desc_base="Criminal V" long_desc_key="Decrease the noise you make while crouching by 10%. Pick locks 20% faster and break 20% less lockpicks."/>
+				<effect_description level="6" desc_base="Criminal VI" long_desc_key="Decrease the noise you make while crouching by 12%. Pick locks 24% faster and break 24% less lockpicks."/>
+				<effect_description level="7" desc_base="Criminal VII" long_desc_key="Decrease the noise you make while crouching by 14%. Pick locks 28% faster and break 28% less lockpicks."/>
+				<effect_description level="8" desc_base="Criminal VIII" long_desc_key="Decrease the noise you make while crouching by 16%. Pick locks 32% faster and break 32% less lockpicks."/>
+				<effect_description level="9" desc_base="Criminal IX" long_desc_key="Decrease the noise you make while crouching by 18%. Pick locks 36% faster and break 36% less lockpicks."/>
+				<effect_description level="10" desc_base="Criminal Mastermind" long_desc_key="Click out of one, nothing on two, three is binding. Decrease the noise you make while crouching by 24%. Pick locks 50% faster and break 50% less lockpicks."/>
+			</effect_group>
+		</perk>
+		
+		<perk name="perkCrafting" max_level="10" parent="skillJackOfAll" name_key="Crafting" desc_key="You are mastering crafting, allowing you to craft even faster than before." icon="mp_craftingspeed">
+			
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/></level_requirements>
+			<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/></level_requirements>
+			<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/></level_requirements>
+			<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/></level_requirements>
+			<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/></level_requirements>
+			<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/></level_requirements>
+			<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/></level_requirements>
+			
+			<effect_group>
+    		<passive_effect name="CraftingTime" operation="perc_add" level="1,9" value="-.05,-.45"/>
+    		<passive_effect name="CraftingTime" operation="perc_add" level="10" value="-0.6"/>
+
+			<passive_effect name="CraftingTier" operation="base_add" level="10" value="1"/>
+
+				<effect_description level="1" desc_base="Crafting I" long_desc_key="Increase your crafting speed by 5%."/>
+				<effect_description level="2" desc_base="Crafting II" long_desc_key="Increase your crafting speed by 10%."/>
+				<effect_description level="3" desc_base="Crafting III" long_desc_key="Increase your crafting speed by 15%."/>
+				<effect_description level="4" desc_base="Crafting IV" long_desc_key="Increase your crafting speed by 20%."/>
+				<effect_description level="5" desc_base="Crafting V" long_desc_key="Increase your crafting speed by 25%."/>
+				<effect_description level="6" desc_base="Crafting VI" long_desc_key="Increase your crafting speed by 30%."/>
+				<effect_description level="7" desc_base="Crafting VII" long_desc_key="Increase your crafting speed by 35%."/>
+				<effect_description level="8" desc_base="Crafting VIII" long_desc_key="Increase your crafting speed by 40%."/>
+				<effect_description level="9" desc_base="Crafting IX" long_desc_key="Increase your crafting speed by 45%."/>
+				<effect_description level="10" desc_base="Crafting Master" long_desc_key="You are Hephaestus. Increase your crafting speed by 60% and add an additional crafting tier."/>
+			</effect_group>
+		</perk>
+		
+		<perk name="perkDismemberment" max_level="10" parent="skillJackOfAll" name_key="Dismemberment" desc_key="You are mastering the art of exploding enemy body parts. Get an additional chance to dismember with any weapon or fists." icon="mp_dismember">
+			
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/></level_requirements>
+			<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/></level_requirements>
+			<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/></level_requirements>
+			<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/></level_requirements>
+			<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/></level_requirements>
+			<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/></level_requirements>
+			<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/></level_requirements>
+			
+			<effect_group>
+				<passive_effect name="DismemberChance" operation="base_add" level="1,10" value=".015,.15"/>
+
+				<effect_description level="1" desc_base="Dismemberment I" long_desc_key="Increase your chance to dismember by 1.5%."/>
+				<effect_description level="2" desc_base="Dismemberment II" long_desc_key="Increase your chance to dismember by 3%."/>
+				<effect_description level="3" desc_base="Dismemberment III" long_desc_key="Increase your chance to dismember by 4.5%."/>
+				<effect_description level="4" desc_base="Dismemberment IV" long_desc_key="Increase your chance to dismember by 6%."/>
+				<effect_description level="5" desc_base="Dismemberment V" long_desc_key="Increase your chance to dismember by 7.5%."/>
+				<effect_description level="6" desc_base="Dismemberment VI" long_desc_key="Increase your chance to dismember by 9%."/>
+				<effect_description level="7" desc_base="Dismemberment VII" long_desc_key="Increase your chance to dismember by 10.5%."/>
+				<effect_description level="8" desc_base="Dismemberment VIII" long_desc_key="Increase your chance to dismember by 12%."/>
+				<effect_description level="9" desc_base="Dismemberment IX" long_desc_key="Increase your chance to dismember by 13.5%."/>
+				<effect_description level="10" desc_base="Dismemberment Master" long_desc_key="Omae wa mou shindeiru. -NANI?! Increase your chance to dismember by 15%."/>
+			</effect_group>
+		</perk>
+		
+		<perk name="perkMemorisation" max_level="10" parent="skillJackOfAll" name_key="Memorisation" desc_key="You mastering the mnemonic method of memorisation. You are earning experience faster." icon="mp_xp">
+			
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/></level_requirements>
+			<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/></level_requirements>
+			<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/></level_requirements>
+			<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/></level_requirements>
+			<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/></level_requirements>
+			<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/></level_requirements>
+			<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/></level_requirements>
+			
+			<effect_group>
+				<passive_effect name="PlayerExpGain" operation="perc_add" value=".03,.27 " level="1,9"/>
+				<passive_effect name="PlayerExpGain" operation="perc_add" value=".35 " level="10"/>
+
+				<effect_description level="1" desc_base="Memorisation I" long_desc_key="Increase your earned experience by 3%."/>
+				<effect_description level="2" desc_base="Memorisation II" long_desc_key="Increase your earned experience by 6%."/>
+				<effect_description level="3" desc_base="Memorisation III" long_desc_key="Increase your earned experience by 9%."/>
+				<effect_description level="4" desc_base="Memorisation IV" long_desc_key="Increase your earned experience by 12%."/>
+				<effect_description level="5" desc_base="Memorisation V" long_desc_key="Increase your earned experience by 15%."/>
+				<effect_description level="6" desc_base="Memorisation VI" long_desc_key="Increase your earned experience by 18%."/>
+				<effect_description level="7" desc_base="Memorisation VII" long_desc_key="Increase your earned experience by 21%."/>
+				<effect_description level="8" desc_base="Memorisation VIII" long_desc_key="Increase your earned experience by 24%."/>
+				<effect_description level="9" desc_base="Memorisation IX" long_desc_key="Increase your earned experience by 27%."/>
+				<effect_description level="10" desc_base="Memorisation Master" long_desc_key="Your memorisation rivals that of Magnus Carlsen. Increase your earned experience by 35%."/>
+			</effect_group>
+		</perk>
+		
+		<perk name="perkTriage" max_level="10" parent="skillJackOfAll" name_key="Triage" desc_key="You are mastering the ways of triage increasing the effectivnes of medical items." icon="mp_healing">
+			
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/></level_requirements>
+			<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/></level_requirements>
+			<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/></level_requirements>
+			<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/></level_requirements>
+			<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/></level_requirements>
+			<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/></level_requirements>
+			<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/></level_requirements>
+			
+			<effect_group>
+		<!--healing regulated in buffs.xml-->
+				<effect_description level="1" desc_base="Triage I" long_desc_key="Increase the healing effectivnes of medical items by 4%."/>
+				<effect_description level="2" desc_base="Triage II" long_desc_key="Increase the healing effectivnes of medical items by 8%."/>
+				<effect_description level="3" desc_base="Triage III" long_desc_key="Increase the healing effectivnes of medical items by 12%."/>
+				<effect_description level="4" desc_base="Triage IV" long_desc_key="Increase the healing effectivnes of medical items by 16%."/>
+				<effect_description level="5" desc_base="Triage V" long_desc_key="Increase the healing effectivnes of medical items by 20%."/>
+				<effect_description level="6" desc_base="Triage VI" long_desc_key="Increase the healing effectivnes of medical items by 24%."/>
+				<effect_description level="7" desc_base="Triage VII" long_desc_key="Increase the healing effectivnes of medical items by 28%."/>
+				<effect_description level="8" desc_base="Triage VIII" long_desc_key="Increase the healing effectivnes of medical items by 32%."/>
+				<effect_description level="9" desc_base="Triage IX" long_desc_key="Increase the healing effectivnes of medical items by 36%."/>
+				<effect_description level="10" desc_base="Triage Master" long_desc_key="Hypocrite that you are to trust the chemicals in your brain to tell you they are chemicals. All knowledge is ultimately based on that which we cannot prove. Will you fight like a man or perish like a dog? Increase the healing effectivnes of medical items by 50%."/>
+			</effect_group>
+		</perk>
+		
+		<perk name="perkDoublePen" max_level="10" parent="skillJackOfAll" name_key="Double Penetration" desc_key="You are mastering the art of penetration. Enemy armor reduced and penetration count increased." icon="mp_doublepen">
+			
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="GTE" value="1" desc_key="Requires The Penetrator lvl 1"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="GTE" value="1" desc_key="Requires The Penetrator lvl 1"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="GTE" value="1" desc_key="Requires The Penetrator lvl 1"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="GTE" value="2" desc_key="Requires The Penetrator lvl 2"/></level_requirements>
+			<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="GTE" value="2" desc_key="Requires The Penetrator lvl 2"/></level_requirements>
+			<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="GTE" value="2" desc_key="Requires The Penetrator lvl 2"/></level_requirements>
+			<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="GTE" value="3" desc_key="Requires The Penetrator lvl 3"/></level_requirements>
+			<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="GTE" value="3" desc_key="Requires The Penetrator lvl 3"/></level_requirements>
+			<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="GTE" value="4" desc_key="Requires The Penetrator lvl 4"/></level_requirements>
+			<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="GTE" value="4" desc_key="Requires The Penetrator lvl 4"/></level_requirements>
+
+			<effect_group>
+				<passive_effect name="TargetArmor" operation="perc_add" level="1,9" value="-.02,-.18" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkPenetrator,perkArchery,perkJavelinMaster"/>
+				<passive_effect name="TargetArmor" operation="perc_add" level="10" value="-.25" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkPenetrator,perkArchery,perkJavelinMaster"/>
+
+				<!-- Note: the 1 penetration effect is on <item name="ammo762mmBulletAP"> and other AP bullets -->
+				<passive_effect name="EntityPenetrationCount" operation="perc_add" level="1,3" value="1" tags="perkDeadEye"/>
+				<passive_effect name="EntityPenetrationCount" operation="perc_add" level="4,6" value="2" tags="perkDeadEye"/>
+				<passive_effect name="EntityPenetrationCount" operation="perc_add" level="7,9" value="3" tags="perkDeadEye"/>
+				<passive_effect name="EntityPenetrationCount" operation="perc_add" level="10" value="4" tags="perkDeadEye"/>
+				<!--	All AP ammo has 1 penetration -->
+
+				<effect_description level="1" desc_base="Double Penetration I" long_desc_key="Ignore an additional 2% of armor with firearms, archery and spears. Armor-piercing rounds can penetrate an additional target or a block of up to 250 extra hit points when using Hunting, Marksman or Sniper Rifles."/>
+				<effect_description level="2" desc_base="Double Penetration II" long_desc_key="Ignore an additional 4% of armor with firearms, archery and spears. Armor-piercing rounds can penetrate an additional target or a block of up to 250 extra hit points when using Hunting, Marksman or Sniper Rifles."/>
+				<effect_description level="3" desc_base="Double Penetration III" long_desc_key="Ignore an additional 6% of armor with firearms, archery and spears. Armor-piercing rounds can penetrate an additional target or a block of up to 250 extra hit points when using Hunting, Marksman or Sniper Rifles."/>
+				<effect_description level="4" desc_base="Double Penetration IV" long_desc_key="Ignore an additional 8% of armor with firearms, archery and spears. Armor-piercing rounds can penetrate two additional targets or blocks of up to 500 extra hit points when using Hunting, Marksman or Sniper Rifles."/>
+				<effect_description level="5" desc_base="Double Penetration V" long_desc_key="Ignore an additional 10% of armor with firearms, archery and spears. Armor-piercing rounds can penetrate two additional targets or blocks of up to 500 extra hit points when using Hunting, Marksman or Sniper Rifles."/>
+				<effect_description level="6" desc_base="Double Penetration VI" long_desc_key="Ignore an additional 12% of armor with firearms, archery and spears. Armor-piercing rounds can penetrate two additional targets or blocks of up to 500 extra hit points when using Hunting, Marksman or Sniper Rifles."/>
+				<effect_description level="7" desc_base="Double Penetration VII" long_desc_key="Ignore an additional 14% of armor with firearms, archery and spears. Armor-piercing rounds can penetrate three additional targets or blocks of up to 750 extra hit points when using Hunting, Marksman or Sniper Rifles."/>
+				<effect_description level="8" desc_base="Double Penetration VIII" long_desc_key="Ignore an additional 16% of armor with firearms, archery and spears. Armor-piercing rounds can penetrate three additional targets or blocks of up to 750 extra hit points when using Hunting, Marksman or Sniper Rifles."/>
+				<effect_description level="9" desc_base="Double Penetration IX" long_desc_key="Ignore an additional 18% of armor with firearms, archery and spears. Armor-piercing rounds can penetrate three additional targets or blocks of up to 750 extra hit points when using Hunting, Marksman or Sniper Rifles."/>
+				<effect_description level="10" desc_base="Double Penetration Master" long_desc_key="Diggy diggy hole! Ignore an additional 25% of armor with firearms, archery and spears. Armor-piercing rounds can penetrate four additional targets or blocks of up to 1000 extra hit points when using Hunting, Marksman or Sniper Rifles."/>
+				
+		</effect_group>
+		</perk>
+		
+		<perk name="perkLootGobbo" max_level="10" parent="skillJackOfAll" name_key="Loot Gobbo" desc_key="You are mastering the art of looting everything! You are more lucky when looting stuff!" icon="mp_gobbo">
+			
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="perkLuckyLooter" operation="GTE" value="1" desc_key="Requires Lucky Looter lvl 1"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="perkLuckyLooter" operation="GTE" value="1" desc_key="Requires Lucky Looter lvl 1"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="perkLuckyLooter" operation="GTE" value="2" desc_key="Requires Lucky Looter lvl 2"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="perkLuckyLooter" operation="GTE" value="2" desc_key="Requires Lucky Looter lvl 2"/></level_requirements>
+			<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="perkLuckyLooter" operation="GTE" value="3" desc_key="Requires Lucky Looter lvl 3"/></level_requirements>
+			<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="perkLuckyLooter" operation="GTE" value="3" desc_key="Requires Lucky Looter lvl 3"/></level_requirements>
+			<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="perkLuckyLooter" operation="GTE" value="4" desc_key="Requires Lucky Looter lvl 4"/></level_requirements>
+			<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="perkLuckyLooter" operation="GTE" value="4" desc_key="Requires Lucky Looter lvl 4"/></level_requirements>
+			<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="perkLuckyLooter" operation="GTE" value="5" desc_key="Requires Lucky Looter lvl 5"/></level_requirements>
+			<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="perkLuckyLooter" operation="GTE" value="5" desc_key="Requires Lucky Looter lvl 5"/></level_requirements>
+			
+			<effect_group>
+				<passive_effect name="LootGamestage" operation="perc_add" level="1,9" value=".02,.18"/>
+				<passive_effect name="LootGamestage" operation="perc_add" level="10" value=".25"/>
+			
+				<passive_effect name="ScavengingTime" operation="perc_subtract" level="1,9" value=".01,.09"/>
+				<passive_effect name="ScavengingTime" operation="perc_subtract" level="10" value=".12"/>
+
+				<passive_effect name="LootQuantity" operation="perc_add" level="1,9" value=".02,.18" tags="buriedTreasure"/>
+				<passive_effect name="LootQuantity" operation="perc_add" level="10" value=".25" tags="buriedTreasure"/>
+
+				<effect_description level="1" desc_base="Loot Gobbo I" long_desc_key="Adds 2% to loot bonus. Looting is 1% faster."/>
+				<effect_description level="2" desc_base="Loot Gobbo II" long_desc_key="Adds 4% to loot bonus. Looting is 2% faster."/>
+				<effect_description level="3" desc_base="Loot Gobbo III" long_desc_key="Adds 6% to loot bonus. Looting is 3% faster."/>
+				<effect_description level="4" desc_base="Loot Gobbo IV" long_desc_key="Adds 8% to loot bonus. Looting is 4% faster."/>
+				<effect_description level="5" desc_base="Loot Gobbo V" long_desc_key="Adds 10% to loot bonus. Looting is 5% faster."/>
+				<effect_description level="6" desc_base="Loot Gobbo VI" long_desc_key="Adds 12% to loot bonus. Looting is 6% faster."/>
+				<effect_description level="7" desc_base="Loot Gobbo VII" long_desc_key="Adds 14% to loot bonus. Looting is 7% faster."/>
+				<effect_description level="8" desc_base="Loot Gobbo VIII" long_desc_key="Adds 16% to loot bonus. Looting is 8% faster."/>
+				<effect_description level="9" desc_base="Loot Gobbo IX" long_desc_key="Adds 18% to loot bonus. Looting is 9% faster."/>
+				<effect_description level="10" desc_base="Loot Gobbo Master" long_desc_key="WE IS BETTER THAN THEM!! You're the master among all Loot Gobbos. Adds 25% to loot bonus. Looting is 12% faster."/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkCrypto" max_level="10" parent="skillJackOfAll" name_key="Crypto" desc_key="You are researching the Cryptocurrency market values. Gathering the data. Your bartering Skills increase." icon="mp_bitcoin">
+			
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="GTE" value="1" desc_key="Requires Better Barter lvl 1"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="GTE" value="1" desc_key="Requires Better Barter lvl 1"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="GTE" value="2" desc_key="Requires Better Barter lvl 2"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="GTE" value="2" desc_key="Requires Better Barter lvl 2"/></level_requirements>
+			<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="GTE" value="3" desc_key="Requires Better Barter lvl 3"/></level_requirements>
+			<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="GTE" value="3" desc_key="Requires Better Barter lvl 3"/></level_requirements>
+			<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="GTE" value="4" desc_key="Requires Better Barter lvl 4"/></level_requirements>
+			<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="GTE" value="4" desc_key="Requires Better Barter lvl 4"/></level_requirements>
+			<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="GTE" value="5" desc_key="Requires Better Barter lvl 5"/></level_requirements>
+			<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="GTE" value="5" desc_key="Requires Better Barter lvl 5"/></level_requirements>
+			
+			<effect_group>
+			<passive_effect name="BarteringBuying" operation="base_add" level="1,9" value=".015,.135"/>
+			<passive_effect name="BarteringBuying" operation="base_add" level="10" value=".20"/>
+			<passive_effect name="BarteringSelling" operation="base_add" level="1,9" value=".015,.135"/>
+			<passive_effect name="BarteringSelling" operation="base_add" level="10" value=".20"/>
+
+			<effect_description level="1" desc_base="Crypto I" long_desc_key="Get a 1.5% better deal buying and selling merchandise with traders."/>
+			<effect_description level="2" desc_base="Crypto II" long_desc_key="Get a 3% better deal buying and selling merchandise with traders."/>
+			<effect_description level="3" desc_base="Crypto III" long_desc_key="Get a 4.5% better deal buying and selling merchandise with traders."/>
+			<effect_description level="4" desc_base="Crypto IV" long_desc_key="Get a 6% better deal buying and selling merchandise with traders."/>
+			<effect_description level="5" desc_base="Crypto V" long_desc_key="Get a 7.5% better deal buying and selling merchandise with traders."/>
+			<effect_description level="6" desc_base="Crypto VI" long_desc_key="Get a 9% better deal buying and selling merchandise with traders."/>
+			<effect_description level="7" desc_base="Crypto VII" long_desc_key="Get a 10.5% better deal buying and selling merchandise with traders."/>
+			<effect_description level="8" desc_base="Crypto VIII" long_desc_key="Get a 12% better deal buying and selling merchandise with traders."/>
+			<effect_description level="9" desc_base="Crypto IX" long_desc_key="Get a 13.5% better deal buying and selling merchandise with traders."/>
+			<effect_description level="10" desc_base="Crypto Master" long_desc_key="Since when were you under the impression that CRAB-17 was over? Get a 20% better deal buying and selling merchandise with traders."/>
+			</effect_group>
+		</perk>
+		
+		<perk name="perkThinSkin" max_level="10" parent="skillJackOfAll" name_key="Thin Skin" desc_key="You are mastering your body control while wearing light armor. Your movement speed and stamina costs while wearing light armor decrease." icon="mp_thinskin">
+			
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="perkLightArmor" operation="GTE" value="1" desc_key="Requires Light Armor lvl 1"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="perkLightArmor" operation="GTE" value="1" desc_key="Requires Light Armor lvl 1"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="perkLightArmor" operation="GTE" value="1" desc_key="Requires Light Armor lvl 1"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="perkLightArmor" operation="GTE" value="2" desc_key="Requires Light Armor lvl 2"/></level_requirements>
+			<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="perkLightArmor" operation="GTE" value="2" desc_key="Requires Light Armor lvl 2"/></level_requirements>
+			<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="perkLightArmor" operation="GTE" value="2" desc_key="Requires Light Armor lvl 2"/></level_requirements>
+			<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="perkLightArmor" operation="GTE" value="3" desc_key="Requires Light Armor lvl 3"/></level_requirements>
+			<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="perkLightArmor" operation="GTE" value="3" desc_key="Requires Light Armor lvl 3"/></level_requirements>
+			<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="perkLightArmor" operation="GTE" value="4" desc_key="Requires Light Armor lvl 4"/></level_requirements>
+			<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="perkLightArmor" operation="GTE" value="4" desc_key="Requires Light Armor lvl 4"/></level_requirements>
+			
+			<effect_group>
+				<effect_description level="1" desc_base="Thin Skin I" long_desc_key="Reduce Light armor movement penalty by 3% and stamina penalty by 2%."/>
+				<effect_description level="2" desc_base="Thin Skin II" long_desc_key="Reduce Light armor movement penalty by 6% and stamina penalty by 4%."/>
+				<effect_description level="3" desc_base="Thin Skin III" long_desc_key="Reduce Light armor movement penalty by 9% and stamina penalty by 6%."/>
+				<effect_description level="4" desc_base="Thin Skin IV" long_desc_key="Reduce Light armor movement penalty by 12% and stamina penalty by 8%."/>
+				<effect_description level="5" desc_base="Thin Skin V" long_desc_key="Reduce Light armor movement penalty by 15% and stamina penalty by 10."/>
+				<effect_description level="6" desc_base="Thin Skin VI" long_desc_key="Reduce Light armor movement penalty by 18% and stamina penalty by 12%."/>
+				<effect_description level="7" desc_base="Thin Skin VII" long_desc_key="Reduce Light armor movement penalty by 21% and stamina penalty by 14%."/>
+				<effect_description level="8" desc_base="Thin Skin VIII" long_desc_key="Reduce Light armor movement penalty by 24% and stamina penalty by 16%."/>
+				<effect_description level="9" desc_base="Thin Skin IX" long_desc_key="Reduce Light armor movement penalty by 27% and stamina penalty by 18%."/>
+				<effect_description level="10" desc_base="Thin Skin Master" long_desc_key="You don't even feel your Light Armor, you even move faster while wearing it! Requiescat in pace. Increase movement speed while wearing Light armor by 15% and reduce the stamina penalty by 25%."/>
+			</effect_group>
+		</perk>
+		
+		<perk name="perkThickSkin" max_level="10" parent="skillJackOfAll" name_key="Thick Skin" desc_key="You are mastering your body control while wearing heavy armor. Your movement speed and stamina costs while wearing heavy armor decrease." icon="mp_thickskin">
+			
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="perkHeavyArmor" operation="GTE" value="1" desc_key="Requires Heavy Armor lvl 1"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="perkHeavyArmor" operation="GTE" value="1" desc_key="Requires Heavy Armor lvl 1"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="perkHeavyArmor" operation="GTE" value="1" desc_key="Requires Heavy Armor lvl 1"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="perkHeavyArmor" operation="GTE" value="2" desc_key="Requires Heavy Armor lvl 2"/></level_requirements>
+			<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="perkHeavyArmor" operation="GTE" value="2" desc_key="Requires Heavy Armor lvl 2"/></level_requirements>
+			<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="perkHeavyArmor" operation="GTE" value="2" desc_key="Requires Heavy Armor lvl 2"/></level_requirements>
+			<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="perkHeavyArmor" operation="GTE" value="3" desc_key="Requires Heavy Armor lvl 3"/></level_requirements>
+			<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="perkHeavyArmor" operation="GTE" value="3" desc_key="Requires Heavy Armor lvl 3"/></level_requirements>
+			<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="perkHeavyArmor" operation="GTE" value="4" desc_key="Requires Heavy Armor lvl 4"/></level_requirements>
+			<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="perkHeavyArmor" operation="GTE" value="4" desc_key="Requires Heavy Armor lvl 4"/></level_requirements>
+			
+			<effect_group>
+				<effect_description level="1" desc_base="Thick Skin I" long_desc_key="Reduce Heavy armor movement and stamina penalty by 2%."/>
+				<effect_description level="2" desc_base="Thick Skin II" long_desc_key="Reduce Heavy armor movement and stamina penalty by 4%."/>
+				<effect_description level="3" desc_base="Thick Skin III" long_desc_key="Reduce Heavy armor movement and stamina penalty by 6%."/>
+				<effect_description level="4" desc_base="Thick Skin IV" long_desc_key="Reduce Heavy armor movement and stamina penalty by 8%."/>
+				<effect_description level="5" desc_base="Thick Skin V" long_desc_key="Reduce Heavy armor movement and stamina penalty by 10%."/>
+				<effect_description level="6" desc_base="Thick Skin VI" long_desc_key="Reduce Heavy armor movement and stamina penalty by 12%."/>
+				<effect_description level="7" desc_base="Thick Skin VII" long_desc_key="Reduce Heavy armor movement and stamina penalty by 14%."/>
+				<effect_description level="8" desc_base="Thick Skin VIII" long_desc_key="Reduce Heavy armor movement and stamina penalty by 16%."/>
+				<effect_description level="9" desc_base="Thick Skin IX" long_desc_key="Reduce Heavy armor movement and stamina penalty by 18%."/>
+				<effect_description level="10" desc_base="Thick Skin Master" long_desc_key="You have mastered the weight of Heavy Armor. You are now Havel the Rock. Reduce Heavy armor movement and stamina penalty by 25%."/>
+			</effect_group>
+		</perk>
+		
+	<!-- Melee Masteries -->
+	
+			<perk name="perkSpartan" max_level="10" parent="skillMeleeMastery" name_key="Spartan" desc_key="You are mastering the arts of the spear. Your damage, attack speed and throwing range with spears increases." icon="mp_spears">
+		
+				<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="perkJavelinMaster" operation="GTE" value="1" desc_key="Requires Javelin Master lvl 1"/></level_requirements>
+				<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="perkJavelinMaster" operation="GTE" value="1" desc_key="Requires Javelin Master lvl 1"/></level_requirements>
+				<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="perkJavelinMaster" operation="GTE" value="2" desc_key="Requires Javelin Master lvl 2"/></level_requirements>
+				<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="perkJavelinMaster" operation="GTE" value="2" desc_key="Requires Javelin Master lvl 2"/></level_requirements>
+				<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="perkJavelinMaster" operation="GTE" value="3" desc_key="Requires Javelin Master lvl 3"/></level_requirements>
+				<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="perkJavelinMaster" operation="GTE" value="3" desc_key="Requires Javelin Master lvl 3"/></level_requirements>
+				<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="perkJavelinMaster" operation="GTE" value="4" desc_key="Requires Javelin Master lvl 4"/></level_requirements>
+				<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="perkJavelinMaster" operation="GTE" value="4" desc_key="Requires Javelin Master lvl 4"/></level_requirements>
+				<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="perkJavelinMaster" operation="GTE" value="5" desc_key="Requires Javelin Master lvl 5"/></level_requirements>
+				<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="perkJavelinMaster" operation="GTE" value="5" desc_key="Requires Javelin Master lvl 5"/></level_requirements>
+				
+			<effect_group>
+				<requirement name="ItemHasTags" tags="perkJavelinMaster"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" level="1,9" value=".01,.09"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" level="10" value=".12"/>
+			
+				<passive_effect name="EntityDamage" operation="perc_add" level="1,9" value=".05,.45"/>
+				<passive_effect name="EntityDamage" operation="perc_add" level="10" value=".6"/>
+
+				<passive_effect name="ProjectileVelocity" operation="perc_add" level="1,9" value=".02,.18"/>
+				<passive_effect name="ProjectileVelocity" operation="perc_add" level="10" value=".25"/>
+
+				<passive_effect name="EntityDamage" operation="perc_add" level="5,9" value=".25,.25" tags="secondary"/>
+				<passive_effect name="EntityDamage" operation="perc_add" level="10" value=".5" tags="secondary"/>
+		
+				<effect_description level="1" desc_base="Spartan I" long_desc_key="Increase your entity damage by 5%, range by 2% and attack speed with spears by 1%."/>
+				<effect_description level="2" desc_base="Spartan II" long_desc_key="Increase your entity damage by 10%, range by 4% and attack speed with spears by 2%."/>
+				<effect_description level="3" desc_base="Spartan III" long_desc_key="Increase your entity damage by 15%, range by 6% and attack speed with spears by 3%."/>
+				<effect_description level="4" desc_base="Spartan IV" long_desc_key="Increase your entity damage by 20%, range by 8% and attack speed with spears by 4%."/>
+				<effect_description level="5" desc_base="Spartan V" long_desc_key="Increase your entity damage by 25%, range by 10% and attack speed with spears by 5%. Thrown spears deal an additional 25% damage."/>
+				<effect_description level="6" desc_base="Spartan VI" long_desc_key="Increase your entity damage by 30%, range by 12% and attack speed with spears by 6%. Thrown spears deal an additional 25% damage."/>
+				<effect_description level="7" desc_base="Spartan VII" long_desc_key="Increase your entity damage by 35%, range by 14% and attack speed with spears by 7%. Thrown spears deal an additional 25% damage."/>
+				<effect_description level="8" desc_base="Spartan VIII" long_desc_key="Increase your entity damage by 40%, range by 16% and attack speed with spears by 8%. Thrown spears deal an additional 25% damage."/>
+				<effect_description level="9" desc_base="Spartan IX" long_desc_key="Increase your entity damage by 45%, range by 18% and attack speed with spears by 9%. Thrown spears deal an additional 25% damage."/>
+				<effect_description level="10" desc_base="Master Spartan" long_desc_key="You are Leonidas and THIS - IS - SPARTAAA!! Increase your entity damage by 60%, range by 25% and attack speed with spears by 12%. Thrown spears deal an additional 50% damage."/>
+		
+			</effect_group>
+		</perk>
+		
+		<perk name="perkClubber" max_level="10" parent="skillMeleeMastery" name_key="Clubber" desc_key="You are mastering the arts of the club (not the other thing). Your damage and attack speed with clubs increases." icon="mp_clubs">
+
+				<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="perkPummelPete" operation="GTE" value="1" desc_key="Requires Pummel Pete lvl 1"/></level_requirements>
+				<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="perkPummelPete" operation="GTE" value="1" desc_key="Requires Pummel Pete lvl 1"/></level_requirements>
+				<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="perkPummelPete" operation="GTE" value="2" desc_key="Requires Pummel Pete lvl 2"/></level_requirements>
+				<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="perkPummelPete" operation="GTE" value="2" desc_key="Requires Pummel Pete lvl 2"/></level_requirements>
+				<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="perkPummelPete" operation="GTE" value="3" desc_key="Requires Pummel Pete lvl 3"/></level_requirements>
+				<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="perkPummelPete" operation="GTE" value="3" desc_key="Requires Pummel Pete lvl 3"/></level_requirements>
+				<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="perkPummelPete" operation="GTE" value="4" desc_key="Requires Pummel Pete lvl 4"/></level_requirements>
+				<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="perkPummelPete" operation="GTE" value="4" desc_key="Requires Pummel Pete lvl 4"/></level_requirements>
+				<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="perkPummelPete" operation="GTE" value="5" desc_key="Requires Pummel Pete lvl 5"/></level_requirements>
+				<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="perkPummelPete" operation="GTE" value="5" desc_key="Requires Pummel Pete lvl 5"/></level_requirements>
+			
+			<effect_group>
+				<requirement name="ItemHasTags" tags="perkPummelPete"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" level="1,9" value=".02,.18"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" level="10" value=".25"/>
+			
+				<passive_effect name="EntityDamage" operation="perc_add" level="1,9" value=".04,.36"/>
+				<passive_effect name="EntityDamage" operation="perc_add" level="10" value=".5"/>
+
+				<passive_effect name="EntityDamage" operation="perc_add" level="5,9" value=".25,.25" tags="running"/>
+				<passive_effect name="EntityDamage" operation="perc_add" level="10" value=".5" tags="running"/>
+
+				<effect_description level="1" desc_base="Clubber I" long_desc_key="Increase your entity damage by 4% and attack speed with clubs by 2%."/>
+				<effect_description level="2" desc_base="Clubber II" long_desc_key="Increase your entity damage by 8% and attack speed with clubs by 4%."/>
+				<effect_description level="3" desc_base="Clubber III" long_desc_key="Increase your entity damage by 12% and attack speed with clubs by 6%."/>
+				<effect_description level="4" desc_base="Clubber IV" long_desc_key="Increase your entity damage by 16% and attack speed with clubs by 8%."/>
+				<effect_description level="5" desc_base="Clubber V" long_desc_key="Increase your entity damage by 20% and attack speed with clubs by 10%. Damage is increased by an additional 25% if you hit a target while sprinting."/>
+				<effect_description level="6" desc_base="Clubber VI" long_desc_key="Increase your entity damage by 24% and attack speed with clubs by 12%. Damage is increased by an additional 25% if you hit a target while sprinting."/>
+				<effect_description level="7" desc_base="Clubber VII" long_desc_key="Increase your entity damage by 28% and attack speed with clubs by 14%. Damage is increased by an additional 25% if you hit a target while sprinting."/>
+				<effect_description level="8" desc_base="Clubber VIII" long_desc_key="Increase your entity damage by 32% and attack speed with clubs by 16%. Damage is increased by an additional 25% if you hit a target while sprinting."/>
+				<effect_description level="9" desc_base="Clubber IX" long_desc_key="Increase your entity damage by 36% and attack speed with clubs by 18%. Damage is increased by an additional 25% if you hit a target while sprinting."/>
+				<effect_description level="10" desc_base="Master Clubber" long_desc_key="You are Cheems with the power of Bonk. Send anyone to horny jail. Increase your entity damage by 50% and attack speed with clubs by 25%. Damage is increased by an additional 50% if you hit a target while sprinting."/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkHammerer" max_level="10" parent="skillMeleeMastery" name_key="Hammerer" desc_key="You are mastering the arts of the sledgehammer." icon="mp_sledges">
+		
+				<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="perkSkullCrusher" operation="GTE" value="1" desc_key="Requires Skull Crusher lvl 1"/></level_requirements>
+				<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="perkSkullCrusher" operation="GTE" value="1" desc_key="Requires Skull Crusher lvl 1"/></level_requirements>
+				<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="perkSkullCrusher" operation="GTE" value="2" desc_key="Requires Skull Crusher lvl 2"/></level_requirements>
+				<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="perkSkullCrusher" operation="GTE" value="2" desc_key="Requires Skull Crusher lvl 2"/></level_requirements>
+				<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="perkSkullCrusher" operation="GTE" value="3" desc_key="Requires Skull Crusher lvl 3"/></level_requirements>
+				<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="perkSkullCrusher" operation="GTE" value="3" desc_key="Requires Skull Crusher lvl 3"/></level_requirements>
+				<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="perkSkullCrusher" operation="GTE" value="4" desc_key="Requires Skull Crusher lvl 4"/></level_requirements>
+				<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="perkSkullCrusher" operation="GTE" value="4" desc_key="Requires Skull Crusher lvl 4"/></level_requirements>
+				<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="perkSkullCrusher" operation="GTE" value="5" desc_key="Requires Skull Crusher lvl 5"/></level_requirements>
+				<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="perkSkullCrusher" operation="GTE" value="5" desc_key="Requires Skull Crusher lvl 5"/></level_requirements>
+
+			<effect_group>
+				<requirement name="ItemHasTags" tags="perkSkullHammerer"/>
+			
+				<passive_effect name="EntityDamage" operation="perc_add" level="1,9" value=".07,.63"/>
+				<passive_effect name="EntityDamage" operation="perc_add" level="10" value=".80"/>
+								
+				<passive_effect name="AttacksPerMinute" operation="perc_add" level="10" value=".05"/>
+				
+				<passive_effect name="BlockDamage" operation="perc_add" value=".15,1.5" level="1,10"/>
+
+				<effect_description level="1" desc_base="Hammerer I" long_desc_key="Increase your entity damage with sledgehammers by 7% and block damage by 15%."/>
+				<effect_description level="2" desc_base="Hammerer II" long_desc_key="Increase your entity damage with sledgehammers by 14% and block damage by 30%."/>
+				<effect_description level="3" desc_base="Hammerer III" long_desc_key="Increase your entity damage with sledgehammers by 21% and block damage by 45%."/>
+				<effect_description level="4" desc_base="Hammerer IV" long_desc_key="Increase your entity damage with sledgehammers by 28% and block damage by 60%."/>
+				<effect_description level="5" desc_base="Hammerer V" long_desc_key="Increase your entity damage with sledgehammers by 35% and block damage by 75%."/>
+				<effect_description level="6" desc_base="Hammerer VI" long_desc_key="Increase your entity damage with sledgehammers by 42% and block damage by 90%."/>
+				<effect_description level="7" desc_base="Hammerer VII" long_desc_key="Increase your entity damage with sledgehammers by 49% and block damage by 105%."/>
+				<effect_description level="8" desc_base="Hammerer VIII" long_desc_key="Increase your entity damage with sledgehammers by 56% and block damage by 120%."/>
+				<effect_description level="9" desc_base="Hammerer IX" long_desc_key="Increase your entity damage with sledgehammers by 63% and block damage by 135%."/>
+				<effect_description level="10" desc_base="Master Hammerer" long_desc_key="You are Bob the Builder's evil twin brother Bobo the Destroyer. Increase your entity damage with sledgehammers by 80%, attack speed by 5% and block damage by 150%."/>
+
+			</effect_group>
+		</perk>
+		
+		<perk name="perkHandyman" max_level="10" parent="skillMeleeMastery" name_key="Handyman" desc_key="You are mastering the use of tools. You are dealing more damage to blocks and work faster." icon="mp_tools">
+
+				<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="perkMiner69r" operation="GTE" value="1" desc_key="Requires Miner 69'er lvl 1"/></level_requirements>
+				<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="perkMiner69r" operation="GTE" value="1" desc_key="Requires Miner 69'er lvl 1"/></level_requirements>
+				<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="perkMiner69r" operation="GTE" value="2" desc_key="Requires Miner 69'er lvl 2"/></level_requirements>
+				<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="perkMiner69r" operation="GTE" value="2" desc_key="Requires Miner 69'er lvl 2"/></level_requirements>
+				<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="perkMiner69r" operation="GTE" value="3" desc_key="Requires Miner 69'er lvl 3"/></level_requirements>
+				<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="perkMiner69r" operation="GTE" value="3" desc_key="Requires Miner 69'er lvl 3"/></level_requirements>
+				<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="perkMiner69r" operation="GTE" value="4" desc_key="Requires Miner 69'er lvl 4"/></level_requirements>
+				<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="perkMiner69r" operation="GTE" value="4" desc_key="Requires Miner 69'er lvl 4"/></level_requirements>
+				<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="perkMiner69r" operation="GTE" value="5" desc_key="Requires Miner 69'er lvl 5"/></level_requirements>
+				<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="perkMiner69r" operation="GTE" value="5" desc_key="Requires Miner 69'er lvl 5"/></level_requirements>
+
+			<effect_group>
+				<requirement name="ItemHasTags" tags="perkMiner69r,turretMelee"/>
+
+				<passive_effect name="EntityDamage" operation="perc_add" level="1,9" value=".02,.18"/>
+				<passive_effect name="EntityDamage" operation="perc_add" level="10" value=".25"/>
+				
+				<passive_effect name="BlockDamage" operation="perc_add" level="1,9" value=".4,.36"/>
+				<passive_effect name="BlockDamage" operation="perc_add" level="10" value=".50"/>
+
+				<passive_effect name="AttacksPerMinute" operation="perc_add" level="1,9" value=".02,.18"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" level="10" value=".25"/>
+
+				<passive_effect name="FallingBlockDamage" operation="perc_add" level="5,9" value="-.1,-.1" />
+				<passive_effect name="FallingBlockDamage" operation="perc_add" level="10" value="-.2" />
+
+				<effect_description level="1" desc_base="Handyman I" long_desc_key="Increase your block damage by 4% and entity damage and attack speed with tools by 2%."/>
+				<effect_description level="2" desc_base="Handyman II" long_desc_key="Increase your block damage by 8% and entity damage and attack speed with tools by 4%."/>
+				<effect_description level="3" desc_base="Handyman III" long_desc_key="Increase your block damage by 12% and entity damage and attack speed with tools by 6%."/>
+				<effect_description level="4" desc_base="Handyman IV" long_desc_key="Increase your block damage by 16% and entity damage and attack speed with tools by 8%."/>
+				<effect_description level="5" desc_base="Handyman V" long_desc_key="Increase your block damage by 20% and entity damage and attack speed with tools by 10%. Decrease the damage you receive through falling blocks by 10% while wearing tools."/>
+				<effect_description level="6" desc_base="Handyman VI" long_desc_key="Increase your block damage by 24% and entity damage and attack speed with tools by 12%. Decrease the damage you receive through falling blocks by 10% while wearing tools."/>
+				<effect_description level="7" desc_base="Handyman VII" long_desc_key="Increase your block damage by 28% and entity damage and attack speed with tools by 14%. Decrease the damage you receive through falling blocks by 10% while wearing tools."/>
+				<effect_description level="8" desc_base="Handyman VIII" long_desc_key="Increase your block damage by 32% and entity damage and attack speed with tools by 16%. Decrease the damage you receive through falling blocks by 10% while wearing tools."/>
+				<effect_description level="9" desc_base="Handyman IX" long_desc_key="Increase your block damage by 36% and entity damage and attack speed with tools by 18%. Decrease the damage you receive through falling blocks by 10% while wearing tools."/>
+				<effect_description level="10" desc_base="Master Handyman" long_desc_key="You are your friend's wife's handyman. Increase your block damage by 50% and entity damage and attack speed with tools by 25%. Decrease the damage you receive through falling blocks by 20% while wearing tools."/>
+			</effect_group>
+		</perk>
+	
+	<perk name="perkMartialArts" max_level="10" parent="skillMeleeMastery" name_key="Martial Arts" desc_key="You are mastering the martial arts. Your damage and overall speed increase while using fists and knuckles." icon="mp_knuckles">
+		
+				<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="perkBrawler" operation="GTE" value="1" desc_key="Requires Brawler lvl 1"/></level_requirements>
+				<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="perkBrawler" operation="GTE" value="1" desc_key="Requires Brawler lvl 1"/></level_requirements>
+				<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="perkBrawler" operation="GTE" value="2" desc_key="Requires Brawler lvl 2"/></level_requirements>
+				<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="perkBrawler" operation="GTE" value="2" desc_key="Requires Brawler lvl 2"/></level_requirements>
+				<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="perkBrawler" operation="GTE" value="3" desc_key="Requires Brawler lvl 3"/></level_requirements>
+				<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="perkBrawler" operation="GTE" value="3" desc_key="Requires Brawler lvl 3"/></level_requirements>
+				<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="perkBrawler" operation="GTE" value="4" desc_key="Requires Brawler lvl 4"/></level_requirements>
+				<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="perkBrawler" operation="GTE" value="4" desc_key="Requires Brawler lvl 4"/></level_requirements>
+				<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="perkBrawler" operation="GTE" value="5" desc_key="Requires Brawler lvl 5"/></level_requirements>
+				<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="perkBrawler" operation="GTE" value="5" desc_key="Requires Brawler lvl 5"/></level_requirements>
+
+			<effect_group>
+				<requirement name="ItemHasTags" tags="perkBrawler"/>
+				
+				<passive_effect name="DismemberChance" operation="base_add" level="10" value=".05" tags="head"/>
+				
+				<passive_effect name="AttacksPerMinute" operation="perc_add" level="1,9" value=".03,.27"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" level="10" value=".35"/>
+			
+				<passive_effect name="EntityDamage" operation="perc_add" level="1,9" value=".03,.27"/>
+				<passive_effect name="EntityDamage" operation="perc_add" level="10" value=".35"/>
+
+				<passive_effect name="RunSpeed" operation="perc_add" level="5,9" value=".1,.1"/>
+				<passive_effect name="RunSpeed" operation="perc_add" level="10" value=".2"/>
+				<passive_effect name="WalkSpeed" operation="perc_add" level="5,9" value=".1,.1"/>
+				<passive_effect name="WalkSpeed" operation="perc_add" level="10" value=".2"/>
+
+				<effect_description level="1" desc_base="Martial Arts I" long_desc_key="Increase your entity damage and attack speed with your fists and knuckles by 3%."/>
+				<effect_description level="2" desc_base="Martial Arts II" long_desc_key="Increase your entity damage and attack speed with your fists and knuckles by 6%."/>
+				<effect_description level="3" desc_base="Martial Arts III" long_desc_key="Increase your entity damage and attack speed with your fists and knuckles by 9%."/>
+				<effect_description level="4" desc_base="Martial Arts IV" long_desc_key="Increase your entity damage and attack speed with your fists and knuckles by 12%."/>
+				<effect_description level="5" desc_base="Martial Arts V" long_desc_key="Increase your entity damage and attack speed with your fists and knuckles by 15%. You move 10% faster while using your fists or knuckles."/>
+				<effect_description level="6" desc_base="Martial Arts VI" long_desc_key="Increase your entity damage and attack speed with your fists and knuckles by 18%. You move 10% faster while using your fists or knuckles."/>
+				<effect_description level="7" desc_base="Martial Arts VII" long_desc_key="Increase your entity damage and attack speed with your fists and knuckles by 21%. You move move 10% faster while using your fists or knuckles."/>
+				<effect_description level="8" desc_base="Martial Arts VIII" long_desc_key="Increase your entity damage and attack speed with your fists and knuckles by 24%. You move 10% faster while using your fists or knuckles."/>
+				<effect_description level="9" desc_base="Martial Arts IX" long_desc_key="Increase your entity damage and attack speed with your fists and knuckles by 27%. You move 10% faster while using your fists or knuckles."/>
+				<effect_description level="10" desc_base="Martial Arts Master" long_desc_key="You are now Kenshiro, Fist of the North Star. Your entity damage and attack speed are increased by 35%. You move 20% faster and have an additonal 5% chance to dismember heads while using your fists or knuckles."/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkBlademaster" max_level="10" parent="skillMeleeMastery" name_key="Blademaster" desc_key="You are mastering the arts of the blade. Your attack speed and bleeding stacks increase." icon="mp_blades">
+		
+				<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="GTE" value="1" desc_key="Requires Deep Cuts lvl 1"/></level_requirements>
+				<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="GTE" value="1" desc_key="Requires Deep Cuts lvl 1"/></level_requirements>
+				<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="GTE" value="2" desc_key="Requires Deep Cuts lvl 2"/></level_requirements>
+				<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="GTE" value="2" desc_key="Requires Deep Cuts lvl 2"/></level_requirements>
+				<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="GTE" value="3" desc_key="Requires Deep Cuts lvl 3"/></level_requirements>
+				<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="GTE" value="3" desc_key="Requires Deep Cuts lvl 3"/></level_requirements>
+				<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="GTE" value="4" desc_key="Requires Deep Cuts lvl 4"/></level_requirements>
+				<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="GTE" value="4" desc_key="Requires Deep Cuts lvl 4"/></level_requirements>
+				<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="GTE" value="5" desc_key="Requires Deep Cuts lvl 5"/></level_requirements>
+				<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="GTE" value="5" desc_key="Requires Deep Cuts lvl 5"/></level_requirements>
+
+			<effect_group>
+				<requirement name="ItemHasTags" tags="perkDeepCuts"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" level="1,9" value=".04,.36"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" level="10" value=".5"/>
+			
+				<passive_effect name="EntityDamage" operation="perc_add" level="5,9" value=".1,.1"/>
+				<passive_effect name="EntityDamage" operation="perc_add" level="10" value=".2"/>
+			
+			<!--bleeding stacks regulated in buffs.xml -->
+			
+				<effect_description level="1" desc_base="Blademaster I" long_desc_key="Increase your attack speed with bladed weapons by 4%."/>
+				<effect_description level="2" desc_base="Blademaster II" long_desc_key="Increase your attack speed with bladed weapons by 8%."/>
+				<effect_description level="3" desc_base="Blademaster III" long_desc_key="Increase your attack speed with bladed weapons by 12%."/>
+				<effect_description level="4" desc_base="Blademaster IV" long_desc_key="Increase your attack speed with bladed weapons by 16%."/>
+				<effect_description level="5" desc_base="Blademaster V" long_desc_key="Increase your attack speed with bladed weapons by 20% and entity damage by 10%. Increase the maximum stacks of bleed you can apply by 2."/>
+				<effect_description level="6" desc_base="Blademaster VI" long_desc_key="Increase your attack speed with bladed weapons by 24% and entity damage by 10%. Increase the maximum stacks of bleed you can apply by 2."/>
+				<effect_description level="7" desc_base="Blademaster VII" long_desc_key="Increase your attack speed with bladed weapons by 28% and entity damage by 10%. Increase the maximum stacks of bleed you can apply by 2."/>
+				<effect_description level="8" desc_base="Blademaster VIII" long_desc_key="Increase your attack speed with bladed weapons by 32% and entity damage by 10%. Increase the maximum stacks of bleed you can apply by 2."/>
+				<effect_description level="9" desc_base="Blademaster IX" long_desc_key="Increase your attack speed with bladed weapons by 36% and entity damage by 10%. Increase the maximum stacks of bleed you can apply by 2."/>
+				<effect_description level="10" desc_base="Blade Master" long_desc_key="The warlocks of the Blackrock clan have spoken! Increase your attack speed by 50% and entity damage by 20% with bladed weapons. Increase the maximum stacks of bleed you can apply by 4."/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkEnforcer" max_level="10" parent="skillMeleeMastery" name_key="Enforcer" desc_key="You are mastering the arts of the baton. What you say, goes. Increase your entity damage and chance to knock down with batons." icon="mp_batons">
+		
+				<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="GTE" value="1" desc_key="Requires Electrocutioner lvl 1"/></level_requirements>
+				<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="GTE" value="1" desc_key="Requires Electrocutioner lvl 1"/></level_requirements>
+				<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="GTE" value="2" desc_key="Requires Electrocutioner lvl 2"/></level_requirements>
+				<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="GTE" value="2" desc_key="Requires Electrocutioner lvl 2"/></level_requirements>
+				<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="GTE" value="3" desc_key="Requires Electrocutioner lvl 3"/></level_requirements>
+				<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="GTE" value="3" desc_key="Requires Electrocutioner lvl 3"/></level_requirements>
+				<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="GTE" value="4" desc_key="Requires Electrocutioner lvl 4"/></level_requirements>
+				<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="GTE" value="4" desc_key="Requires Electrocutioner lvl 4"/></level_requirements>
+				<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="GTE" value="5" desc_key="Requires Electrocutioner lvl 5"/></level_requirements>
+				<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="GTE" value="5" desc_key="Requires Electrocutioner lvl 5"/></level_requirements>
+
+			<effect_group>
+				<requirement name="ItemHasTags" tags="perkElectrocutioner"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" level="5,9" value=".05,.05"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" level="10" value=".1"/>
+			
+				<passive_effect name="EntityDamage" operation="perc_add" level="1,9" value=".07,.63"/>
+				<passive_effect name="EntityDamage" operation="perc_add" level="10" value=".8"/>
+			
+				<effect_description level="1" desc_base="Enforcer I" long_desc_key="Increase your entity damage with stun batons by 7%."/>
+				<effect_description level="2" desc_base="Enforcer II" long_desc_key="Increase your entity damage with stun batons by 14%."/>
+				<effect_description level="3" desc_base="Enforcer III" long_desc_key="Increase your entity damage with stun batons by 21%."/>
+				<effect_description level="4" desc_base="Enforcer IV" long_desc_key="Increase your entity damage with stun batons by 28%."/>
+				<effect_description level="5" desc_base="Enforcer V" long_desc_key="Increase your entity damage with stun batons by 35% and attack speed by 5% with stun batons. Also gives you an additional 15% chance to knock down enemies."/>
+				<effect_description level="6" desc_base="Enforcer VI" long_desc_key="Increase your entity damage with stun batons by 42% and attack speed by 5% with stun batons. Also gives you an additional 15% chance to knock down enemies."/>
+				<effect_description level="7" desc_base="Enforcer VII" long_desc_key="Increase your entity damage with stun batons by 49% and attack speed by 5% with stun batons. Also gives you an additional 15% chance to knock down enemies."/>
+				<effect_description level="8" desc_base="Enforcer VIII" long_desc_key="Increase your entity damage with stun batons by 56% and attack speed by 5% with stun batons. Also gives you an additional 15% chance to knock down enemies."/>
+				<effect_description level="9" desc_base="Enforcer IX" long_desc_key="Increase your entity damage with stun batons by 63% and attack speed by 5% with stun batons. Also gives you an additional 15% chance to knock down enemies."/>
+				<effect_description level="10" desc_base="Master Enforcer" long_desc_key="STOP RESISTING!! Increase your entity damage by 80% and attack speed by 10% with stun batons. Also gives you an additional 30% chance to knock down enemies."/>
+			</effect_group>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+						<requirement name="ProgressionLevel" progression_name="perkBatonMastery" operation="Equals" value="5"/>
+						<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="15"/>
+				</triggered_effect>
+				
+				<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+						<requirement name="ProgressionLevel" progression_name="perkBatonMastery" operation="Equals" value="6"/>
+						<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="15"/>
+				</triggered_effect>
+				
+				<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+						<requirement name="ProgressionLevel" progression_name="perkBatonMastery" operation="Equals" value="7"/>
+						<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="15"/>
+				</triggered_effect>
+				
+				<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+						<requirement name="ProgressionLevel" progression_name="perkBatonMastery" operation="Equals" value="8"/>
+						<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="15"/>
+				</triggered_effect>
+				
+				<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+						<requirement name="ProgressionLevel" progression_name="perkBatonMastery" operation="Equals" value="8"/>
+						<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="15"/>
+				</triggered_effect>
+
+				<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+						<requirement name="ProgressionLevel" progression_name="perkBatonMastery" operation="GTE" value="10"/>
+						<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
+				</triggered_effect>
+			</effect_group>
+		</perk>
+		
+		
+		
+	<!-- Ranged Masteries -->
+		
+		<perk name="perkRifleman" max_level="10" parent="skillRangedMastery" name_key="Rifleman" desc_key="You are mastering the arts of the rifle. Your damage and weapon handling increases." icon="mp_rifles">
+
+				<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="perkDeadEye" operation="GTE" value="1" desc_key="Requires Dead Eye lvl 1"/></level_requirements>
+				<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="perkDeadEye" operation="GTE" value="1" desc_key="Requires Dead Eye lvl 1"/></level_requirements>
+				<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="perkDeadEye" operation="GTE" value="2" desc_key="Requires Dead Eye lvl 2"/></level_requirements>
+				<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="perkDeadEye" operation="GTE" value="2" desc_key="Requires Dead Eye lvl 2"/></level_requirements>
+				<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="perkDeadEye" operation="GTE" value="3" desc_key="Requires Dead Eye lvl 3"/></level_requirements>
+				<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="perkDeadEye" operation="GTE" value="3" desc_key="Requires Dead Eye lvl 3"/></level_requirements>
+				<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="perkDeadEye" operation="GTE" value="4" desc_key="Requires Dead Eye lvl 4"/></level_requirements>
+				<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="perkDeadEye" operation="GTE" value="4" desc_key="Requires Dead Eye lvl 4"/></level_requirements>
+				<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="perkDeadEye" operation="GTE" value="5" desc_key="Requires Dead Eye lvl 5"/></level_requirements>
+				<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="perkDeadEye" operation="GTE" value="5" desc_key="Requires Dead Eye lvl 5"/></level_requirements>
+			
+			<effect_group>
+				
+				<requirement name="ItemHasTags" tags="perkDeadEye"/>
+			
+				<passive_effect name="EntityDamage" operation="perc_add" level="1,9" value=".04,.36"/>
+				<passive_effect name="EntityDamage" operation="perc_add" level="10" value=".5"/>
+
+				<passive_effect name="WeaponHandling" operation="perc_add" level="1,9" value=".04,.36"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" level="10" value=".5"/>
+
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="1,9" value=".04,.36"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="10" value=".5"/>
+
+				<passive_effect name="TargetArmor" operation="perc_add" level="5,9" value="-.1,-.1"/>
+				<passive_effect name="TargetArmor" operation="perc_add" level="10" value="-.2"/>
+
+		
+				<effect_description level="1" desc_base="Rifleman I" long_desc_key="Increase your entity damage, weapon handling and reload speed with rifles by 4%."/>
+				<effect_description level="2" desc_base="Rifleman II." long_desc_key="Increase your entity damage, weapon handling and reload speed with rifles by 8%."/>
+				<effect_description level="3" desc_base="Rifleman III" long_desc_key="Increase your entity damage, weapon handling and reload speed with rifles by 12%."/>
+				<effect_description level="4" desc_base="Rifleman IV" long_desc_key="Increase your entity damage, weapon handling and reload speed with rifles by 16%."/>
+				<effect_description level="5" desc_base="Rifleman V" long_desc_key="Increase your entity damage, weapon handling, reload speed with rifles by 20% and ignore an additional 10% of the targets armor."/>
+				<effect_description level="6" desc_base="Rifleman VI" long_desc_key="Increase your entity damage, weapon handling, reload speed with rifles by 24% and ignore an additional 10% of the targets armor."/>
+				<effect_description level="7" desc_base="Rifleman VII" long_desc_key="Increase your entity damage, weapon handling, reload speed with rifles by 28% and ignore an additional 10% of the targets armor."/>
+				<effect_description level="8" desc_base="Rifleman VIII" long_desc_key="Increase your entity damage, weapon handling, reload speed with rifles by 32% and ignore an additional 10% of the targets armor."/>
+				<effect_description level="9" desc_base="Rifleman IX" long_desc_key="Increase your entity damage, weapon handling, reload speed with rifles by 36% and ignore an additional 10% of the targets armor."/>
+				<effect_description level="10" desc_base="Master Rifleman" long_desc_key="You are Simo Hayha the White Death. Increase your entity damage, weapon handling, reload speed with rifles by 50% and ignore an additional 20% of the targets armor."/>
+
+			</effect_group>
+		</perk>
+		
+		<perk name="perkDemoman" max_level="10" parent="skillRangedMastery" name_key="Demoman" desc_key="You are mastering the art of throwing dynamite around. Vastly increase your damage and the chance to dismember with explosives." icon="mp_explosives">
+			
+				<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="GTE" value="1" desc_key="Requires Demolitions Expert lvl 1"/></level_requirements>
+				<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="GTE" value="1" desc_key="Requires Demolitions Expert lvl 1"/></level_requirements>
+				<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="GTE" value="2" desc_key="Requires Demolitions Expert lvl 2"/></level_requirements>
+				<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="GTE" value="2" desc_key="Requires Demolitions Expert lvl 2"/></level_requirements>
+				<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="GTE" value="3" desc_key="Requires Demolitions Expert lvl 3"/></level_requirements>
+				<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="GTE" value="3" desc_key="Requires Demolitions Expert lvl 3"/></level_requirements>
+				<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="GTE" value="4" desc_key="Requires Demolitions Expert lvl 4"/></level_requirements>
+				<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="GTE" value="4" desc_key="Requires Demolitions Expert lvl 4"/></level_requirements>
+				<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="GTE" value="5" desc_key="Requires Demolitions Expert lvl 5"/></level_requirements>
+				<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="GTE" value="5" desc_key="Requires Demolitions Expert lvl 5"/></level_requirements>
+				
+			<effect_group>
+				<requirement name="ItemHasTags" tags="perkDemolitionsExpert"/>
+
+				<passive_effect name="EntityDamage" operation="perc_add" level="1,10" value=".05,.5"/>
+
+				<passive_effect name="WeaponHandling" operation="perc_add" level="1,9" value=".02,.18"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" level="10" value=".25"/>
+
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="1,9" value=".02,.18"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="10" value=".25"/>
+
+				<passive_effect name="DismemberChance" operation="base_add" level="1,10" value=".01,.1"/>
+
+				<effect_description level="1" desc_base="Demoman I" long_desc_key="Increase entity damage by 5%, weapon handling and reload speed with explosives by 2%. Explosives have an additional 1% chance to dismember."/>
+				<effect_description level="2" desc_base="Demoman II" long_desc_key="Increase entity damage by 10%, weapon handling and reload speed with explosives by 4%. Explosives have an additional 2% chance to dismember."/>
+				<effect_description level="3" desc_base="Demoman III" long_desc_key="Increase entity damage by 15%, weapon handling and reload speed with explosives by 6%. Explosives have an additional 3% chance to dismember."/>
+				<effect_description level="4" desc_base="Demoman IV" long_desc_key="Increase entity damage by 20%, weapon handling and reload speed with explosives by 8%. Explosives have an additional 4% chance to dismember."/>
+				<effect_description level="5" desc_base="Demoman V" long_desc_key="Increase entity damage by 25%, weapon handling and reload speed with explosives by 10%. Explosives have an additional 5% chance to dismember."/>
+				<effect_description level="6" desc_base="Demoman VI" long_desc_key="Increase entity damage by 30%, weapon handling and reload speed with explosives by 12%. Explosives have an additional 6% chance to dismember."/>
+				<effect_description level="7" desc_base="Demoman VII" long_desc_key="Increase entity damage by 35%, weapon handling and reload speed with explosives by 14%. Explosives have an additional 7% chance to dismember."/>
+				<effect_description level="8" desc_base="Demoman VIII" long_desc_key="Increase entity damage by 40%, weapon handling and reload speed with explosives by 16%. Explosives have an additional 8% chance to dismember."/>
+				<effect_description level="9" desc_base="Demoman IX" long_desc_key="Increase entity damage by 45%, weapon handling and reload speed with explosives by 18. Explosives have an additional 9% chance to dismember."/>
+				<effect_description level="10" desc_base="Master Demoman" long_desc_key="Hey, as long as it works. Increase entity damage by 50%, weapon handling and reload speed with explosives by 25%. Explosives have an additional 10% chance to dismember."/>
+			</effect_group>
+		</perk>
+		
+		<perk name="perkShotty" max_level="10" parent="skillRangedMastery" name_key="Shotty" desc_key="You are mastering the arts of the shotgun. Your entity damage and weapon handling increases." icon="mp_shotguns">
+
+				<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="perkBoomstick" operation="GTE" value="1" desc_key="Requires Boomstick lvl 1"/></level_requirements>
+				<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="perkBoomstick" operation="GTE" value="1" desc_key="Requires Boomstick lvl 1"/></level_requirements>
+				<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="perkBoomstick" operation="GTE" value="2" desc_key="Requires Boomstick lvl 2"/></level_requirements>
+				<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="perkBoomstick" operation="GTE" value="2" desc_key="Requires Boomstick lvl 2"/></level_requirements>
+				<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="perkBoomstick" operation="GTE" value="3" desc_key="Requires Boomstick lvl 3"/></level_requirements>
+				<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="perkBoomstick" operation="GTE" value="3" desc_key="Requires Boomstick lvl 3"/></level_requirements>
+				<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="perkBoomstick" operation="GTE" value="4" desc_key="Requires Boomstick lvl 4"/></level_requirements>
+				<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="perkBoomstick" operation="GTE" value="4" desc_key="Requires Boomstick lvl 4"/></level_requirements>
+				<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="perkBoomstick" operation="GTE" value="5" desc_key="Requires Boomstick lvl 5"/></level_requirements>
+				<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="perkBoomstick" operation="GTE" value="5" desc_key="Requires Boomstick lvl 5"/></level_requirements>
+
+			<effect_group>
+				<requirement name="ItemHasTags" tags="perkBoomstick"/>
+			
+				<passive_effect name="EntityDamage" operation="perc_add" level="1,9" value=".03,.27"/>
+				<passive_effect name="EntityDamage" operation="perc_add" level="10" value=".35"/>
+
+				<passive_effect name="WeaponHandling" operation="perc_add" level="1,9" value=".03,.27"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" level="10" value=".35"/>
+
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="1,9" value=".03,.27"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="10" value=".35"/>
+			
+				<passive_effect name="MagazineSize" operation="perc_add" level="1,9" value=".03,.27"/>
+				<passive_effect name="MagazineSize" operation="perc_add" level="10" value=".35"/>
+
+				<passive_effect name="DamageFalloffRange" operation="base_add" level="10" value="2"/>
+		
+				<effect_description level="1" desc_base="Shotty I" long_desc_key="Increase your entity damage, weapon handling, clip size and reload speed with shotguns by 3%."/>
+				<effect_description level="2" desc_base="Shotty II" long_desc_key="Increase your entity damage, weapon handling, clip size and reload speed with shotguns by 6%."/>
+				<effect_description level="3" desc_base="Shotty III" long_desc_key="Increase your entity damage, weapon handling, clip size and reload speed with shotguns by 9%."/>
+				<effect_description level="4" desc_base="Shotty IV" long_desc_key="Increase your entity damage, weapon handling, clip size and reload speed with shotguns by 12%."/>
+				<effect_description level="5" desc_base="Shotty V" long_desc_key="Increase your entity damage, weapon handling, clip size and reload speed with shotguns by 15%."/>
+				<effect_description level="6" desc_base="Shotty VI" long_desc_key="Increase your entity damage, weapon handling, clip size and reload speed with shotguns by 18%."/>
+				<effect_description level="7" desc_base="Shotty VII" long_desc_key="Increase your entity damage, weapon handling, clip size and reload speed with shotguns by 21%."/>
+				<effect_description level="8" desc_base="Shotty VIII" long_desc_key="Increase your entity damage, weapon handling, clip size and reload speed with shotguns by 24%."/>
+				<effect_description level="9" desc_base="Shotty IX" long_desc_key="Increase your entity damage, weapon handling, clip size and reload speed with shotguns by 27%."/>
+				<effect_description level="10" desc_base="Shotty Master" long_desc_key="Hey little sister, SHOTGUN! Increase your entity damage, weapon handling, clip size  and reload speed with shotguns by 35%. Increase the maximum range at which shotguns deal full damage by 2m."/>
+
+			</effect_group>
+		</perk>
+		
+		<perk name="perkMarine" max_level="10" parent="skillRangedMastery" name_key="Marine" desc_key="You are mastering the arts of automatic rifles. Your fire rate and weapon handling increases." icon="mp_ars">
+		
+				<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="perkMachineGunner" operation="GTE" value="1" desc_key="Requires Machine Gunner lvl 1"/></level_requirements>
+				<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="perkMachineGunner" operation="GTE" value="1" desc_key="Requires Machine Gunner lvl 1"/></level_requirements>
+				<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="perkMachineGunner" operation="GTE" value="2" desc_key="Requires Machine Gunner lvl 2"/></level_requirements>
+				<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="perkMachineGunner" operation="GTE" value="2" desc_key="Requires Machine Gunner lvl 2"/></level_requirements>
+				<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="perkMachineGunner" operation="GTE" value="3" desc_key="Requires Machine Gunner lvl 3"/></level_requirements>
+				<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="perkMachineGunner" operation="GTE" value="3" desc_key="Requires Machine Gunner lvl 3"/></level_requirements>
+				<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="perkMachineGunner" operation="GTE" value="4" desc_key="Requires Machine Gunner lvl 4"/></level_requirements>
+				<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="perkMachineGunner" operation="GTE" value="4" desc_key="Requires Machine Gunner lvl 4"/></level_requirements>
+				<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="perkMachineGunner" operation="GTE" value="5" desc_key="Requires Machine Gunner lvl 5"/></level_requirements>
+				<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="perkMachineGunner" operation="GTE" value="5" desc_key="Requires Machine Gunner lvl 5"/></level_requirements>
+		
+			<effect_group>
+				<requirement name="ItemHasTags" tags="perkMachineGunner"/>
+				<passive_effect name="RoundsPerMinute" operation="perc_add" level="1,9" value=".03,.27"/>
+				<passive_effect name="RoundsPerMinute" operation="perc_add" level="10" value=".35"/>
+
+				<passive_effect name="WeaponHandling" operation="perc_add" level="1,9" value=".03,.27"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" level="10" value=".35"/>
+
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="1,9" value=".03,.27"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="10" value=".35"/>
+
+				<passive_effect name="MagazineSize" operation="perc_add" level="1,9" value=".03,.27"/>
+				<passive_effect name="MagazineSize" operation="perc_add" level="10" value=".35"/>
+
+				<passive_effect name="DegradationPerUse" operation="perc_add" level="5,9" value="-.10,-.10"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" level="10" value="-.20"/>
+
+				<effect_description level="1" desc_base="Marine I" long_desc_key="Increase your fire rate, weapon handling, clip size and reload speed with machine guns by 3%."/>
+				<effect_description level="2" desc_base="Marine II" long_desc_key="Increase your fire rate, weapon handling, clip size and reload speed with machine guns by 6%."/>
+				<effect_description level="3" desc_base="Marine III" long_desc_key="Increase your fire rate, weapon handling, clip size and reload speed with machine guns by 9%."/>
+				<effect_description level="4" desc_base="Marine IV" long_desc_key="Increase your fire rate, weapon handling, clip size and reload speed with machine guns by 12%."/>
+				<effect_description level="5" desc_base="Marine V" long_desc_key="Increase your fire rate, weapon handling, clip size and reload speed with machine guns by 15%. Also reduce their degradation by 10%."/>
+				<effect_description level="6" desc_base="Marine VI" long_desc_key="Increase your fire rate, weapon handling, clip size and reload speed with machine guns by 18%. Also reduce their degradation by 10%."/>
+				<effect_description level="7" desc_base="Marine VII" long_desc_key="Increase your fire rate, weapon handling, clip size and reload speed with machine guns by 21%. Also reduce their degradation by 10%."/>
+				<effect_description level="8" desc_base="Marine VIII" long_desc_key="Increase your fire rate, weapon handling, clip size and reload speed with machine guns by 24%. Also reduce their degradation by 10%."/>
+				<effect_description level="9" desc_base="Marine IX" long_desc_key="Increase your fire rate, weapon handling, clip size and reload speed with machine guns by 27%. Also reduce their degradation by 10%."/>
+				<effect_description level="10" desc_base="Master Marine" long_desc_key="HO-LEE-JESUS. WHAT IS THAT? WHAT - THE F**K IS THAT? Increase your fire rate, weapon handling, clip size and reload speed with machine guns by 35%. Also reduce their degradation by 20%."/>
+
+			</effect_group>
+		</perk>
+
+		<perk name="perkBowman" max_level="10" parent="skillRangedMastery" name_key="Bowman" desc_key="You are mastering the arts of the bow. If thou are of pure heart the arrow shall miss, if thou are not, the arrow shall tear thee asunder." icon="mp_bows">
+			
+				<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="perkArchery" operation="GTE" value="1" desc_key="Requires Archery lvl 1"/></level_requirements>
+				<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="perkArchery" operation="GTE" value="1" desc_key="Requires Archery lvl 1"/></level_requirements>
+				<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="perkArchery" operation="GTE" value="2" desc_key="Requires Archery lvl 2"/></level_requirements>
+				<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="perkArchery" operation="GTE" value="2" desc_key="Requires Archery lvl 2"/></level_requirements>
+				<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="perkArchery" operation="GTE" value="3" desc_key="Requires Archery lvl 3"/></level_requirements>
+				<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="perkArchery" operation="GTE" value="3" desc_key="Requires Archery lvl 3"/></level_requirements>
+				<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="perkArchery" operation="GTE" value="4" desc_key="Requires Archery lvl 4"/></level_requirements>
+				<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="perkArchery" operation="GTE" value="4" desc_key="Requires Archery lvl 4"/></level_requirements>
+				<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="perkArchery" operation="GTE" value="5" desc_key="Requires Archery lvl 5"/></level_requirements>
+				<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="perkArchery" operation="GTE" value="5" desc_key="Requires Archery lvl 5"/></level_requirements>
+			
+			<effect_group>
+				<requirement name="ItemHasTags" tags="bowDrawPenalty"/>
+					<passive_effect name="RoundsPerMinute" operation="perc_add" level="1,5" value=".06,.3"/>
+					<passive_effect name="RoundsPerMinute" operation="perc_add" level="6,10" value=".34,.5"/>
+			</effect_group>
+
+			<effect_group>
+				<requirement name="ItemHasTags" tags="perkArchery"/>
+
+				<passive_effect name="RoundsPerMinute" operation="perc_add" level="1,9" value=".03,.27"/>
+				<passive_effect name="RoundsPerMinute" operation="perc_add" level="10" value=".35"/>
+			
+				<passive_effect name="EntityDamage" operation="perc_add" level="1,9" value=".03,.27"/>
+				<passive_effect name="EntityDamage" operation="perc_add" level="10" value=".35"/>
+
+				<passive_effect name="WeaponHandling" operation="perc_add" level="1,9" value=".03,.27"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" level="10" value=".35"/>
+
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="1,9" value=".03,.27"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="10" value=".35"/>
+			
+				<passive_effect name="MagazineSize" operation="base_add" level="1,3" value="1,1"/>
+				<passive_effect name="MagazineSize" operation="base_add" level="4,6" value="2,2"/>
+				<passive_effect name="MagazineSize" operation="base_add" level="7,9" value="3,3"/>
+				<passive_effect name="MagazineSize" operation="base_add" level="10" value="4"/>
+
+				<effect_description level="1" desc_base="Bowman I" long_desc_key="Increase your fire rate, entity damage, weapon handling, reload speed with bows by 3% and prepare an additional bolt or arrow per reload."/>
+				<effect_description level="2" desc_base="Bowman II" long_desc_key="Increase your fire rate, entity damage, weapon handling, reload speed with bows by 6% and prepare an additional bolt or arrow per reload."/>
+				<effect_description level="3" desc_base="Bowman III" long_desc_key="Increase your fire rate, entity damage, weapon handling, reload speed with bows by 9% and prepare an additional bolt or arrow per reload."/>
+				<effect_description level="4" desc_base="Bowman IV" long_desc_key="Increase your fire rate, entity damage, weapon handling, reload speed with bows by 12% and prepare 2 additional bolts or arrows per reload."/>
+				<effect_description level="5" desc_base="Bowman V" long_desc_key="Increase your fire rate, entity damage, weapon handling, reload speed with bows by 15% and prepare 2 additional bolts or arrows per reload."/>
+				<effect_description level="6" desc_base="Bowman VI" long_desc_key="Increase your fire rate, entity damage, weapon handling, reload speed with bows by 18% and prepare 2 additional bolts or arrows per reload."/>
+				<effect_description level="7" desc_base="Bowman VII" long_desc_key="Increase your fire rate, entity damage, weapon handling, reload speed with bows by 21% and prepare 3 additional bolts or arrows per reload."/>
+				<effect_description level="8" desc_base="Bowman VIII" long_desc_key="Increase your fire rate, entity damage, weapon handling, reload speed with bows by 24% and prepare 3 additional bolts or arrows per reload."/>
+				<effect_description level="9" desc_base="Bowman IX" long_desc_key="Increase your fire rate, entity damage, weapon handling, reload speed with bows by 27% and prepare 3 additional bolts or arrows per reload."/>
+				<effect_description level="10" desc_base="Master Bowman" long_desc_key="Golden arrow? And what would we do with a golden arrow? Increase your fire rate, entity damage, weapon handling, reload speed with bows by 35% and prepare 4 additional bolts or arrows per reload."/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkSharpshooter" max_level="10" parent="skillRangedMastery" name_key="Sharpshooter" desc_key="You are mastering the arts of sidearms. Every aspect of handgun handling increases." icon="mp_pistols">
+		
+				<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="perkGunslinger" operation="GTE" value="1" desc_key="Requires Gunslinger lvl 1"/></level_requirements>
+				<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="perkGunslinger" operation="GTE" value="1" desc_key="Requires Gunslinger lvl 1"/></level_requirements>
+				<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="perkGunslinger" operation="GTE" value="2" desc_key="Requires Gunslinger lvl 2"/></level_requirements>
+				<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="perkGunslinger" operation="GTE" value="2" desc_key="Requires Gunslinger lvl 2"/></level_requirements>
+				<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="perkGunslinger" operation="GTE" value="3" desc_key="Requires Gunslinger lvl 3"/></level_requirements>
+				<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="perkGunslinger" operation="GTE" value="3" desc_key="Requires Gunslinger lvl 3"/></level_requirements>
+				<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="perkGunslinger" operation="GTE" value="4" desc_key="Requires Gunslinger lvl 4"/></level_requirements>
+				<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="perkGunslinger" operation="GTE" value="4" desc_key="Requires Gunslinger lvl 4"/></level_requirements>
+				<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="perkGunslinger" operation="GTE" value="5" desc_key="Requires Gunslinger lvl 5"/></level_requirements>
+				<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="perkGunslinger" operation="GTE" value="5" desc_key="Requires Gunslinger lvl 5"/></level_requirements>
+
+			<effect_group>
+				<requirement name="ItemHasTags" tags="perkGunslinger"/>
+				<passive_effect name="RoundsPerMinute" operation="perc_add" level="1,9" value=".04,.36"/>
+				<passive_effect name="RoundsPerMinute" operation="perc_add" level="10" value=".5"/>
+			
+				<passive_effect name="EntityDamage" operation="perc_add" level="1,9" value=".04,.36"/>
+				<passive_effect name="EntityDamage" operation="perc_add" level="10" value=".5"/>
+
+				<passive_effect name="WeaponHandling" operation="perc_add" level="1,9" value=".04,.36"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" level="10" value=".5"/>
+
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="1,9" value=".04,.36"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="10" value=".5"/>
+
+				<passive_effect name="IncrementalSpreadMultiplier" operation="perc_add" level="1,9" value="-.02,-.18"/>
+				<passive_effect name="IncrementalSpreadMultiplier" operation="perc_add" level="10" value="-.25"/>
+
+				<effect_description level="1" desc_base="Sharpshooter I" long_desc_key="Increase your fire rate, entity damage, weapon handling, reload speed with sidearms by 4% and reduce their spread by an additional 2%."/>
+				<effect_description level="2" desc_base="Sharpshooter II" long_desc_key="Increase your fire rate, entity damage, weapon handling, reload speed with sidearms by 8% and reduce their spread by an additional 4%."/>
+				<effect_description level="3" desc_base="Sharpshooter III" long_desc_key="Increase your fire rate, entity damage, weapon handling, reload speed with sidearms by 12% and reduce their spread by an additional 6%."/>
+				<effect_description level="4" desc_base="Sharpshooter IV" long_desc_key="Increase your fire rate, entity damage, weapon handling, reload speed with sidearms by 16% and reduce their spread by an additional 8%."/>
+				<effect_description level="5" desc_base="Sharpshooter V" long_desc_key="Increase your fire rate, entity damage, weapon handling, reload speed with sidearms by 20% and reduce their spread by an additional 10%."/>
+				<effect_description level="6" desc_base="Sharpshooter VI" long_desc_key="Increase your fire rate, entity damage, weapon handling, reload speed with sidearms by 24% and reduce their spread by an additional 12%."/>
+				<effect_description level="7" desc_base="Sharpshooter VII" long_desc_key="Increase your fire rate, entity damage, weapon handling, reload speed with sidearms by 28% and reduce their spread by an additional 14%."/>
+				<effect_description level="8" desc_base="Sharpshooter VIII" long_desc_key="Increase your fire rate, entity damage, weapon handling, reload speed with sidearms by 32% and reduce their spread by an additional 16%."/>
+				<effect_description level="9" desc_base="Sharpshooter IX" long_desc_key="Increase your fire rate, entity damage, weapon handling, reload speed with sidearms by 36% and reduce their spread by an additional 18%."/>
+				<effect_description level="10" desc_base="Master Sharpshooter" long_desc_key="You are now the good, the bad and the ugly. Increase your fire rate, entity damage, weapon handling, reload speed with sidearms by 50% and reduce their spread by an additional 25%."/>
+
+			</effect_group>
+		</perk>
+
+		<perk name="perkRobotics" max_level="10" parent="skillRangedMastery" name_key="Robotics" desc_key="You are mastering the art of robotics. Your turret control range and magazine size increases." icon="mp_turrets">
+		
+				<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="perkTurrets" operation="GTE" value="1" desc_key="Requires Robotics Inventor lvl 1"/></level_requirements>
+				<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="perkTurrets" operation="GTE" value="1" desc_key="Requires Robotics Inventor lvl 1"/></level_requirements>
+				<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="perkTurrets" operation="GTE" value="2" desc_key="Requires Robotics Inventor lvl 2"/></level_requirements>
+				<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="perkTurrets" operation="GTE" value="2" desc_key="Requires Robotics Inventor lvl 2"/></level_requirements>
+				<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="perkTurrets" operation="GTE" value="3" desc_key="Requires Robotics Inventor lvl 3"/></level_requirements>
+				<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="perkTurrets" operation="GTE" value="3" desc_key="Requires Robotics Inventor lvl 3"/></level_requirements>
+				<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="perkTurrets" operation="GTE" value="4" desc_key="Requires Robotics Inventor lvl 4"/></level_requirements>
+				<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="perkTurrets" operation="GTE" value="4" desc_key="Requires Robotics Inventor lvl 4"/></level_requirements>
+				<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="perkTurrets" operation="GTE" value="5" desc_key="Requires Robotics Inventor lvl 5"/></level_requirements>
+				<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="perkTurrets" operation="GTE" value="5" desc_key="Requires Robotics Inventor lvl 5"/></level_requirements>
+		
+		<effect_group name="Holding a turret">
+				<requirement name="ItemHasTags" tags="turretRanged"/>
+					<passive_effect name="MagazineSize" operation="base_add" level="1,9" value="09,81"/>
+					<passive_effect name="MagazineSize" operation="base_add" level="10" value="100"/>
+			</effect_group>
+
+		<effect_group name="General and deployed turrets">
+
+				<passive_effect name="RoundsPerMinute" operation="perc_add" level="1,9" value=".06,.54" tags="turretRanged, turretMelee"/>
+				<passive_effect name="RoundsPerMinute" operation="perc_add" level="10" value="0.66" tags="turretRanged, turretMelee"/>
+				
+				<passive_effect name="JunkTurretActiveCount" operation="perc_add" level="10" value="1"/>
+				<passive_effect name="JunkTurretActiveRange" operation="perc_add" level="1,9" value=".09,.81"/>
+				<passive_effect name="JunkTurretActiveRange" operation="perc_add" level="10" value="1"/>
+
+				<effect_description level="1" desc_base="Robotics I" long_desc_key="Increase the magazine size of junk turrets by 9, fire rate by 6% and the maximum range at which they are active by 9%."/>
+				<effect_description level="2" desc_base="Robotics II" long_desc_key="Increase the magazine size of junk turrets by 18, fire rate by 12% and the maximum range at which they are active by 18%."/>
+				<effect_description level="3" desc_base="Robotics III" long_desc_key="Increase the magazine size of junk turrets by 27, fire rate by 18% and the maximum range at which they are active by 27%."/>
+				<effect_description level="4" desc_base="Robotics IV" long_desc_key="Increase the magazine size of junk turrets by 36, fire rate by 24% and the maximum range at which they are active by 36%."/>
+				<effect_description level="5" desc_base="Robotics V" long_desc_key="Increase the magazine size of junk turrets by 45, fire rate by 30% and the maximum range at which they are active by 45%."/>
+				<effect_description level="6" desc_base="Robotics VI" long_desc_key="Increase the magazine size of junk turrets by 54, fire rate by 36% and the maximum range at which they are active by 54%."/>
+				<effect_description level="7" desc_base="Robotics VII" long_desc_key="Increase the magazine size of junk turrets by 63, fire rate by 42% and the maximum range at which they are active by 63%."/>
+				<effect_description level="8" desc_base="Robotics VIII" long_desc_key="Increase the magazine size of junk turrets by 72, fire rate by 48% and the maximum range at which they are active by 72%."/>
+				<effect_description level="9" desc_base="Robotics IX" long_desc_key="Increase the magazine size of junk turrets by 81, fire rate by 54% and the maximum range at which they are active by 81%."/>
+				<effect_description level="10" desc_base="Robotics Master" long_desc_key="Go Gadget, go! Increase the magazine size of junk turrets by 100, fire rate by 66%, the maximum range at which they are active by 100% and have 1 additional turret active at the samme time."/>
+			</effect_group>
+			</perk>
+
+		
+</insertBefore>
+</configs>

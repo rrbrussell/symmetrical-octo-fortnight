@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xml>
+	<ModInfo>
+		<Name value="Perk Mastery" />
+		<Description value="Provides additional Mastery options for most skills." />
+		<Author value="devon752" />
+		<Version value="1.200" />
+	</ModInfo>
+</xml>
