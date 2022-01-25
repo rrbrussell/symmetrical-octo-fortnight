@@ -1,0 +1,3 @@
+<configs>
+<set xpath="/progression/level/@experience_multiplier">1.03</set> <!--vanilla caps at around 187k xp at level 60 with this it will cap at around 59k-->
+</configs>
