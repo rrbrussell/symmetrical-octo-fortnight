@@ -8,6 +8,7 @@ For Alpha 20
 - [A20 - AGF - Quick Intro Quest](https://www.nexusmods.com/7daystodie/mods/1769)
 - [Always Open Trader v2](https://www.nexusmods.com/7daystodie/mods/415)
 - [Beaker Recipe v1](https://www.nexusmods.com/7daystodie/mods/308)
+- [Custom Perks - Prestige Skills (CPPS)](https://www.nexusmods.com/7daystodie/mods/783)
 - [Extened Loot Drop Timer v1](https://www.nexusmods.com/7daystodie/mods/584)
 - [EzPerks (A17 - b240)](https://www.nexusmods.com/7daystodie/mods/181)
 - [Perk Mastery](https://www.nexusmods.com/7daystodie/mods/1330)
